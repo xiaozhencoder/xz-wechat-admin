@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="25px" viewBox="0 0 24 25" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <g id="页面-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" opacity="0.300000012">
+        <g id="看板" transform="translate(-979.000000, -80.000000)">
+            <g id="icon/16/箭头备份-10" transform="translate(979.000000, 81.000000)">
+                <circle id="椭圆形" stroke="#545860" stroke-width="2" cx="12" cy="11" r="6"></circle>
+                <rect id="矩形" stroke="#26292E" fill="#D8D8D8" transform="translate(17.939340, 15.939340) rotate(-45.000000) translate(-17.939340, -15.939340) " x="17.4393398" y="13.9393398" width="1" height="4" rx="0.5"></rect>
+            </g>
+        </g>
+    </g>
+</svg>

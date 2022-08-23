@@ -1,0 +1,87 @@
+.xz-table-wrap {
+  width: 100%;
+  min-height: 200px;
+  position: relative;
+
+  .table-multiple-head {
+    z-index: 101;
+    position: absolute;
+    top: 0;
+    left: 48px;
+    right: 0;
+    height: 55px;
+    background: #f6f7f9;
+    padding-left: 8px;
+    :deep(.select-edit) {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      height: inherit;
+      .select-num {
+        span {
+          display: inline-block;
+          width: 17px;
+          height: auto;
+        }
+      }
+      .state {
+        cursor: pointer;
+        margin-left: 40px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        svg {
+          width: 24px;
+          height: 24px;
+        }
+        span {
+          margin-left: 8px;
+        }
+      }
+    }
+  }
+  .table-top-opt {
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: 16px 0 18px;
+    display: flex;
+    justify-content: flex-end;
+    svg {
+      width: 24px;
+      height: 24px;
+    }
+  }
+  .cell {
+    padding: 0 18px !important;
+    display: flex;
+    align-items: center;
+    height: 35px;
+  }
+  .el-table-column--selection {
+    .cell {
+      padding: 0 12px !important;
+    }
+  }
+  .el-table__body tr.hover-row > td.el-table__cell,
+  .el-table__body tr.hover-row.current-row > td.el-table__cell,
+  .el-table__body tr.hover-row.el-table__row--striped > td.el-table__cell,
+  .el-table__body tr.hover-row.el-table__row--striped.current-row > td.el-table__cell {
+    background-color: #fafbfc !important;
+  }
+  .el-table--enable-row-hover .el-table__body tr:hover > td.el-table__cell {
+    background-color: #fafbfc !important;
+  }
+
+  .el-table__fixed,
+  .el-table__fixed-right {
+    z-index: 2;
+  }
+  .tips-icon {
+    font-size: 16px;
+  }
+}
+.el-tooltip__popper {
+  max-width: 252px;
+}

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="16px" height="16px" viewBox="0 0 16 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>切片</title>
+    <g id="智能分析2" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="监控预警-创建" transform="translate(-680.000000, -252.000000)" stroke="#26292E">
+            <g id="分析/表单备份-5" transform="translate(672.000000, 244.000000)">
+                <g id="icon/16/箭头备份-12" transform="translate(6.000000, 8.000000)">
+                    <g id="编组" transform="translate(7.914214, 7.914214) rotate(-45.000000) translate(-7.914214, -7.914214) translate(2.414214, 2.414214)" stroke-width="0.99">
+                        <path d="M5.42564123,1.59546119 L9.17797849,6.7924232 L6.62323649,6.31621904 L6.33928415,9.3074212 L4.88977582,9.51557556 L4.36035124,6.27618144 L1.97457717,6.93747987 L5.42564123,1.59546119 Z" id="三角形"></path>
+                    </g>
+                    <line x1="13.2497965" y1="9" x2="16.2094122" y2="9" id="路径-8"></line>
+                    <line x1="12.1867766" y1="12" x2="16.2094122" y2="12" id="路径-8备份"></line>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

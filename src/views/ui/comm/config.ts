@@ -1,0 +1,2141 @@
+export const customSimpleData = [
+  {
+    id: 436,
+    attributeName: "user_type",
+    attributeDesc: null,
+    showName: "用户类型 ",
+    dataType: "STRING",
+    format: null,
+    dict: false,
+    visible: true,
+    preset: false,
+    remark: null
+  },
+  {
+    id: 437,
+    attributeName: "IDFA",
+    attributeDesc: null,
+    showName: "IDFA ",
+    dataType: "STRING",
+    format: null,
+    dict: false,
+    visible: true,
+    preset: false,
+    remark: null
+  },
+  {
+    id: 438,
+    attributeName: "gender",
+    attributeDesc: null,
+    showName: "性别 ",
+    dataType: "STRING",
+    format: null,
+    dict: false,
+    visible: true,
+    preset: false,
+    remark: null
+  },
+  {
+    id: 439,
+    attributeName: "IMEI",
+    attributeDesc: null,
+    showName: "IMEI ",
+    dataType: "STRING",
+    format: null,
+    dict: false,
+    visible: true,
+    preset: false,
+    remark: null
+  },
+  {
+    id: 443,
+    attributeName: "credit",
+    attributeDesc: null,
+    showName: "积分 ",
+    dataType: "NUMBER:INT",
+    format: null,
+    dict: false,
+    visible: true,
+    preset: false,
+    remark: null
+  },
+  {
+    id: 445,
+    attributeName: "member_level",
+    attributeDesc: null,
+    showName: "会员等级 ",
+    dataType: "STRING",
+    format: null,
+    dict: false,
+    visible: true,
+    preset: false,
+    remark: null
+  },
+  {
+    id: 448,
+    attributeName: "phone_number",
+    attributeDesc: null,
+    showName: "手机号码 ",
+    dataType: "STRING",
+    format: null,
+    dict: false,
+    visible: true,
+    preset: false,
+    remark: null
+  },
+  {
+    id: 449,
+    attributeName: "last_visit_time",
+    attributeDesc: null,
+    showName: "最近一次访问时间 ",
+    dataType: "DATETIME",
+    format: null,
+    dict: false,
+    visible: true,
+    preset: false,
+    remark: null
+  },
+  {
+    id: 450,
+    attributeName: "memer_id",
+    attributeDesc: null,
+    showName: "会员ID ",
+    dataType: "STRING",
+    format: null,
+    dict: false,
+    visible: true,
+    preset: false,
+    remark: null
+  },
+  {
+    id: 451,
+    attributeName: "email",
+    attributeDesc: null,
+    showName: "邮箱 ",
+    dataType: "STRING",
+    format: null,
+    dict: false,
+    visible: true,
+    preset: false,
+    remark: null
+  },
+  {
+    id: 453,
+    attributeName: "nickname",
+    attributeDesc: null,
+    showName: "昵称 ",
+    dataType: "STRING",
+    format: null,
+    dict: false,
+    visible: true,
+    preset: false,
+    remark: null
+  },
+  {
+    id: 22573,
+    attributeName: "$screen_width",
+    attributeDesc: null,
+    showName: "小程序屏幕宽度 ",
+    dataType: "NUMBER:INT",
+    format: null,
+    dict: false,
+    visible: true,
+    preset: true,
+    remark: null
+  },
+  {
+    id: 22574,
+    attributeName: "$os_version",
+    attributeDesc: null,
+    showName: "操作系统版本 ",
+    dataType: "STRING",
+    format: null,
+    dict: false,
+    visible: true,
+    preset: true,
+    remark: null
+  },
+  {
+    id: 22575,
+    attributeName: "$app_id",
+    attributeDesc: null,
+    showName: "应用唯一标识 ",
+    dataType: "STRING",
+    format: null,
+    dict: false,
+    visible: true,
+    preset: true,
+    remark: null
+  },
+  {
+    id: 22576,
+    attributeName: "$is_first_day",
+    attributeDesc: null,
+    showName: "是否首日触发 ",
+    dataType: "BOOL",
+    format: null,
+    dict: false,
+    visible: true,
+    preset: true,
+    remark: null
+  },
+  {
+    id: 22577,
+    attributeName: "$screen_height",
+    attributeDesc: null,
+    showName: "小程序屏幕高度 ",
+    dataType: "NUMBER:INT",
+    format: null,
+    dict: false,
+    visible: true,
+    preset: true,
+    remark: null
+  },
+  {
+    id: 22578,
+    attributeName: "$model",
+    attributeDesc: null,
+    showName: "设备型号 ",
+    dataType: "STRING",
+    format: null,
+    dict: false,
+    visible: true,
+    preset: true,
+    remark: null
+  },
+  {
+    id: 22579,
+    attributeName: "$timezone_offset",
+    attributeDesc: null,
+    showName: "时区偏移量 ",
+    dataType: "NUMBER:INT",
+    format: null,
+    dict: false,
+    visible: true,
+    preset: true,
+    remark: null
+  },
+  {
+    id: 22580,
+    attributeName: "$lib",
+    attributeDesc: null,
+    showName: "SDK 类型 ",
+    dataType: "STRING",
+    format: null,
+    dict: false,
+    visible: true,
+    preset: true,
+    remark: null
+  },
+  {
+    id: 22581,
+    attributeName: "$manufacturer",
+    attributeDesc: null,
+    showName: "设备制造商 ",
+    dataType: "STRING",
+    format: null,
+    dict: false,
+    visible: true,
+    preset: true,
+    remark: null
+  },
+  {
+    id: 22582,
+    attributeName: "$brand",
+    attributeDesc: null,
+    showName: "设备品牌 ",
+    dataType: "STRING",
+    format: null,
+    dict: false,
+    visible: true,
+    preset: true,
+    remark: null
+  },
+  {
+    id: 22583,
+    attributeName: "$network_type",
+    attributeDesc: null,
+    showName: "网络类型 ",
+    dataType: "STRING",
+    format: null,
+    dict: false,
+    visible: true,
+    preset: true,
+    remark: null
+  },
+  {
+    id: 22584,
+    attributeName: "$latest_scene",
+    attributeDesc: null,
+    showName: "最近一次启动场景 ",
+    dataType: "STRING",
+    format: null,
+    dict: false,
+    visible: true,
+    preset: true,
+    remark: null
+  },
+  {
+    id: 22816,
+    attributeName: "$first_visit_time",
+    attributeDesc: null,
+    showName: "首次访问时间 ",
+    dataType: "DATETIME",
+    format: null,
+    dict: false,
+    visible: true,
+    preset: true,
+    remark: null
+  },
+  {
+    id: 31201,
+    attributeName: "$Wechat_ToUserName",
+    attributeDesc: null,
+    showName: "公众号名称 ",
+    dataType: "STRING",
+    format: null,
+    dict: false,
+    visible: true,
+    preset: true,
+    remark: null
+  },
+  {
+    id: 31203,
+    attributeName: "$Wechat_OpenID",
+    attributeDesc: null,
+    showName: "公众号OpenID ",
+    dataType: "STRING",
+    format: null,
+    dict: false,
+    visible: true,
+    preset: true,
+    remark: null
+  },
+  {
+    id: 31204,
+    attributeName: "$wechat_AppID",
+    attributeDesc: null,
+    showName: "微信APPID ",
+    dataType: "STRING",
+    format: null,
+    dict: false,
+    visible: true,
+    preset: true,
+    remark: null
+  },
+  {
+    id: 31205,
+    attributeName: "$Wechat_EventKey",
+    attributeDesc: null,
+    showName: "事件消息值 ",
+    dataType: "STRING",
+    format: null,
+    dict: false,
+    visible: true,
+    preset: true,
+    remark: null
+  }
+]
+
+export const mediaList = [
+  {
+    id: 177,
+    contentType: "image",
+    contentName: "31-微信.jpg",
+    contentDetail:
+      '{"picUrl":"zall-commerce/CONTENT_CENTER/7v647q3l4yrwf6f.jpeg","fileSize":"22","name":"31-微信.jpg","imageSize":"600*605","type":"image"}',
+    groupId: 13,
+    projectId: 71,
+    wechatId: 50,
+    channelId: null,
+    wechatMediaId: "-3xdZSOY0NgayMPR5PH9lS91X-jnfN6t9SNFVJxA0XU23z6ziShVCCR0TwVOyCuo",
+    picType: "jpeg",
+    userId: 251,
+    userName: "luogangming",
+    createTime: "2022-03-28 14:47:42",
+    updateTime: "2022-03-28 14:47:42"
+  },
+  {
+    id: 14,
+    contentType: "voice",
+    contentName: "情人节主题曲",
+    contentDetail:
+      '{"voiceUrl":"zall-commerce/CONTENT_CENTER/4nobsp82x3x24mu.mp3","duration":"45.6272","fileSize":"1926.31","name":"情人节主题曲","type":"voice"}',
+    groupId: 1,
+    projectId: 71,
+    wechatId: null,
+    channelId: null,
+    wechatMediaId: null,
+    picType: null,
+    userId: 265,
+    userName: "范雪剑",
+    createTime: "2022-02-11 10:51:37",
+    updateTime: "2022-02-24 17:44:52"
+  },
+  {
+    id: 15,
+    contentType: "video",
+    contentName: "情人节素材02",
+    contentDetail:
+      '{"duration":"15.045011","picUrl":"zall-commerce/CONTENT_CENTER/wrgvpmqx1h9ngb2.jpg","videoUrl":"zall-commerce/CONTENT_CENTER/7gtukj7li6dudlr.mp4","fileSize":"1467.03","name":"情人节素材02","description":"","type":"video","title":"123321"}',
+    groupId: 1,
+    projectId: 71,
+    wechatId: null,
+    channelId: null,
+    wechatMediaId: null,
+    picType: null,
+    userId: 265,
+    userName: "范雪剑",
+    createTime: "2022-02-11 10:51:44",
+    updateTime: "2022-03-25 15:45:24"
+  },
+  {
+    id: 329,
+    contentType: "text",
+    contentName: "引流1",
+    contentDetail:
+      '{"name":"引流1","type":"text","content":"{\\"content\\":[{\\"type\\":\\"text\\",\\"value\\":\\"Hi，终于等到你～欢迎来到润百颜颜粉福利社\\\\n这里是超宠你的护肤福利官颜姐\\\\n\\\\n润百颜是华熙生物旗下的核心战略品牌，深耕玻尿酸护肤的研发与创新 \\",\\"line_num\\":1},{\\"type\\":\\"text\\",\\"value\\":\\" 为你准备了一份新人见面礼，点击下方领取\\\\n\\\\n19.9抢价值109元4件套新人礼  限量500份，速领\\",\\"line_num\\":3}],\\"color\\":\\"#000\\"}"}',
+    groupId: 0,
+    projectId: 71,
+    wechatId: null,
+    channelId: null,
+    wechatMediaId: null,
+    picType: null,
+    userId: 201,
+    userName: "admin",
+    createTime: "2022-06-08 16:09:57",
+    updateTime: "2022-06-08 16:09:57"
+  },
+  {
+    id: 325,
+    contentType: "news",
+    contentName: "12.88哈哈哈",
+    contentDetail:
+      '{"picUrl":"zall-commerce/CONTENT_CENTER/qun5rzc3ztxx8fv.jpeg","name":"12.88哈哈哈","linkUrl":"https://zall.zalldata.cn/addReply?wxAutoReplayId=127&rourteName=DefaultReply&wechatId=50","description":"12.88哈哈哈12.88哈哈哈12.8","type":"news","title":"12.88哈哈哈"}',
+    groupId: 0,
+    projectId: 71,
+    wechatId: null,
+    channelId: null,
+    wechatMediaId: null,
+    picType: null,
+    userId: 275,
+    userName: " yangmingming",
+    createTime: "2022-06-08 15:54:27",
+    updateTime: "2022-06-08 15:54:26"
+  },
+  {
+    id: 44,
+    contentType: "sms",
+    contentName: "会员专属优惠券到期提醒",
+    contentDetail:
+      '{"name":"会员专属优惠券到期提醒","type":"sms","content":"{\\"content\\":[{\\"type\\":\\"text\\",\\"value\\":\\"【卓尔数科】会员您好，会员专属大额满优惠券即将到期，享受更多优质服务http://e9q.cn/WpY4GP 退订TD\\",\\"line_num\\":1}],\\"color\\":\\"#000\\"}","channelId":157}',
+    groupId: 0,
+    projectId: 71,
+    wechatId: null,
+    channelId: 157,
+    wechatMediaId: null,
+    picType: null,
+    userId: 265,
+    userName: "范雪剑",
+    createTime: "2022-02-16 11:42:14",
+    updateTime: "2022-02-16 11:55:18"
+  },
+  {
+    id: 21,
+    contentType: "miniprogrampage",
+    contentName: "zsh测试小程序",
+    contentDetail:
+      '{"picUrl":"zall-commerce/CONTENT_CENTER/g22zwm5pulewn5b.jpg","appId":"wx70dbec2349cfbca3","name":"zsh测试小程序","type":"miniprogrampage","title":"123321","pagePath":"pages/goods/goods-category/index"}',
+    groupId: 1,
+    projectId: 71,
+    wechatId: null,
+    channelId: null,
+    wechatMediaId: null,
+    picType: null,
+    userId: 288,
+    userName: "赵世豪",
+    createTime: "2022-02-11 10:52:11",
+    updateTime: "2022-02-11 10:52:11"
+  },
+  {
+    id: 420,
+    contentType: "file",
+    contentName: "测试数据",
+    contentDetail:
+      '{"fileName":"测试.txt","fileSize":"0","name":"测试数据","fileUrl":"zall-commerce/CONTENT_CENTER/wwbkfz0vz34ubwv.txt","type":"file"}',
+    groupId: 12,
+    projectId: 71,
+    wechatId: null,
+    channelId: null,
+    wechatMediaId: null,
+    picType: "txt",
+    userId: 255,
+    userName: "刘爽",
+    createTime: "2022-07-27 23:01:47",
+    updateTime: "2022-07-27 23:01:46"
+  },
+  {
+    id: 210,
+    contentType: "msgmenu",
+    contentName: "专属福利",
+    contentDetail:
+      '{"headContentTxt":"<div style=\\"word-break:break-all\\" index=\\"1\\">Hi，欢迎来到官网！</div><div style=\\"word-break:break-all\\" index=\\"2\\">出口世界各国专属品牌，秉承高效、极致的护肤理念，“专注无添加，没得更无暇”。</div><div style=\\"word-break:break-all\\" index=\\"3\\">戳蓝字了解：</div><div style=\\"word-break:break-all\\" index=\\"4\\"><img class=\\"emoji-icon\\" src=\\"https://res.wx.qq.com/mpres/htmledition/images/icon/emotion/63.gif\\" alt=\\"[玫瑰]\\"/><span style=\\"color: #2749F1\\">圈粉百万</span></div><div style=\\"word-break:break-all\\" index=\\"5\\"><img class=\\"emoji-icon\\" src=\\"https://res.wx.qq.com/mpres/htmledition/images/icon/emotion/63.gif\\" alt=\\"[玫瑰]\\"/><span style=\\"color: #2749F1\\">揭秘无添加</span></div><br><div style=\\"word-break:break-all\\" index=\\"7\\">点击【每日签到】，还能领取积分，兑换超子好礼！</div>","isVugiFlag":true,"nextLevelMenu":[{"nextLevelMenu":[{"isVugiFlag":false,"id":"11978090360","type":"mpnews","content":"{\\"picUrl\\":\\"zall-commerce/CONTENT_CENTER/cb34g6ab82ao0t5.jpeg\\",\\"author\\":\\"\\",\\"articleId\\":\\"QKLfTE-No1by9IJ7vk97XVm7aoSCUOby8RsyqN2TlYZ03CBACA4MTHwSDGBq9u4a\\",\\"name\\":\\"第2期留言中奖名单\\",\\"digest\\":\\"再次恭喜3位获奖的小可爱～\\",\\"type\\":\\"mpnews\\",\\"title\\":\\"第2期留言中奖名单\\",\\"content\\":\\"<section style=\\\\\\"margin-top: 10px;margin-bottom: 10px;max-width: 100%;white-space: normal;text-align: center;overflow-wrap: break-word !important;box-sizing: border-box !important;\\\\\\" data-mpa-powered-by=\\\\\\"yiban.io\\\\\\"><section style=\\\\\\"max-width: 100%;display: inline-block;width: 370px;vertical-align: top;overflow-wrap: break-word !important;box-sizing: border-box !important;\\\\\\"><section style=\\\\\\"max-width: 100%;overflow-wrap: break-word !important;box-sizing: border-box !important;\\\\\\"><section style=\\\\\\"padding-right: 3px;padding-left: 3px;max-width: 100%;display: inline-block;vertical-align: bottom;width: 29.5938px;overflow-wrap: break-word !important;box-sizing: border-box !important;\\\\\\"><section style=\\\\\\"max-width: 100%;transform: translate3d(10px, 0px, 0px);overflow-wrap: break-word !important;box-sizing: border-box !important;\\\\\\"><section style=\\\\\\"max-width: 100%;vertical-align: middle;display: inline-block;line-height: 0;width: 23.5938px;overflow-wrap: break-word !important;box-sizing: border-box !important;\\\\\\"><img class=\\\\\\"rich_pages wxw-img\\\\\\" data-fileid=\\\\\\"100019733\\\\\\" data-ratio=\\\\\\"2.665\\\\\\" data-src=\\\\\\"https://mmbiz.qpic.cn/mmbiz_png/icXzy2ibdAq5etjY3ZkFp4HrhP0nWQWWJWBBFl1o6uuwjyzSJMUYLX3yT1ibBJSBjUD5zAHVneGKMZaic80GkMsCmg/640?wx_fmt=png\\\\\\" data-type=\\\\\\"png\\\\\\" data-w=\\\\\\"200\\\\\\" style=\\\\\\"width: 23.5938px;vertical-align: middle;box-sizing: border-box;overflow-wrap: break-word !important;\\\\\\"  /></section></section></section><section style=\\\\\\"max-width: 100%;display: inline-block;vertical-align: bottom;width: 340.391px;overflow-wrap: break-word !important;box-sizing: border-box !important;\\\\\\"><section style=\\\\\\"margin-bottom: -5px;max-width: 100%;text-align: right;overflow-wrap: break-word !important;box-sizing: border-box !important;\\\\\\"><section style=\\\\\\"max-width: 100%;vertical-align: middle;display: inline-block;line-height: 0;width: 102.109px;overflow-wrap: break-word !important;box-sizing: border-box !important;\\\\\\"><img data-ratio=\\\\\\"0.2988505747126437\\\\\\" data-src=\\\\\\"https://mmbiz.qpic.cn/mmbiz_gif/icXzy2ibdAq5etjY3ZkFp4HrhP0nWQWWJW5icUr9pPWoF2gy9ZuLkofz7gTYe6DyRmfxcP4CvwSgPSVbDzKCcd1Tw/640?wx_fmt=gif\\\\\\" data-type=\\\\\\"gif\\\\\\" data-w=\\\\\\"435\\\\\\" style=\\\\\\"width: 102.109px;vertical-align: middle;box-sizing: border-box;overflow-wrap: break-word !important;\\\\\\" data-fileid=\\\\\\"100019732\\\\\\"  /></section></section><section style=\\\\\\"margin-top: 10px;margin-bottom: -5px;max-width: 100%;transform: translate3d(-1px, 0px, 0px);overflow-wrap: break-word !important;box-sizing: border-box !important;\\\\\\"><section style=\\\\\\"max-width: 100%;vertical-align: middle;display: inline-block;line-height: 0;width: 27.2188px;overflow-wrap: break-word !important;box-sizing: border-box !important;\\\\\\"><img data-ratio=\\\\\\"1.0338709677419355\\\\\\" data-src=\\\\\\"https://mmbiz.qpic.cn/mmbiz_gif/icXzy2ibdAq5etjY3ZkFp4HrhP0nWQWWJWtKjKeG0aiazkwA8ZzYXAZ4Iz87RN2zNtVibU6FA8lP0aRsDO2Ikhww9w/640?wx_fmt=gif\\\\\\" data-type=\\\\\\"gif\\\\\\" data-w=\\\\\\"620\\\\\\" style=\\\\\\"width: 27.2188px;vertical-align: middle;box-sizing: border-box;overflow-wrap: break-word !important;\\\\\\" data-fileid=\\\\\\"100019734\\\\\\"  /></section></section></section></section><section style=\\\\\\"max-width: 100%;overflow-wrap: break-word !important;box-sizing: border-box !important;\\\\\\"><section style=\\\\\\"padding: 5px 10px;max-width: 100%;display: inline-block;vertical-align: top;background-color: rgb(179, 229, 252);border-width: 0px;border-radius: 5px;border-style: none;border-color: rgb(62, 62, 62);width: 370px;overflow-wrap: break-word !important;box-sizing: border-box !important;\\\\\\"><section style=\\\\\\"max-width: 100%;color: rgb(96, 125, 139);overflow-wrap: break-word !important;box-sizing: border-box !important;\\\\\\"><p style=\\\\\\"max-width: 100%;overflow-wrap: break-word !important;box-sizing: border-box !important;\\\\\\"><strong style=\\\\\\"max-width: 100%;overflow-wrap: break-word !important;box-sizing: border-box !important;\\\\\\">第2期留言互动中奖名单</strong></p></section></section></section></section></section><p style=\\\\\\"margin-top: 5px;margin-bottom: 1em;max-width: 100%;white-space: normal;overflow-wrap: break-word !important;box-sizing: border-box !important;\\\\\\"><br style=\\\\\\"max-width: 100%;overflow-wrap: break-word !important;box-sizing: border-box !important;\\\\\\"  /></p><section style=\\\\\\"margin-top: 10px;margin-bottom: 10px;max-width: 100%;white-space: normal;text-align: center;overflow-wrap: break-word !important;box-sizing: border-box !important;\\\\\\"><section style=\\\\\\"padding: 5px;max-width: 100%;display: inline-block;width: 370px;vertical-align: top;background-color: rgb(187, 222, 251);overflow-wrap: break-word !important;box-sizing: border-box !important;\\\\\\"><section style=\\\\\\"max-width: 100%;text-align: justify;overflow-wrap: break-word !important;box-sizing: border-box !important;\\\\\\"><p style=\\\\\\"max-width: 100%;overflow-wrap: break-word !important;box-sizing: border-box !important;\\\\\\"><br style=\\\\\\"max-width: 100%;overflow-wrap: break-word !important;box-sizing: border-box !important;\\\\\\"  /></p></section><section style=\\\\\\"max-width: 100%;text-align: justify;overflow-wrap: break-word !important;box-sizing: border-box !important;\\\\\\"><section style=\\\\\\"padding: 5px;max-width: 100%;display: inline-block;width: 360px;vertical-align: top;border-style: dashed;border-width: 1px;border-radius: 0px;border-color: rgb(255, 255, 255);overflow-wrap: break-word !important;box-sizing: border-box !important;\\\\\\"><section style=\\\\\\"max-width: 100%;overflow-wrap: break-word !important;box-sizing: border-box !important;\\\\\\"><section style=\\\\\\"padding: 10px;max-width: 100%;display: inline-block;width: 348px;vertical-align: top;background-color: rgb(255, 255, 255);overflow-wrap: break-word !important;box-sizing: border-box !important;\\\\\\"><section style=\\\\\\"max-width: 100%;text-align: center;line-height: 1.8;overflow-wrap: break-word !important;box-sizing: border-box !important;\\\\\\"><p style=\\\\\\"max-width: 100%;color: rgb(158, 158, 158);font-size: 15px;overflow-wrap: break-word !important;box-sizing: border-box !important;\\\\\\"><br style=\\\\\\"max-width: 100%;overflow-wrap: break-word !important;box-sizing: border-box !important;\\\\\\"  /></p><p style=\\\\\\"max-width: 100%;color: rgb(158, 158, 158);font-size: 15px;overflow-wrap: break-word !important;box-sizing: border-box !important;\\\\\\"><span style=\\\\\\"max-width: 100%;color: rgb(63, 57, 56);overflow-wrap: break-word !important;box-sizing: border-box !important;\\\\\\">恭喜以下3位小可爱</span><span style=\\\\\\"font-family: mp-quote, -apple-system-font, BlinkMacSystemFont, &quot;Helvetica Neue&quot;, &quot;PingFang SC&quot;, &quot;Hiragino Sans GB&quot;, &quot;Microsoft YaHei UI&quot;, &quot;Microsoft YaHei&quot;, Arial, sans-serif;color: rgb(63, 57, 56);\\\\\\">可各获</span></p><p style=\\\\\\"max-width: 100%;color: rgb(158, 158, 158);font-size: 15px;overflow-wrap: break-word !important;box-sizing: border-box !important;\\\\\\"><span style=\\\\\\"font-family: mp-quote, -apple-system-font, BlinkMacSystemFont, &quot;Helvetica Neue&quot;, &quot;PingFang SC&quot;, &quot;Hiragino Sans GB&quot;, &quot;Microsoft YaHei UI&quot;, &quot;Microsoft YaHei&quot;, Arial, sans-serif;color: rgb(84, 141, 212);\\\\\\">【 珀莱雅官方商城在售任意单品 】1支</span></p><p style=\\\\\\"max-width: 100%;color: rgb(158, 158, 158);font-size: 15px;overflow-wrap: break-word !important;box-sizing: border-box !important;\\\\\\"><span style=\\\\\\"max-width: 100%;font-family: mp-quote, -apple-system-font, BlinkMacSystemFont, &quot;Helvetica Neue&quot;, &quot;PingFang SC&quot;, &quot;Hiragino Sans GB&quot;, &quot;Microsoft YaHei UI&quot;, &quot;Microsoft YaHei&quot;, Arial, sans-serif;color: rgb(84, 141, 212);overflow-wrap: break-word !important;box-sizing: border-box !important;\\\\\\"></span></p><p style=\\\\\\"max-width: 100%;color: rgb(158, 158, 158);font-size: 15px;overflow-wrap: break-word !important;box-sizing: border-box !important;\\\\\\"><span style=\\\\\\"max-width: 100%;color: rgb(84, 141, 212);font-family: mp-quote, -apple-system-font, BlinkMacSystemFont, &quot;Helvetica Neue&quot;, &quot;PingFang SC&quot;, &quot;Hiragino Sans GB&quot;, &quot;Microsoft YaHei UI&quot;, &quot;Microsoft YaHei&quot;, Arial, sans-serif;font-size: 14px;overflow-wrap: break-word !important;box-sizing: border-box !important;\\\\\\"></span></p><p style=\\\\\\"max-width: 100%;overflow-wrap: break-word !important;box-sizing: border-box !important;\\\\\\"><img class=\\\\\\"rich_pages wxw-img\\\\\\" data-cropselx1=\\\\\\"0\\\\\\" data-cropselx2=\\\\\\"328\\\\\\" data-cropsely1=\\\\\\"0\\\\\\" data-cropsely2=\\\\\\"158\\\\\\" data-fileid=\\\\\\"100019735\\\\\\" data-galleryid=\\\\\\"\\\\\\" data-ratio=\\\\\\"0.46987951807228917\\\\\\" data-s=\\\\\\"300,640\\\\\\" data-src=\\\\\\"https://mmbiz.qpic.cn/mmbiz_png/G7mGZTFciaaXY0iaK1pnuEf36Topyib7JVsias25z0icS1QPtTsaqcj2d0o4tkHsy9cYWq3yqg5R5kemDyD9qS4km1Q/640?wx_fmt=png\\\\\\" data-type=\\\\\\"png\\\\\\" data-w=\\\\\\"830\\\\\\" style=\\\\\\"height: 158px;width: 336px;overflow-wrap: break-word !important;\\\\\\"  /><span style=\\\\\\"max-width: 100%;font-family: mp-quote, -apple-system-font, BlinkMacSystemFont, &quot;Helvetica Neue&quot;, &quot;PingFang SC&quot;, &quot;Hiragino Sans GB&quot;, &quot;Microsoft YaHei UI&quot;, &quot;Microsoft YaHei&quot;, Arial, sans-serif;overflow-wrap: break-word !important;box-sizing: border-box !important;\\\\\\"></span></p><section style=\\\\\\"max-width: 100%;font-family: -apple-system-font, system-ui, &quot;Helvetica Neue&quot;, &quot;PingFang SC&quot;, &quot;Hiragino Sans GB&quot;, &quot;Microsoft YaHei UI&quot;, &quot;Microsoft YaHei&quot;, Arial, sans-serif;letter-spacing: 0.544px;line-height: 1.8;overflow-wrap: break-word !important;box-sizing: border-box !important;\\\\\\"><p style=\\\\\\"max-width: 100%;color: rgb(158, 158, 158);font-size: 15px;overflow-wrap: break-word !important;box-sizing: border-box !important;\\\\\\"><br style=\\\\\\"max-width: 100%;overflow-wrap: break-word !important;box-sizing: border-box !important;\\\\\\"  /></p><p style=\\\\\\"max-width: 100%;color: rgb(158, 158, 158);font-size: 15px;overflow-wrap: break-word !important;box-sizing: border-box !important;\\\\\\"><span style=\\\\\\"max-width: 100%;color: rgb(49, 48, 48);font-size: 14px;overflow-wrap: break-word !important;box-sizing: border-box !important;\\\\\\">请中奖的小可爱</span><br style=\\\\\\"max-width: 100%;overflow-wrap: break-word !important;box-sizing: border-box !important;\\\\\\"  /></p><p style=\\\\\\"max-width: 100%;color: rgb(158, 158, 158);font-size: 15px;overflow-wrap: break-word !important;box-sizing: border-box !important;\\\\\\"><span style=\\\\\\"max-width: 100%;color: rgb(49, 48, 48);font-size: 14px;overflow-wrap: break-word !important;box-sizing: border-box !important;\\\\\\">在2022年1月26日中午12点前</span></p></section><section style=\\\\\\"max-width: 100%;font-family: -apple-system-font, system-ui, &quot;Helvetica Neue&quot;, &quot;PingFang SC&quot;, &quot;Hiragino Sans GB&quot;, &quot;Microsoft YaHei UI&quot;, &quot;Microsoft YaHei&quot;, Arial, sans-serif;letter-spacing: 0.544px;transform: rotate(0deg);overflow-wrap: break-word !important;box-sizing: border-box !important;\\\\\\"><section style=\\\\\\"max-width: 100%;font-size: 14px;color: rgb(49, 48, 48);line-height: 1.8;overflow-wrap: break-word !important;box-sizing: border-box !important;\\\\\\"><p style=\\\\\\"max-width: 100%;overflow-wrap: break-word !important;box-sizing: border-box !important;\\\\\\">扫描下方二维码填写个人信息</p><p style=\\\\\\"max-width: 100%;overflow-wrap: break-word !important;box-sizing: border-box !important;\\\\\\"><br style=\\\\\\"max-width: 100%;overflow-wrap: break-word !important;box-sizing: border-box !important;\\\\\\"  /></p><p style=\\\\\\"max-width: 100%;overflow-wrap: break-word !important;box-sizing: border-box !important;\\\\\\"><img class=\\\\\\"rich_pages wxw-img\\\\\\" data-cropselx1=\\\\\\"0\\\\\\" data-cropselx2=\\\\\\"133\\\\\\" data-cropsely1=\\\\\\"0\\\\\\" data-cropsely2=\\\\\\"133\\\\\\" data-fileid=\\\\\\"100019736\\\\\\" data-galleryid=\\\\\\"\\\\\\" data-ratio=\\\\\\"1\\\\\\" data-s=\\\\\\"300,640\\\\\\" data-src=\\\\\\"https://mmbiz.qpic.cn/mmbiz_png/G7mGZTFciaaXY0iaK1pnuEf36Topyib7JVsia8a7Qsl4ldchPn9t4EwdayoynzrxMj7IZ2YuBSRcGtcChEq4CYmGdQ/640?wx_fmt=png\\\\\\" data-type=\\\\\\"png\\\\\\" data-w=\\\\\\"220\\\\\\" style=\\\\\\"height: 133px;letter-spacing: 0.544px;width: 133px;overflow-wrap: break-word !important;\\\\\\"><br style=\\\\\\"max-width: 100%;overflow-wrap: break-word !important;box-sizing: border-box !important;\\\\\\"  /></p><p style=\\\\\\"max-width: 100%;overflow-wrap: break-word !important;box-sizing: border-box !important;\\\\\\"><br style=\\\\\\"max-width: 100%;overflow-wrap: break-word !important;box-sizing: border-box !important;\\\\\\"  /></p></section></section></section><section style=\\\\\\"max-width: 100%;transform: rotate(0deg);overflow-wrap: break-word !important;box-sizing: border-box !important;\\\\\\"><section style=\\\\\\"max-width: 100%;font-size: 14px;color: rgb(49, 48, 48);text-align: center;line-height: 1.8;overflow-wrap: break-word !important;box-sizing: border-box !important;\\\\\\"><p style=\\\\\\"max-width: 100%;overflow-wrap: break-word !important;box-sizing: border-box !important;\\\\\\">如过期未登记</p><p style=\\\\\\"max-width: 100%;overflow-wrap: break-word !important;box-sizing: border-box !important;\\\\\\">则视为自动放弃领奖</p><p style=\\\\\\"max-width: 100%;overflow-wrap: break-word !important;box-sizing: border-box !important;\\\\\\">奖品将在填写个人信息截止后</p><p style=\\\\\\"max-width: 100%;overflow-wrap: break-word !important;box-sizing: border-box !important;\\\\\\">3～5个工作日发出<br style=\\\\\\"max-width: 100%;overflow-wrap: break-word !important;box-sizing: border-box !important;\\\\\\"  /></p><p style=\\\\\\"max-width: 100%;overflow-wrap: break-word !important;box-sizing: border-box !important;\\\\\\"><br style=\\\\\\"max-width: 100%;overflow-wrap: break-word !important;box-sizing: border-box !important;\\\\\\"  /></p></section></section></section></section></section></section></section></section><p style=\\\\\\"max-width: 100%;white-space: normal;overflow-wrap: break-word !important;box-sizing: border-box !important;\\\\\\"><br  /></p>\\",\\"url\\":\\"http://mp.weixin.qq.com/s?__biz=Mzg4NjMzODcyNw==&mid=2247488855&idx=1&sn=0904a9c1def84e4a83e87ee013313a20&chksm=cf9a709ff8edf989d1774b58b22f6d2cc8ba6e6a2285245fd71f2583f963893ea4d5e8ea96f2#rd\\"}"}],"menuName":"回复“6”即可领取你的专属福利优惠~~","id":"1197646957"}],"tailContentTxt":"<div style=\\"word-break:break-all\\" index=\\"1\\"><img class=\\"emoji-icon\\" src=\\"https://res.wx.qq.com/mpres/htmledition/images/icon/emotion/63.gif\\" alt=\\"[玫瑰]\\"/></div>","id":"1197117007","headContent":"{\\"content\\":[{\\"type\\":\\"text\\",\\"value\\":\\"Hi，欢迎来到官网！\\",\\"line_num\\":1},{\\"type\\":\\"text\\",\\"value\\":\\"出口世界各国专属品牌，秉承高效、极致的护肤理念，“专注无添加，没得更无暇”。\\",\\"line_num\\":2},{\\"type\\":\\"text\\",\\"value\\":\\"戳蓝字了解：\\",\\"line_num\\":3},{\\"type\\":\\"emoji\\",\\"value\\":\\"[玫瑰]\\",\\"line_num\\":4},{\\"type\\":\\"hyperlink\\",\\"name\\":\\"link.圈粉百万\\",\\"value\\":\\"https://h5.youzan.com/v2/showcase/mpnews?alias=YZG8oqcoMd&spm=m943830608339009536.subscribe&yz_from=yz_wx_reply\\",\\"line_num\\":4},{\\"type\\":\\"emoji\\",\\"value\\":\\"[玫瑰]\\",\\"line_num\\":5},{\\"type\\":\\"hyperlink\\",\\"name\\":\\"link.揭秘无添加\\",\\"value\\":\\"https://h5.youzan.com/v2/showcase/mpnews?alias=YZG8oqcoMd&spm=m943830608339009536.subscribe&yz_from=yz_wx_reply\\",\\"line_num\\":5},{\\"type\\":\\"text\\",\\"value\\":\\"点击【每日签到】，还能领取积分，兑换超子好礼！\\",\\"line_num\\":7}],\\"color\\":\\"#000\\"}","tailContent":"{\\"content\\":[{\\"type\\":\\"emoji\\",\\"value\\":\\"[玫瑰]\\",\\"line_num\\":1}],\\"color\\":\\"#000\\"}","type":"msgmenu"}',
+    groupId: 0,
+    projectId: 71,
+    wechatId: 50,
+    channelId: null,
+    wechatMediaId: null,
+    picType: null,
+    userId: 265,
+    userName: "范雪剑",
+    createTime: "2022-03-25 16:43:28",
+    updateTime: "2022-03-25 16:43:52"
+  },
+  {
+    id: 208,
+    contentType: "msgmenu",
+    contentName: "肤质测评",
+    contentDetail:
+      '{"headContentTxt":"<div style=\\"word-break:break-all\\" index=\\"1\\">尊敬的客户，您好！诚挚邀请您参加以下调研，为您改善肤质<img class=\\"emoji-icon\\" src=\\"https://res.wx.qq.com/mpres/htmledition/images/icon/emotion/63.gif\\" alt=\\"[玫瑰]\\"/></div><div style=\\"word-break:break-all\\" index=\\"2\\">【可以根据相应的数字回复，为您分析推荐改善方法~~】</div><div style=\\"word-break:break-all\\" index=\\"3\\">【1】斑点、色斑</div><div style=\\"word-break:break-all\\" index=\\"4\\">【2】痘痘</div><div style=\\"word-break:break-all\\" index=\\"5\\">【3】皱纹、松弛</div><div style=\\"word-break:break-all\\" index=\\"6\\">【4】毛孔粗大</div><div style=\\"word-break:break-all\\" index=\\"7\\">【5】暗黄</div>","isVugiFlag":true,"nextLevelMenu":[{"nextLevelMenu":[{"isVugiFlag":false,"id":"11959236090","type":"text","content":"{\\"name\\":\\"会员优惠券活动\\",\\"type\\":\\"text\\",\\"content\\":\\"{\\\\\\"content\\\\\\":[{\\\\\\"type\\\\\\":\\\\\\"text\\\\\\",\\\\\\"value\\\\\\":\\\\\\"【卓尔数科】会员您好，会员专属大额满优惠券已到账，享受更多优质服务http://e9q.cn/WpY4GP 退订TD\\\\\\",\\\\\\"line_num\\\\\\":1}],\\\\\\"color\\\\\\":\\\\\\"#000\\\\\\"}\\"}"}],"menuName":"1","id":"1195859098"}],"tailContentTxt":"<div style=\\"word-break:break-all\\" index=\\"1\\">感谢您的配合！</div>","id":"1195681517","headContent":"{\\"content\\":[{\\"type\\":\\"text\\",\\"value\\":\\"尊敬的客户，您好！诚挚邀请您参加以下调研，为您改善肤质\\",\\"line_num\\":1},{\\"type\\":\\"emoji\\",\\"value\\":\\"[玫瑰]\\",\\"line_num\\":1},{\\"type\\":\\"text\\",\\"value\\":\\"【可以根据相应的数字回复，为您分析推荐改善方法~~】\\",\\"line_num\\":2},{\\"type\\":\\"text\\",\\"value\\":\\"【1】斑点、色斑\\",\\"line_num\\":3},{\\"type\\":\\"text\\",\\"value\\":\\"【2】痘痘\\",\\"line_num\\":4},{\\"type\\":\\"text\\",\\"value\\":\\"【3】皱纹、松弛\\",\\"line_num\\":5},{\\"type\\":\\"text\\",\\"value\\":\\"【4】毛孔粗大\\",\\"line_num\\":6},{\\"type\\":\\"text\\",\\"value\\":\\"【5】暗黄\\",\\"line_num\\":7}],\\"color\\":\\"#000\\"}","tailContent":"{\\"content\\":[{\\"type\\":\\"text\\",\\"value\\":\\"感谢您的配合！\\",\\"line_num\\":1}],\\"color\\":\\"#000\\"}","type":"msgmenu"}',
+    groupId: 0,
+    projectId: 71,
+    wechatId: 50,
+    channelId: null,
+    wechatMediaId: null,
+    picType: null,
+    userId: 265,
+    userName: "范雪剑",
+    createTime: "2022-03-25 16:12:03",
+    updateTime: "2022-03-25 16:31:47"
+  },
+  {
+    id: 209,
+    contentType: "template",
+    contentName: "物流信息",
+    contentDetail:
+      '{"templateParameters":[{"oldShowValue":"{{first.DATA}}","name":"first","label":"first","title":"","value":"{\\"content\\":[{\\"type\\":\\"text\\",\\"value\\":\\"尊敬的客户，您好！您的快件已到达代收点，请及时取件，详情如下：\\",\\"line_num\\":1}],\\"color\\":\\"#000\\"}"},{"oldShowValue":"{{order_id.DATA}}","name":"order_id","label":"订单号","title":"订单号","value":"{\\"content\\":[{\\"type\\":\\"text\\",\\"value\\":\\"12782689283823109\\",\\"line_num\\":1}],\\"color\\":\\"#000\\"}"},{"oldShowValue":"{{package_id.DATA}}","name":"package_id","label":"包裹单号","title":"包裹单号","value":"{\\"content\\":[{\\"type\\":\\"text\\",\\"value\\":\\"782689283823109\\",\\"line_num\\":1}],\\"color\\":\\"#000\\"}"},{"oldShowValue":"{{remark.DATA}}","name":"remark","label":"remark","title":"","value":"{\\"content\\":[{\\"type\\":\\"text\\",\\"value\\":\\"卓尔数科\\",\\"line_num\\":1}],\\"color\\":\\"#000\\"}"}],"name":"物流信息","wechatId":50,"openTypeParameters":{"parameter":{"pagepath":"223","appId":"223"},"type":"MINI_PROGRAM"},"type":"template","templateId":"mHBrxv2F71T9yfNi2tvnPYs2-ircDPtFyEuHzqQj8RY"}',
+    groupId: 0,
+    projectId: 71,
+    wechatId: 50,
+    channelId: null,
+    wechatMediaId: null,
+    picType: null,
+    userId: 238,
+    userName: "朱东霞",
+    createTime: "2022-03-25 16:19:14",
+    updateTime: "2022-04-01 15:54:25"
+  },
+  {
+    id: 205,
+    contentType: "mpnews",
+    contentName: "第2期留言中奖名单",
+    contentDetail:
+      '{"picUrl":"zall-commerce/CONTENT_CENTER/cb34g6ab82ao0t5.jpeg","author":"","articleId":"QKLfTE-No1by9IJ7vk97XVm7aoSCUOby8RsyqN2TlYZ03CBACA4MTHwSDGBq9u4a","name":"第2期留言中奖名单","digest":"再次恭喜3位获奖的小可爱～","type":"mpnews","title":"第2期留言中奖名单","content":"<section style=\\"margin-top: 10px;margin-bottom: 10px;max-width: 100%;white-space: normal;text-align: center;overflow-wrap: break-word !important;box-sizing: border-box !important;\\" data-mpa-powered-by=\\"yiban.io\\"><section style=\\"max-width: 100%;display: inline-block;width: 370px;vertical-align: top;overflow-wrap: break-word !important;box-sizing: border-box !important;\\"><section style=\\"max-width: 100%;overflow-wrap: break-word !important;box-sizing: border-box !important;\\"><section style=\\"padding-right: 3px;padding-left: 3px;max-width: 100%;display: inline-block;vertical-align: bottom;width: 29.5938px;overflow-wrap: break-word !important;box-sizing: border-box !important;\\"><section style=\\"max-width: 100%;transform: translate3d(10px, 0px, 0px);overflow-wrap: break-word !important;box-sizing: border-box !important;\\"><section style=\\"max-width: 100%;vertical-align: middle;display: inline-block;line-height: 0;width: 23.5938px;overflow-wrap: break-word !important;box-sizing: border-box !important;\\"><img class=\\"rich_pages wxw-img\\" data-fileid=\\"100019733\\" data-ratio=\\"2.665\\" data-src=\\"https://mmbiz.qpic.cn/mmbiz_png/icXzy2ibdAq5etjY3ZkFp4HrhP0nWQWWJWBBFl1o6uuwjyzSJMUYLX3yT1ibBJSBjUD5zAHVneGKMZaic80GkMsCmg/640?wx_fmt=png\\" data-type=\\"png\\" data-w=\\"200\\" style=\\"width: 23.5938px;vertical-align: middle;box-sizing: border-box;overflow-wrap: break-word !important;\\"  /></section></section></section><section style=\\"max-width: 100%;display: inline-block;vertical-align: bottom;width: 340.391px;overflow-wrap: break-word !important;box-sizing: border-box !important;\\"><section style=\\"margin-bottom: -5px;max-width: 100%;text-align: right;overflow-wrap: break-word !important;box-sizing: border-box !important;\\"><section style=\\"max-width: 100%;vertical-align: middle;display: inline-block;line-height: 0;width: 102.109px;overflow-wrap: break-word !important;box-sizing: border-box !important;\\"><img data-ratio=\\"0.2988505747126437\\" data-src=\\"https://mmbiz.qpic.cn/mmbiz_gif/icXzy2ibdAq5etjY3ZkFp4HrhP0nWQWWJW5icUr9pPWoF2gy9ZuLkofz7gTYe6DyRmfxcP4CvwSgPSVbDzKCcd1Tw/640?wx_fmt=gif\\" data-type=\\"gif\\" data-w=\\"435\\" style=\\"width: 102.109px;vertical-align: middle;box-sizing: border-box;overflow-wrap: break-word !important;\\" data-fileid=\\"100019732\\"  /></section></section><section style=\\"margin-top: 10px;margin-bottom: -5px;max-width: 100%;transform: translate3d(-1px, 0px, 0px);overflow-wrap: break-word !important;box-sizing: border-box !important;\\"><section style=\\"max-width: 100%;vertical-align: middle;display: inline-block;line-height: 0;width: 27.2188px;overflow-wrap: break-word !important;box-sizing: border-box !important;\\"><img data-ratio=\\"1.0338709677419355\\" data-src=\\"https://mmbiz.qpic.cn/mmbiz_gif/icXzy2ibdAq5etjY3ZkFp4HrhP0nWQWWJWtKjKeG0aiazkwA8ZzYXAZ4Iz87RN2zNtVibU6FA8lP0aRsDO2Ikhww9w/640?wx_fmt=gif\\" data-type=\\"gif\\" data-w=\\"620\\" style=\\"width: 27.2188px;vertical-align: middle;box-sizing: border-box;overflow-wrap: break-word !important;\\" data-fileid=\\"100019734\\"  /></section></section></section></section><section style=\\"max-width: 100%;overflow-wrap: break-word !important;box-sizing: border-box !important;\\"><section style=\\"padding: 5px 10px;max-width: 100%;display: inline-block;vertical-align: top;background-color: rgb(179, 229, 252);border-width: 0px;border-radius: 5px;border-style: none;border-color: rgb(62, 62, 62);width: 370px;overflow-wrap: break-word !important;box-sizing: border-box !important;\\"><section style=\\"max-width: 100%;color: rgb(96, 125, 139);overflow-wrap: break-word !important;box-sizing: border-box !important;\\"><p style=\\"max-width: 100%;overflow-wrap: break-word !important;box-sizing: border-box !important;\\"><strong style=\\"max-width: 100%;overflow-wrap: break-word !important;box-sizing: border-box !important;\\">第2期留言互动中奖名单</strong></p></section></section></section></section></section><p style=\\"margin-top: 5px;margin-bottom: 1em;max-width: 100%;white-space: normal;overflow-wrap: break-word !important;box-sizing: border-box !important;\\"><br style=\\"max-width: 100%;overflow-wrap: break-word !important;box-sizing: border-box !important;\\"  /></p><section style=\\"margin-top: 10px;margin-bottom: 10px;max-width: 100%;white-space: normal;text-align: center;overflow-wrap: break-word !important;box-sizing: border-box !important;\\"><section style=\\"padding: 5px;max-width: 100%;display: inline-block;width: 370px;vertical-align: top;background-color: rgb(187, 222, 251);overflow-wrap: break-word !important;box-sizing: border-box !important;\\"><section style=\\"max-width: 100%;text-align: justify;overflow-wrap: break-word !important;box-sizing: border-box !important;\\"><p style=\\"max-width: 100%;overflow-wrap: break-word !important;box-sizing: border-box !important;\\"><br style=\\"max-width: 100%;overflow-wrap: break-word !important;box-sizing: border-box !important;\\"  /></p></section><section style=\\"max-width: 100%;text-align: justify;overflow-wrap: break-word !important;box-sizing: border-box !important;\\"><section style=\\"padding: 5px;max-width: 100%;display: inline-block;width: 360px;vertical-align: top;border-style: dashed;border-width: 1px;border-radius: 0px;border-color: rgb(255, 255, 255);overflow-wrap: break-word !important;box-sizing: border-box !important;\\"><section style=\\"max-width: 100%;overflow-wrap: break-word !important;box-sizing: border-box !important;\\"><section style=\\"padding: 10px;max-width: 100%;display: inline-block;width: 348px;vertical-align: top;background-color: rgb(255, 255, 255);overflow-wrap: break-word !important;box-sizing: border-box !important;\\"><section style=\\"max-width: 100%;text-align: center;line-height: 1.8;overflow-wrap: break-word !important;box-sizing: border-box !important;\\"><p style=\\"max-width: 100%;color: rgb(158, 158, 158);font-size: 15px;overflow-wrap: break-word !important;box-sizing: border-box !important;\\"><br style=\\"max-width: 100%;overflow-wrap: break-word !important;box-sizing: border-box !important;\\"  /></p><p style=\\"max-width: 100%;color: rgb(158, 158, 158);font-size: 15px;overflow-wrap: break-word !important;box-sizing: border-box !important;\\"><span style=\\"max-width: 100%;color: rgb(63, 57, 56);overflow-wrap: break-word !important;box-sizing: border-box !important;\\">恭喜以下3位小可爱</span><span style=\\"font-family: mp-quote, -apple-system-font, BlinkMacSystemFont, &quot;Helvetica Neue&quot;, &quot;PingFang SC&quot;, &quot;Hiragino Sans GB&quot;, &quot;Microsoft YaHei UI&quot;, &quot;Microsoft YaHei&quot;, Arial, sans-serif;color: rgb(63, 57, 56);\\">可各获</span></p><p style=\\"max-width: 100%;color: rgb(158, 158, 158);font-size: 15px;overflow-wrap: break-word !important;box-sizing: border-box !important;\\"><span style=\\"font-family: mp-quote, -apple-system-font, BlinkMacSystemFont, &quot;Helvetica Neue&quot;, &quot;PingFang SC&quot;, &quot;Hiragino Sans GB&quot;, &quot;Microsoft YaHei UI&quot;, &quot;Microsoft YaHei&quot;, Arial, sans-serif;color: rgb(84, 141, 212);\\">【 珀莱雅官方商城在售任意单品 】1支</span></p><p style=\\"max-width: 100%;color: rgb(158, 158, 158);font-size: 15px;overflow-wrap: break-word !important;box-sizing: border-box !important;\\"><span style=\\"max-width: 100%;font-family: mp-quote, -apple-system-font, BlinkMacSystemFont, &quot;Helvetica Neue&quot;, &quot;PingFang SC&quot;, &quot;Hiragino Sans GB&quot;, &quot;Microsoft YaHei UI&quot;, &quot;Microsoft YaHei&quot;, Arial, sans-serif;color: rgb(84, 141, 212);overflow-wrap: break-word !important;box-sizing: border-box !important;\\"></span></p><p style=\\"max-width: 100%;color: rgb(158, 158, 158);font-size: 15px;overflow-wrap: break-word !important;box-sizing: border-box !important;\\"><span style=\\"max-width: 100%;color: rgb(84, 141, 212);font-family: mp-quote, -apple-system-font, BlinkMacSystemFont, &quot;Helvetica Neue&quot;, &quot;PingFang SC&quot;, &quot;Hiragino Sans GB&quot;, &quot;Microsoft YaHei UI&quot;, &quot;Microsoft YaHei&quot;, Arial, sans-serif;font-size: 14px;overflow-wrap: break-word !important;box-sizing: border-box !important;\\"></span></p><p style=\\"max-width: 100%;overflow-wrap: break-word !important;box-sizing: border-box !important;\\"><img class=\\"rich_pages wxw-img\\" data-cropselx1=\\"0\\" data-cropselx2=\\"328\\" data-cropsely1=\\"0\\" data-cropsely2=\\"158\\" data-fileid=\\"100019735\\" data-galleryid=\\"\\" data-ratio=\\"0.46987951807228917\\" data-s=\\"300,640\\" data-src=\\"https://mmbiz.qpic.cn/mmbiz_png/G7mGZTFciaaXY0iaK1pnuEf36Topyib7JVsias25z0icS1QPtTsaqcj2d0o4tkHsy9cYWq3yqg5R5kemDyD9qS4km1Q/640?wx_fmt=png\\" data-type=\\"png\\" data-w=\\"830\\" style=\\"height: 158px;width: 336px;overflow-wrap: break-word !important;\\"  /><span style=\\"max-width: 100%;font-family: mp-quote, -apple-system-font, BlinkMacSystemFont, &quot;Helvetica Neue&quot;, &quot;PingFang SC&quot;, &quot;Hiragino Sans GB&quot;, &quot;Microsoft YaHei UI&quot;, &quot;Microsoft YaHei&quot;, Arial, sans-serif;overflow-wrap: break-word !important;box-sizing: border-box !important;\\"></span></p><section style=\\"max-width: 100%;font-family: -apple-system-font, system-ui, &quot;Helvetica Neue&quot;, &quot;PingFang SC&quot;, &quot;Hiragino Sans GB&quot;, &quot;Microsoft YaHei UI&quot;, &quot;Microsoft YaHei&quot;, Arial, sans-serif;letter-spacing: 0.544px;line-height: 1.8;overflow-wrap: break-word !important;box-sizing: border-box !important;\\"><p style=\\"max-width: 100%;color: rgb(158, 158, 158);font-size: 15px;overflow-wrap: break-word !important;box-sizing: border-box !important;\\"><br style=\\"max-width: 100%;overflow-wrap: break-word !important;box-sizing: border-box !important;\\"  /></p><p style=\\"max-width: 100%;color: rgb(158, 158, 158);font-size: 15px;overflow-wrap: break-word !important;box-sizing: border-box !important;\\"><span style=\\"max-width: 100%;color: rgb(49, 48, 48);font-size: 14px;overflow-wrap: break-word !important;box-sizing: border-box !important;\\">请中奖的小可爱</span><br style=\\"max-width: 100%;overflow-wrap: break-word !important;box-sizing: border-box !important;\\"  /></p><p style=\\"max-width: 100%;color: rgb(158, 158, 158);font-size: 15px;overflow-wrap: break-word !important;box-sizing: border-box !important;\\"><span style=\\"max-width: 100%;color: rgb(49, 48, 48);font-size: 14px;overflow-wrap: break-word !important;box-sizing: border-box !important;\\">在2022年1月26日中午12点前</span></p></section><section style=\\"max-width: 100%;font-family: -apple-system-font, system-ui, &quot;Helvetica Neue&quot;, &quot;PingFang SC&quot;, &quot;Hiragino Sans GB&quot;, &quot;Microsoft YaHei UI&quot;, &quot;Microsoft YaHei&quot;, Arial, sans-serif;letter-spacing: 0.544px;transform: rotate(0deg);overflow-wrap: break-word !important;box-sizing: border-box !important;\\"><section style=\\"max-width: 100%;font-size: 14px;color: rgb(49, 48, 48);line-height: 1.8;overflow-wrap: break-word !important;box-sizing: border-box !important;\\"><p style=\\"max-width: 100%;overflow-wrap: break-word !important;box-sizing: border-box !important;\\">扫描下方二维码填写个人信息</p><p style=\\"max-width: 100%;overflow-wrap: break-word !important;box-sizing: border-box !important;\\"><br style=\\"max-width: 100%;overflow-wrap: break-word !important;box-sizing: border-box !important;\\"  /></p><p style=\\"max-width: 100%;overflow-wrap: break-word !important;box-sizing: border-box !important;\\"><img class=\\"rich_pages wxw-img\\" data-cropselx1=\\"0\\" data-cropselx2=\\"133\\" data-cropsely1=\\"0\\" data-cropsely2=\\"133\\" data-fileid=\\"100019736\\" data-galleryid=\\"\\" data-ratio=\\"1\\" data-s=\\"300,640\\" data-src=\\"https://mmbiz.qpic.cn/mmbiz_png/G7mGZTFciaaXY0iaK1pnuEf36Topyib7JVsia8a7Qsl4ldchPn9t4EwdayoynzrxMj7IZ2YuBSRcGtcChEq4CYmGdQ/640?wx_fmt=png\\" data-type=\\"png\\" data-w=\\"220\\" style=\\"height: 133px;letter-spacing: 0.544px;width: 133px;overflow-wrap: break-word !important;\\"><br style=\\"max-width: 100%;overflow-wrap: break-word !important;box-sizing: border-box !important;\\"  /></p><p style=\\"max-width: 100%;overflow-wrap: break-word !important;box-sizing: border-box !important;\\"><br style=\\"max-width: 100%;overflow-wrap: break-word !important;box-sizing: border-box !important;\\"  /></p></section></section></section><section style=\\"max-width: 100%;transform: rotate(0deg);overflow-wrap: break-word !important;box-sizing: border-box !important;\\"><section style=\\"max-width: 100%;font-size: 14px;color: rgb(49, 48, 48);text-align: center;line-height: 1.8;overflow-wrap: break-word !important;box-sizing: border-box !important;\\"><p style=\\"max-width: 100%;overflow-wrap: break-word !important;box-sizing: border-box !important;\\">如过期未登记</p><p style=\\"max-width: 100%;overflow-wrap: break-word !important;box-sizing: border-box !important;\\">则视为自动放弃领奖</p><p style=\\"max-width: 100%;overflow-wrap: break-word !important;box-sizing: border-box !important;\\">奖品将在填写个人信息截止后</p><p style=\\"max-width: 100%;overflow-wrap: break-word !important;box-sizing: border-box !important;\\">3～5个工作日发出<br style=\\"max-width: 100%;overflow-wrap: break-word !important;box-sizing: border-box !important;\\"  /></p><p style=\\"max-width: 100%;overflow-wrap: break-word !important;box-sizing: border-box !important;\\"><br style=\\"max-width: 100%;overflow-wrap: break-word !important;box-sizing: border-box !important;\\"  /></p></section></section></section></section></section></section></section></section><p style=\\"max-width: 100%;white-space: normal;overflow-wrap: break-word !important;box-sizing: border-box !important;\\"><br  /></p>","url":"http://mp.weixin.qq.com/s?__biz=Mzg4NjMzODcyNw==&mid=2247488855&idx=1&sn=0904a9c1def84e4a83e87ee013313a20&chksm=cf9a709ff8edf989d1774b58b22f6d2cc8ba6e6a2285245fd71f2583f963893ea4d5e8ea96f2#rd"}',
+    groupId: 0,
+    projectId: 71,
+    wechatId: 51,
+    channelId: null,
+    wechatMediaId: "QKLfTE-No1by9IJ7vk97XVm7aoSCUOby8RsyqN2TlYZ03CBACA4MTHwSDGBq9u4a",
+    picType: null,
+    userId: 265,
+    userName: "范雪剑",
+    createTime: "2022-03-25 15:48:37",
+    updateTime: "2022-03-25 15:48:37"
+  }
+]
+
+export const groups = [
+  {
+    groupId: -1,
+    groupName: "全部",
+    count: 159,
+    orderNum: -1
+  },
+  {
+    groupId: 0,
+    groupName: "默认分组",
+    count: 141,
+    orderNum: 0
+  },
+  {
+    groupId: 13,
+    groupName: "六一素材",
+    count: 3,
+    orderNum: 2
+  },
+  {
+    groupId: 12,
+    groupName: "草稿箱",
+    count: 7,
+    orderNum: 3
+  },
+  {
+    groupId: 1,
+    groupName: "情人节素材",
+    count: 8,
+    orderNum: 4
+  }
+]
+
+export const imageList = [
+  {
+    id: 256,
+    contentType: "image",
+    contentName: "二二",
+    contentDetail:
+      '{"picUrl":"zall-commerce/CONTENT_CENTER/loy4b8zlnp0o4ez.jpg","fileSize":"14.12","name":"二二","imageSize":"183*187","type":"image"}',
+    groupId: 0,
+    projectId: 71,
+    wechatId: null,
+    channelId: null,
+    wechatMediaId: null,
+    picType: "jpg",
+    userId: 353,
+    userName: "王超雄",
+    createTime: "2022-04-20 18:49:42",
+    updateTime: "2022-04-20 18:49:41"
+  },
+  {
+    id: 233,
+    contentType: "image",
+    contentName: "1600宽度.png",
+    contentDetail:
+      '{"picUrl":"zall-commerce/CONTENT_CENTER/9pg7htfko7mnbi8.png","fileSize":"537","name":"1600宽度.png","imageSize":"1600*681","type":"image"}',
+    groupId: 0,
+    projectId: 71,
+    wechatId: 51,
+    channelId: null,
+    wechatMediaId: "RCKclOMxtsUU0zFlkLtswemKjcXJC17pZytRXyXXBpcFemq-IYvV3Vdx889QqKig",
+    picType: "png",
+    userId: 261,
+    userName: "常欢欢",
+    createTime: "2022-03-29 18:29:11",
+    updateTime: "2022-03-29 18:29:11"
+  },
+  {
+    id: 234,
+    contentType: "image",
+    contentName: "封面3.jpg",
+    contentDetail:
+      '{"picUrl":"zall-commerce/CONTENT_CENTER/qun5rzc3ztxx8fv.jpeg","fileSize":"24","name":"封面3.jpg","imageSize":"900*383","type":"image"}',
+    groupId: 0,
+    projectId: 71,
+    wechatId: 51,
+    channelId: null,
+    wechatMediaId: "RCKclOMxtsUU0zFlkLtswbFG2fX2J88IdhEK6vfAqfwzyD1maxeOsOGJp6VUgjJ7",
+    picType: "jpeg",
+    userId: 261,
+    userName: "常欢欢",
+    createTime: "2022-03-29 18:29:11",
+    updateTime: "2022-03-29 18:29:11"
+  },
+  {
+    id: 235,
+    contentType: "image",
+    contentName: "二条小封面.jpg",
+    contentDetail:
+      '{"picUrl":"zall-commerce/CONTENT_CENTER/142ii7wf9smeekm.jpeg","fileSize":"83","name":"二条小封面.jpg","imageSize":"1000*1000","type":"image"}',
+    groupId: 0,
+    projectId: 71,
+    wechatId: 51,
+    channelId: null,
+    wechatMediaId: "RCKclOMxtsUU0zFlkLtswf1f26hxWae9b30kt45P6dMgNM_ktqkT6AzW7tWc2sx5",
+    picType: "jpeg",
+    userId: 261,
+    userName: "常欢欢",
+    createTime: "2022-03-29 18:29:11",
+    updateTime: "2022-03-29 18:29:11"
+  },
+  {
+    id: 230,
+    contentType: "image",
+    contentName: "会员最后.jpg",
+    contentDetail:
+      '{"picUrl":"zall-commerce/CONTENT_CENTER/1psdopvf9mlwufy.jpeg","fileSize":"299","name":"会员最后.jpg","imageSize":"1080*3712","type":"image"}',
+    groupId: 0,
+    projectId: 71,
+    wechatId: 51,
+    channelId: null,
+    wechatMediaId: "RCKclOMxtsUU0zFlkLtswZpVcG6t4EGjG8xCJIFu65Gx3m_bn6j2wdC6EknOhoDQ",
+    picType: "jpeg",
+    userId: 261,
+    userName: "常欢欢",
+    createTime: "2022-03-29 18:29:10",
+    updateTime: "2022-03-29 18:29:10"
+  },
+  {
+    id: 231,
+    contentType: "image",
+    contentName: "帆船.jpg",
+    contentDetail:
+      '{"picUrl":"zall-commerce/CONTENT_CENTER/ax7crld6xbmipa2.jpeg","fileSize":"124","name":"帆船.jpg","imageSize":"1080*1618","type":"image"}',
+    groupId: 0,
+    projectId: 71,
+    wechatId: 51,
+    channelId: null,
+    wechatMediaId: "RCKclOMxtsUU0zFlkLtswdyJfsv-n8VlURH9R1wiGBb2WXJuQsfQUEZv9et81tvh",
+    picType: "jpeg",
+    userId: 261,
+    userName: "常欢欢",
+    createTime: "2022-03-29 18:29:11",
+    updateTime: "2022-03-29 18:29:10"
+  },
+  {
+    id: 232,
+    contentType: "image",
+    contentName: "KOC.png",
+    contentDetail:
+      '{"picUrl":"zall-commerce/CONTENT_CENTER/hzk5w8fbz7zm45s.png","fileSize":"41","name":"KOC.png","imageSize":"1201*451","type":"image"}',
+    groupId: 0,
+    projectId: 71,
+    wechatId: 51,
+    channelId: null,
+    wechatMediaId: "RCKclOMxtsUU0zFlkLtswTzyZweuNgONoYtnF9WskLZ6h7797aobqLflFu7z5f-t",
+    picType: "png",
+    userId: 261,
+    userName: "常欢欢",
+    createTime: "2022-03-29 18:29:11",
+    updateTime: "2022-03-29 18:29:10"
+  },
+  {
+    id: 175,
+    contentType: "image",
+    contentName: "9.jpg",
+    contentDetail:
+      '{"picUrl":"zall-commerce/CONTENT_CENTER/jgv5ml5oa52nn8d.jpeg","fileSize":"12","name":"9.jpg","imageSize":"490*332","type":"image"}',
+    groupId: 13,
+    projectId: 71,
+    wechatId: 50,
+    channelId: null,
+    wechatMediaId: "-3xdZSOY0NgayMPR5PH9lXnu696l2Zq8NyBh9nBUZ1qZgBEjJEHfvCJD8nlCzuC-",
+    picType: "jpeg",
+    userId: 251,
+    userName: "luogangming",
+    createTime: "2022-03-28 14:47:42",
+    updateTime: "2022-03-28 14:47:42"
+  },
+  {
+    id: 177,
+    contentType: "image",
+    contentName: "31-微信.jpg",
+    contentDetail:
+      '{"picUrl":"zall-commerce/CONTENT_CENTER/7v647q3l4yrwf6f.jpeg","fileSize":"22","name":"31-微信.jpg","imageSize":"600*605","type":"image"}',
+    groupId: 13,
+    projectId: 71,
+    wechatId: 50,
+    channelId: null,
+    wechatMediaId: "-3xdZSOY0NgayMPR5PH9lS91X-jnfN6t9SNFVJxA0XU23z6ziShVCCR0TwVOyCuo",
+    picType: "jpeg",
+    userId: 251,
+    userName: "luogangming",
+    createTime: "2022-03-28 14:47:42",
+    updateTime: "2022-03-28 14:47:42"
+  },
+  {
+    id: 189,
+    contentType: "image",
+    contentName: "13.jpg",
+    contentDetail:
+      '{"picUrl":"zall-commerce/CONTENT_CENTER/ogypzm9491nt3si.jpeg","fileSize":"29","name":"13.jpg","imageSize":"450*281","type":"image"}',
+    groupId: 13,
+    projectId: 71,
+    wechatId: 50,
+    channelId: null,
+    wechatMediaId: "-3xdZSOY0NgayMPR5PH9levz8ZI1Atgl0NQ8J-FDg86zWcUpsxVqusrlg3kO9Mhf",
+    picType: "jpeg",
+    userId: 251,
+    userName: "luogangming",
+    createTime: "2022-03-28 14:47:42",
+    updateTime: "2022-03-28 14:47:42"
+  },
+  {
+    id: 191,
+    contentType: "image",
+    contentName: "新客002-2022-03-08.png",
+    contentDetail:
+      '{"picUrl":"zall-commerce/CONTENT_CENTER/786rvbklr1qxlem.png","fileSize":"68.53","name":"新客002-2022-03-08.png","imageSize":"396*396","type":"image"}',
+    groupId: 0,
+    projectId: 71,
+    wechatId: null,
+    channelId: null,
+    wechatMediaId: null,
+    picType: "png",
+    userId: 251,
+    userName: "luogangming",
+    createTime: "2022-03-15 18:05:02",
+    updateTime: "2022-03-15 18:05:02"
+  },
+  {
+    id: 190,
+    contentType: "image",
+    contentName: "12.png",
+    contentDetail:
+      '{"picUrl":"zall-commerce/CONTENT_CENTER/mq5klsrucmi0i7d.png","fileSize":"503","name":"12.png","imageSize":"998*638","type":"image"}',
+    groupId: 0,
+    projectId: 71,
+    wechatId: 50,
+    channelId: null,
+    wechatMediaId: "-3xdZSOY0NgayMPR5PH9la8f4upe_FMoJjo8Jo-zX6fBWnZiT-mBCutFMF0HWw3v",
+    picType: "png",
+    userId: 251,
+    userName: "luogangming",
+    createTime: "2022-03-15 18:04:32",
+    updateTime: "2022-03-15 18:04:31"
+  },
+  {
+    id: 188,
+    contentType: "image",
+    contentName: "14.png",
+    contentDetail:
+      '{"picUrl":"zall-commerce/CONTENT_CENTER/0rc2xt9tdolb8ho.png","fileSize":"52","name":"14.png","imageSize":"835*346","type":"image"}',
+    groupId: 0,
+    projectId: 71,
+    wechatId: 50,
+    channelId: null,
+    wechatMediaId: "-3xdZSOY0NgayMPR5PH9lRSPI-1uSwIc8VcMipQiwBc-X2WWsKGaF141JWbgNHCu",
+    picType: "png",
+    userId: 251,
+    userName: "luogangming",
+    createTime: "2022-03-15 18:04:30",
+    updateTime: "2022-03-15 18:04:30"
+  },
+  {
+    id: 186,
+    contentType: "image",
+    contentName: "16.bmp",
+    contentDetail:
+      '{"picUrl":"zall-commerce/CONTENT_CENTER/wqe9kb2a3abx3cp.png","fileSize":"375","name":"16.bmp","imageSize":"541*831","type":"image"}',
+    groupId: 0,
+    projectId: 71,
+    wechatId: 50,
+    channelId: null,
+    wechatMediaId: "-3xdZSOY0NgayMPR5PH9lXu3Ex16g6P7VU4OPeT34TnVxeEmfNnJ--t_ab-9yRcu",
+    picType: "png",
+    userId: 251,
+    userName: "luogangming",
+    createTime: "2022-03-15 18:04:28",
+    updateTime: "2022-03-15 18:04:28"
+  }
+]
+
+export const voiceList = [
+  {
+    id: 14,
+    contentType: "voice",
+    contentName: "情人节主题曲",
+    contentDetail:
+      '{"voiceUrl":"zall-commerce/CONTENT_CENTER/4nobsp82x3x24fu.mp3","duration":"45.6272","fileSize":"1926.31","name":"情人节主题曲","type":"voice"}',
+    groupId: 1,
+    projectId: 71,
+    wechatId: null,
+    channelId: null,
+    wechatMediaId: null,
+    picType: null,
+    userId: 265,
+    userName: "范雪剑",
+    createTime: "2022-02-11 10:51:37",
+    updateTime: "2022-02-24 17:44:52"
+  },
+  {
+    id: 15,
+    contentType: "voice",
+    contentName: "情人节主题曲1",
+    contentDetail:
+      '{"voiceUrl":"zall-commerce/CONTENT_CENTER/4nobsp82f3x24mu.mp3","duration":"45.6272","fileSize":"1926.31","name":"情人节主题曲","type":"voice"}',
+    groupId: 1,
+    projectId: 71,
+    wechatId: null,
+    channelId: null,
+    wechatMediaId: null,
+    picType: null,
+    userId: 265,
+    userName: "范雪剑",
+    createTime: "2022-02-11 10:51:37",
+    updateTime: "2022-02-24 17:44:52"
+  },
+  {
+    id: 16,
+    contentType: "voice",
+    contentName: "情人节主题曲2",
+    contentDetail:
+      '{"voiceUrl":"zall-commerce/CONTENT_CENTER/4nobsf2x3x24mu.mp3","duration":"45.6272","fileSize":"1926.31","name":"情人节主题曲","type":"voice"}',
+    groupId: 1,
+    projectId: 71,
+    wechatId: null,
+    channelId: null,
+    wechatMediaId: null,
+    picType: null,
+    userId: 265,
+    userName: "范雪剑",
+    createTime: "2022-02-11 10:51:37",
+    updateTime: "2022-02-24 17:44:52"
+  },
+  {
+    id: 17,
+    contentType: "voice",
+    contentName: "情人节主题曲3",
+    contentDetail:
+      '{"voiceUrl":"zall-commerce/CONTENT_CENTER/4nfbsp82x3x24mu.mp3","duration":"45.6272","fileSize":"1926.31","name":"情人节主题曲","type":"voice"}',
+    groupId: 1,
+    projectId: 71,
+    wechatId: null,
+    channelId: null,
+    wechatMediaId: null,
+    picType: null,
+    userId: 265,
+    userName: "范雪剑",
+    createTime: "2022-02-11 10:51:37",
+    updateTime: "2022-02-24 17:44:52"
+  },
+  {
+    id: 18,
+    contentType: "voice",
+    contentName: "情人节主题曲4",
+    contentDetail:
+      '{"voiceUrl":"zall-commerce/CONTENT_CENTER/4nobsp82x3fxf4mu.mp3","duration":"45.6272","fileSize":"1926.31","name":"情人节主题曲","type":"voice"}',
+    groupId: 1,
+    projectId: 71,
+    wechatId: null,
+    channelId: null,
+    wechatMediaId: null,
+    picType: null,
+    userId: 265,
+    userName: "范雪剑",
+    createTime: "2022-02-11 10:51:37",
+    updateTime: "2022-02-24 17:44:52"
+  },
+  {
+    id: 19,
+    contentType: "voice",
+    contentName: "情人节主题曲5",
+    contentDetail:
+      '{"voiceUrl":"zall-commerce/CONTENT_CENTER/4fobsp82x3x24mu.mp3","duration":"45.6272","fileSize":"1926.31","name":"情人节主题曲","type":"voice"}',
+    groupId: 1,
+    projectId: 71,
+    wechatId: null,
+    channelId: null,
+    wechatMediaId: null,
+    picType: null,
+    userId: 265,
+    userName: "范雪剑",
+    createTime: "2022-02-11 10:51:37",
+    updateTime: "2022-02-24 17:44:52"
+  },
+  {
+    id: 20,
+    contentType: "voice",
+    contentName: "情人节主题曲6",
+    contentDetail:
+      '{"voiceUrl":"zall-commerce/CONTENT_CENTER/4nfbsp82x3x24mu.mp3","duration":"45.6272","fileSize":"1926.31","name":"情人节主题曲","type":"voice"}',
+    groupId: 1,
+    projectId: 71,
+    wechatId: null,
+    channelId: null,
+    wechatMediaId: null,
+    picType: null,
+    userId: 265,
+    userName: "范雪剑",
+    createTime: "2022-02-11 10:51:37",
+    updateTime: "2022-02-24 17:44:52"
+  }
+]
+
+export const videoList = [
+  {
+    id: 15,
+    contentType: "video",
+    contentName: "情人节素材02",
+    contentDetail:
+      '{"duration":"15.045011","picUrl":"zall-commerce/CONTENT_CENTER/wrgvpmqx1h9ngb2.jpg","videoUrl":"zall-commerce/CONTENT_CENTER/7gtukj7li6dudlr.mp4","fileSize":"1467.03","name":"情人节素材02","description":"","type":"video","title":"123321"}',
+    groupId: 1,
+    projectId: 71,
+    wechatId: null,
+    channelId: null,
+    wechatMediaId: null,
+    picType: null,
+    userId: 265,
+    userName: "范雪剑",
+    createTime: "2022-02-11 10:51:44",
+    updateTime: "2022-03-25 15:45:24"
+  },
+  {
+    id: 16,
+    contentType: "video",
+    contentName: "情人节素材16",
+    contentDetail:
+      '{"duration":"15.045011","picUrl":"zall-commerce/CONTENT_CENTER/wrgvpmqx1h9ngb2.jpg","videoUrl":"zall-commerce/CONTENT_CENTER/7gtukj7li6dudlr.mp4","fileSize":"1467.03","name":"情人节素材02","description":"","type":"video","title":"123321"}',
+    groupId: 1,
+    projectId: 71,
+    wechatId: null,
+    channelId: null,
+    wechatMediaId: null,
+    picType: null,
+    userId: 265,
+    userName: "范雪剑",
+    createTime: "2022-02-11 10:51:44",
+    updateTime: "2022-03-25 15:45:24"
+  },
+  {
+    id: 17,
+    contentType: "video",
+    contentName: "情人节素材17",
+    contentDetail:
+      '{"duration":"15.045011","picUrl":"zall-commerce/CONTENT_CENTER/wrgvpmqx1h9ngb2.jpg","videoUrl":"zall-commerce/CONTENT_CENTER/7gtukj7li6dudlr.mp4","fileSize":"1467.03","name":"情人节素材02","description":"","type":"video","title":"123321"}',
+    groupId: 1,
+    projectId: 71,
+    wechatId: null,
+    channelId: null,
+    wechatMediaId: null,
+    picType: null,
+    userId: 265,
+    userName: "范雪剑",
+    createTime: "2022-02-11 10:51:44",
+    updateTime: "2022-03-25 15:45:24"
+  },
+  {
+    id: 18,
+    contentType: "video",
+    contentName: "情人节素材18",
+    contentDetail:
+      '{"duration":"15.045011","picUrl":"zall-commerce/CONTENT_CENTER/wrgvpmqx1h9ngb2.jpg","videoUrl":"zall-commerce/CONTENT_CENTER/7gtukj7li6dudlr.mp4","fileSize":"1467.03","name":"情人节素材02","description":"","type":"video","title":"123321"}',
+    groupId: 1,
+    projectId: 71,
+    wechatId: null,
+    channelId: null,
+    wechatMediaId: null,
+    picType: null,
+    userId: 265,
+    userName: "范雪剑",
+    createTime: "2022-02-11 10:51:44",
+    updateTime: "2022-03-25 15:45:24"
+  },
+  {
+    id: 19,
+    contentType: "video",
+    contentName: "情人节素材19",
+    contentDetail:
+      '{"duration":"15.045011","picUrl":"zall-commerce/CONTENT_CENTER/wrgvpmqx1h9ngb2.jpg","videoUrl":"zall-commerce/CONTENT_CENTER/7gtukj7li6dudlr.mp4","fileSize":"1467.03","name":"情人节素材02","description":"","type":"video","title":"123321"}',
+    groupId: 1,
+    projectId: 71,
+    wechatId: null,
+    channelId: null,
+    wechatMediaId: null,
+    picType: null,
+    userId: 265,
+    userName: "范雪剑",
+    createTime: "2022-02-11 10:51:44",
+    updateTime: "2022-03-25 15:45:24"
+  },
+  {
+    id: 20,
+    contentType: "video",
+    contentName: "情人节素材20",
+    contentDetail:
+      '{"duration":"15.045011","picUrl":"zall-commerce/CONTENT_CENTER/wrgvpmqx1h9ngb2.jpg","videoUrl":"zall-commerce/CONTENT_CENTER/7gtukj7li6dudlr.mp4","fileSize":"1467.03","name":"情人节素材02","description":"","type":"video","title":"123321"}',
+    groupId: 1,
+    projectId: 71,
+    wechatId: null,
+    channelId: null,
+    wechatMediaId: null,
+    picType: null,
+    userId: 265,
+    userName: "范雪剑",
+    createTime: "2022-02-11 10:51:44",
+    updateTime: "2022-03-25 15:45:24"
+  },
+  {
+    id: 21,
+    contentType: "video",
+    contentName: "情人节素材21",
+    contentDetail:
+      '{"duration":"15.045011","picUrl":"zall-commerce/CONTENT_CENTER/wrgvpmqx1h9ngb2.jpg","videoUrl":"zall-commerce/CONTENT_CENTER/7gtukj7li6dudlr.mp4","fileSize":"1467.03","name":"情人节素材02","description":"","type":"video","title":"123321"}',
+    groupId: 1,
+    projectId: 71,
+    wechatId: null,
+    channelId: null,
+    wechatMediaId: null,
+    picType: null,
+    userId: 265,
+    userName: "范雪剑",
+    createTime: "2022-02-11 10:51:44",
+    updateTime: "2022-03-25 15:45:24"
+  },
+  {
+    id: 22,
+    contentType: "video",
+    contentName: "情人节素材22",
+    contentDetail:
+      '{"duration":"15.045011","picUrl":"zall-commerce/CONTENT_CENTER/wrgvpmqx1h9ngb2.jpg","videoUrl":"zall-commerce/CONTENT_CENTER/7gtukj7li6dudlr.mp4","fileSize":"1467.03","name":"情人节素材02","description":"","type":"video","title":"123321"}',
+    groupId: 1,
+    projectId: 71,
+    wechatId: null,
+    channelId: null,
+    wechatMediaId: null,
+    picType: null,
+    userId: 265,
+    userName: "范雪剑",
+    createTime: "2022-02-11 10:51:44",
+    updateTime: "2022-03-25 15:45:24"
+  },
+  {
+    id: 23,
+    contentType: "video",
+    contentName: "情人节素材23",
+    contentDetail:
+      '{"duration":"15.045011","picUrl":"zall-commerce/CONTENT_CENTER/wrgvpmqx1h9ngb2.jpg","videoUrl":"zall-commerce/CONTENT_CENTER/7gtukj7li6dudlr.mp4","fileSize":"1467.03","name":"情人节素材02","description":"","type":"video","title":"123321"}',
+    groupId: 1,
+    projectId: 71,
+    wechatId: null,
+    channelId: null,
+    wechatMediaId: null,
+    picType: null,
+    userId: 265,
+    userName: "范雪剑",
+    createTime: "2022-02-11 10:51:44",
+    updateTime: "2022-03-25 15:45:24"
+  },
+  {
+    id: 24,
+    contentType: "video",
+    contentName: "情人节素材24",
+    contentDetail:
+      '{"duration":"15.045011","picUrl":"zall-commerce/CONTENT_CENTER/wrgvpmqx1h9ngb2.jpg","videoUrl":"zall-commerce/CONTENT_CENTER/7gtukj7li6dudlr.mp4","fileSize":"1467.03","name":"情人节素材02","description":"","type":"video","title":"123321"}',
+    groupId: 1,
+    projectId: 71,
+    wechatId: null,
+    channelId: null,
+    wechatMediaId: null,
+    picType: null,
+    userId: 265,
+    userName: "范雪剑",
+    createTime: "2022-02-11 10:51:44",
+    updateTime: "2022-03-25 15:45:24"
+  }
+]
+
+export const textList = [
+  {
+    id: 330,
+    contentType: "text",
+    contentName: "1232112",
+    contentDetail:
+      '{"name":"1232112","type":"text","content":"{\\"content\\":[{\\"type\\":\\"text\\",\\"value\\":\\"21\\",\\"line_num\\":1},{\\"type\\":\\"hyperlink\\",\\"name\\":\\"link.123\\",\\"value\\":\\"https://zall.zalldata.cn/addReply?wxAutoReplayId=127&rourteName=DefaultReply&wechatId=50\\",\\"line_num\\":1}],\\"color\\":\\"#000\\"}"}',
+    groupId: 0,
+    projectId: 71,
+    wechatId: null,
+    channelId: null,
+    wechatMediaId: null,
+    picType: null,
+    userId: 275,
+    userName: " yangmingming",
+    createTime: "2022-06-11 08:39:29",
+    updateTime: "2022-06-11 08:39:29"
+  },
+  {
+    id: 329,
+    contentType: "text",
+    contentName: "引流1",
+    contentDetail:
+      '{"name":"引流1","type":"text","content":"{\\"content\\":[{\\"type\\":\\"text\\",\\"value\\":\\"Hi，终于等到你～欢迎来到润百颜颜粉福利社\\\\n这里是超宠你的护肤福利官颜姐\\\\n\\\\n润百颜是华熙生物旗下的核心战略品牌，深耕玻尿酸护肤的研发与创新 \\",\\"line_num\\":1},{\\"type\\":\\"text\\",\\"value\\":\\" 为你准备了一份新人见面礼，点击下方领取\\\\n\\\\n19.9抢价值109元4件套新人礼  限量500份，速领\\",\\"line_num\\":3}],\\"color\\":\\"#000\\"}"}',
+    groupId: 0,
+    projectId: 71,
+    wechatId: null,
+    channelId: null,
+    wechatMediaId: null,
+    picType: null,
+    userId: 201,
+    userName: "admin",
+    createTime: "2022-06-08 16:09:57",
+    updateTime: "2022-06-08 16:09:57"
+  },
+  {
+    id: 326,
+    contentType: "text",
+    contentName: "引流",
+    contentDetail:
+      '{"name":"引流","type":"text","content":"{\\"content\\":[{\\"type\\":\\"text\\",\\"value\\":\\"Hi，终于等到你～欢迎来到润百颜颜粉福利社\\\\n这里是超宠你的护肤福利官颜姐\\\\n\\\\n润百颜是华熙生物旗下的核心战略品牌，深耕玻尿酸护肤的研发与创新 \\",\\"line_num\\":1},{\\"type\\":\\"text\\",\\"value\\":\\" 为你准备了一份新人见面礼，点击下方领取\\\\n\\\\n19.9抢价值109元4件套新人礼  限量500份，速领\\",\\"line_num\\":3}],\\"color\\":\\"#000\\"}"}',
+    groupId: 0,
+    projectId: 71,
+    wechatId: null,
+    channelId: null,
+    wechatMediaId: null,
+    picType: null,
+    userId: 201,
+    userName: "admin",
+    createTime: "2022-06-08 16:00:15",
+    updateTime: "2022-06-08 16:00:14"
+  },
+  {
+    id: 6,
+    contentType: "text",
+    contentName: "纯文本",
+    contentDetail:
+      '{"name":"纯文本","type":"text","content":"{\\"content\\":[{\\"type\\":\\"text\\",\\"value\\":\\"1、我可以微笑着听你说你们的故事，但真的打不起笑脸听你说你们的关系。\\\\n\\\\n　　\\",\\"line_num\\":1},{\\"type\\":\\"text\\",\\"value\\":\\"2、如果。所有的伤痕都能够痊愈。 如果。所有的真心都能够换来真意。 如果。所有的相信都能够坚持。如果。所有的情感都能够完美。如果。依然能相遇在某座城。单纯的微笑。微微的幸福。肆意的拥抱。 该多好。可是真的只是如果。\\\\n\\\\n　　\\",\\"line_num\\":2},{\\"type\\":\\"text\\",\\"value\\":\\"3、有人说，青春仿佛是朵素洁的昙花，来不及铺张、来不及遐思，甚至来不及弥补欠缺和瑕庛，就那么匆匆地谢了。\\\\n\\\\n　　\\",\\"line_num\\":3},{\\"type\\":\\"text\\",\\"value\\":\\"4、多少次又多少次，回忆把生活划成一个圈，而我们在原地转了无数次，无法解脱。总是希望回到最初相识的地点，如果能够再一次选择的话，以为可以爱得更单纯。\\\\n\\\\n　　\\",\\"line_num\\":4},{\\"type\\":\\"text\\",\\"value\\":\\"5、人生就像一座山，重要的不是它的高低，而在于灵秀；人生就像一场雨，重要的不是它的大小，而在于及时。\\\\n\\\\n　\\",\\"line_num\\":5},{\\"type\\":\\"text\\",\\"value\\":\\"6、想洗澡吗？不要到外面等待下雨；想成功吗？不要空等机遇的到来。\\\\n\\\\n　　\\",\\"line_num\\":6},{\\"type\\":\\"text\\",\\"value\\":\\"7、因为爱心，流浪的人们才能重返家园；因为爱心，疲惫的灵魂才能活力如初。渴望爱心，如同星光渴望彼此辉映；渴望爱心，如同世纪之歌渴望永远被唱下去。\\\\n\\\\n　　\\",\\"line_num\\":7},{\\"type\\":\\"text\\",\\"value\\":\\"8、放开你，不是因为我不爱你，是因为我太爱你\\\\n\\\\n　　\\",\\"line_num\\":8},{\\"type\\":\\"text\\",\\"value\\":\\"9、如果爱情只是路过，又何必到此一游。\\\\n\\\\n　　\\",\\"line_num\\":9},{\\"type\\":\\"text\\",\\"value\\":\\"10、母爱是一缕阳光，让你的心灵即便在寒冷的冬天也能感受到温暖如春；母爱是一泓清泉，让你的情感即使蒙上岁月的风尘仍然清澈澄净。\\\\n\\\\n　　\\",\\"line_num\\":10},{\\"type\\":\\"text\\",\\"value\\":\\"11、爱是一盏灯，黑暗中照亮前行的远方；爱是一首诗，冰冷中温暖渴求的心房；爱是夏日的风，是冬日的阳，是春日的雨，是秋日的果。\\",\\"line_num\\":11}],\\"color\\":\\"#000\\"}"}',
+    groupId: 13,
+    projectId: 71,
+    wechatId: null,
+    channelId: null,
+    wechatMediaId: null,
+    picType: null,
+    userId: 238,
+    userName: "朱东霞",
+    createTime: "2022-03-28 14:48:49",
+    updateTime: "2022-03-28 14:48:49"
+  },
+  {
+    id: 45,
+    contentType: "text",
+    contentName: "会员优惠券活动",
+    contentDetail:
+      '{"name":"会员优惠券活动","type":"text","content":"{\\"content\\":[{\\"type\\":\\"text\\",\\"value\\":\\"【卓尔数科】会员您好，会员专属大额满优惠券已到账，享受更多优质服务http://e9q.cn/WpY4GP 退订TD\\",\\"line_num\\":1}],\\"color\\":\\"#000\\"}"}',
+    groupId: 13,
+    projectId: 71,
+    wechatId: null,
+    channelId: null,
+    wechatMediaId: null,
+    picType: null,
+    userId: 265,
+    userName: "范雪剑",
+    createTime: "2022-03-28 14:48:49",
+    updateTime: "2022-03-28 14:48:49"
+  },
+  {
+    id: 47,
+    contentType: "text",
+    contentName: "周年回馈专属福利",
+    contentDetail:
+      '{"name":"周年回馈专属福利","type":"text","content":"{\\"content\\":[{\\"type\\":\\"text\\",\\"value\\":\\"「周年庆」 ~\\\\n\\\\n\\\\n\\\\n\\\\n\\\\n\\\\n\\\\n\\\\n\\\\n\\\\n优惠链接在上方了哦，下单前不仅可以领取甜蜜购物基金，支付后实付满¥520还可以免费领取明星单品哦~\\\\n\\\\n早下单即可尽早收货心仪产品哦\\",\\"line_num\\":1}],\\"color\\":\\"#000\\"}"}',
+    groupId: 0,
+    projectId: 71,
+    wechatId: null,
+    channelId: null,
+    wechatMediaId: null,
+    picType: null,
+    userId: 203,
+    userName: "卓尔演示-1",
+    createTime: "2022-02-17 14:56:22",
+    updateTime: "2022-03-02 12:30:26"
+  },
+  {
+    id: 48,
+    contentType: "text",
+    contentName: "周年庆入群引导语",
+    contentDetail:
+      '{"name":"周年庆入群引导语","type":"text","content":"{\\"content\\":[{\\"type\\":\\"text\\",\\"value\\":\\"Hi ，周年回馈活动火爆进行中，赶紧入群领取福利吧~~~\\",\\"line_num\\":1}],\\"color\\":\\"#000\\"}"}',
+    groupId: 0,
+    projectId: 71,
+    wechatId: null,
+    channelId: null,
+    wechatMediaId: null,
+    picType: null,
+    userId: 265,
+    userName: "范雪剑",
+    createTime: "2022-02-17 15:51:20",
+    updateTime: "2022-02-17 15:51:20"
+  },
+  {
+    id: 46,
+    contentType: "text",
+    contentName: "周年活动大促",
+    contentDetail:
+      '{"name":"周年活动大促","type":"text","content":"{\\"content\\":[{\\"type\\":\\"text\\",\\"value\\":\\"Hi YE、，欢迎来到官网！周年回馈活动火爆进行中，出口日本的“高端面膜”品牌。秉承极简、高效护肤理念，“专注无添加，美得更安心”。\\\\n\\\\n戳蓝字了解：\\\\n\\\\n❤ \\",\\"line_num\\":1},{\\"type\\":\\"text\\",\\"value\\":\\"\\\\n\\\\n❤ \\",\\"line_num\\":1},{\\"type\\":\\"text\\",\\"value\\":\\"\\\\n\\\\n❤ \\",\\"line_num\\":1},{\\"type\\":\\"text\\",\\"value\\":\\"\\\\n\\\\n点击\\",\\"line_num\\":1},{\\"type\\":\\"text\\",\\"value\\":\\"，还能领取积分，兑换超值好礼！\\\\n\\\\n回复“8”可以领取你的专属福利优惠哦！[礼物]\\",\\"line_num\\":1}],\\"color\\":\\"#000\\"}"}',
+    groupId: 0,
+    projectId: 71,
+    wechatId: null,
+    channelId: null,
+    wechatMediaId: null,
+    picType: null,
+    userId: 265,
+    userName: "范雪剑",
+    createTime: "2022-02-17 11:34:15",
+    updateTime: "2022-02-17 11:34:15"
+  },
+  {
+    id: 1,
+    contentType: "text",
+    contentName: "214情人节快乐",
+    contentDetail:
+      '{"name":"214情人节快乐","type":"text","content":"{\\"content\\":[{\\"type\\":\\"text\\",\\"value\\":\\"1、真诚之中，与你相识相知，灵犀之间，与你朝夕相伴。情人节快乐！2、心与心的呼唤，离不开深深的爱恋；心与心的沟通，离不开永久的思念。生命中的每一天，愿有你的陪伴，直到海枯石烂，仍不改变\\",\\"line_num\\":1}],\\"color\\":\\"#000\\"}"}',
+    groupId: 1,
+    projectId: 71,
+    wechatId: null,
+    channelId: null,
+    wechatMediaId: null,
+    picType: null,
+    userId: 248,
+    userName: "胡巧",
+    createTime: "2022-02-11 10:51:51",
+    updateTime: "2022-02-11 11:02:31"
+  },
+  {
+    id: 4,
+    contentType: "text",
+    contentName: "纯表情",
+    contentDetail:
+      '{"name":"纯表情","type":"text","content":"{\\"content\\":[{\\"type\\":\\"emoji\\",\\"value\\":\\"[色]\\",\\"line_num\\":1},{\\"type\\":\\"emoji\\",\\"value\\":\\"[色]\\",\\"line_num\\":1},{\\"type\\":\\"emoji\\",\\"value\\":\\"[色]\\",\\"line_num\\":1},{\\"type\\":\\"emoji\\",\\"value\\":\\"[色]\\",\\"line_num\\":1},{\\"type\\":\\"emoji\\",\\"value\\":\\"[发呆]\\",\\"line_num\\":1},{\\"type\\":\\"emoji\\",\\"value\\":\\"[发呆]\\",\\"line_num\\":1},{\\"type\\":\\"emoji\\",\\"value\\":\\"[得意]\\",\\"line_num\\":1},{\\"type\\":\\"emoji\\",\\"value\\":\\"[流泪]\\",\\"line_num\\":1},{\\"type\\":\\"emoji\\",\\"value\\":\\"[害羞]\\",\\"line_num\\":1},{\\"type\\":\\"emoji\\",\\"value\\":\\"[闭嘴]\\",\\"line_num\\":1},{\\"type\\":\\"emoji\\",\\"value\\":\\"[睡]\\",\\"line_num\\":1},{\\"type\\":\\"emoji\\",\\"value\\":\\"[大哭]\\",\\"line_num\\":1},{\\"type\\":\\"emoji\\",\\"value\\":\\"[尴尬]\\",\\"line_num\\":1},{\\"type\\":\\"emoji\\",\\"value\\":\\"[发怒]\\",\\"line_num\\":1},{\\"type\\":\\"emoji\\",\\"value\\":\\"[调皮]\\",\\"line_num\\":1},{\\"type\\":\\"emoji\\",\\"value\\":\\"[呲牙]\\",\\"line_num\\":1},{\\"type\\":\\"emoji\\",\\"value\\":\\"[惊讶]\\",\\"line_num\\":1},{\\"type\\":\\"emoji\\",\\"value\\":\\"[难过]\\",\\"line_num\\":1},{\\"type\\":\\"emoji\\",\\"value\\":\\"[饥饿]\\",\\"line_num\\":1}],\\"color\\":\\"#000\\"}"}',
+    groupId: 1,
+    projectId: 71,
+    wechatId: null,
+    channelId: null,
+    wechatMediaId: null,
+    picType: null,
+    userId: 239,
+    userName: "宋珊",
+    createTime: "2022-02-11 10:51:51",
+    updateTime: "2022-02-11 10:51:51"
+  }
+]
+
+export const fileList = [
+  {
+    id: 420,
+    contentType: "file",
+    contentName: "测试数据",
+    contentDetail:
+      '{"fileName":"测试.txt","fileSize":"0","name":"测试数据","fileUrl":"zall-commerce/CONTENT_CENTER/wwbkfz0vz34ubwv.txt","type":"file"}',
+    groupId: 12,
+    projectId: 71,
+    wechatId: null,
+    channelId: null,
+    wechatMediaId: null,
+    picType: "txt",
+    userId: 255,
+    userName: "刘爽",
+    createTime: "2022-07-27 23:01:47",
+    updateTime: "2022-07-27 23:01:46"
+  },
+  {
+    id: 421,
+    contentType: "file",
+    contentName: "测试数据1",
+    contentDetail:
+      '{"fileName":"测试.txt","fileSize":"0","name":"测试数据","fileUrl":"zall-commerce/CONTENT_CENTER/wwbkfz0vz34ubwv.txt","type":"file"}',
+    groupId: 12,
+    projectId: 71,
+    wechatId: null,
+    channelId: null,
+    wechatMediaId: null,
+    picType: "txt",
+    userId: 255,
+    userName: "刘爽",
+    createTime: "2022-07-27 23:01:47",
+    updateTime: "2022-07-27 23:01:46"
+  },
+  {
+    id: 422,
+    contentType: "file",
+    contentName: "测试数据2",
+    contentDetail:
+      '{"fileName":"测试.txt","fileSize":"0","name":"测试数据","fileUrl":"zall-commerce/CONTENT_CENTER/wwbkfz0vz34ubwv.txt","type":"file"}',
+    groupId: 12,
+    projectId: 71,
+    wechatId: null,
+    channelId: null,
+    wechatMediaId: null,
+    picType: "txt",
+    userId: 255,
+    userName: "刘爽",
+    createTime: "2022-07-27 23:01:47",
+    updateTime: "2022-07-27 23:01:46"
+  },
+  {
+    id: 423,
+    contentType: "file",
+    contentName: "测试数据3",
+    contentDetail:
+      '{"fileName":"测试.txt","fileSize":"0","name":"测试数据","fileUrl":"zall-commerce/CONTENT_CENTER/wwbkfz0vz34ubwv.txt","type":"file"}',
+    groupId: 12,
+    projectId: 71,
+    wechatId: null,
+    channelId: null,
+    wechatMediaId: null,
+    picType: "txt",
+    userId: 255,
+    userName: "刘爽",
+    createTime: "2022-07-27 23:01:47",
+    updateTime: "2022-07-27 23:01:46"
+  },
+  {
+    id: 424,
+    contentType: "file",
+    contentName: "测试数据4",
+    contentDetail:
+      '{"fileName":"测试.txt","fileSize":"0","name":"测试数据","fileUrl":"zall-commerce/CONTENT_CENTER/wwbkfz0vz34ubwv.txt","type":"file"}',
+    groupId: 12,
+    projectId: 71,
+    wechatId: null,
+    channelId: null,
+    wechatMediaId: null,
+    picType: "txt",
+    userId: 255,
+    userName: "刘爽",
+    createTime: "2022-07-27 23:01:47",
+    updateTime: "2022-07-27 23:01:46"
+  },
+  {
+    id: 425,
+    contentType: "file",
+    contentName: "测试数据5",
+    contentDetail:
+      '{"fileName":"测试.txt","fileSize":"0","name":"测试数据","fileUrl":"zall-commerce/CONTENT_CENTER/wwbkfz0vz34ubwv.txt","type":"file"}',
+    groupId: 12,
+    projectId: 71,
+    wechatId: null,
+    channelId: null,
+    wechatMediaId: null,
+    picType: "txt",
+    userId: 255,
+    userName: "刘爽",
+    createTime: "2022-07-27 23:01:47",
+    updateTime: "2022-07-27 23:01:46"
+  },
+  {
+    id: 426,
+    contentType: "file",
+    contentName: "测试数据6",
+    contentDetail:
+      '{"fileName":"测试.txt","fileSize":"0","name":"测试数据","fileUrl":"zall-commerce/CONTENT_CENTER/wwbkfz0vz34ubwv.txt","type":"file"}',
+    groupId: 12,
+    projectId: 71,
+    wechatId: null,
+    channelId: null,
+    wechatMediaId: null,
+    picType: "txt",
+    userId: 255,
+    userName: "刘爽",
+    createTime: "2022-07-27 23:01:47",
+    updateTime: "2022-07-27 23:01:46"
+  },
+  {
+    id: 427,
+    contentType: "file",
+    contentName: "测试数据7",
+    contentDetail:
+      '{"fileName":"测试.txt","fileSize":"0","name":"测试数据","fileUrl":"zall-commerce/CONTENT_CENTER/wwbkfz0vz34ubwv.txt","type":"file"}',
+    groupId: 12,
+    projectId: 71,
+    wechatId: null,
+    channelId: null,
+    wechatMediaId: null,
+    picType: "txt",
+    userId: 255,
+    userName: "刘爽",
+    createTime: "2022-07-27 23:01:47",
+    updateTime: "2022-07-27 23:01:46"
+  },
+  {
+    id: 428,
+    contentType: "file",
+    contentName: "测试数据8",
+    contentDetail:
+      '{"fileName":"测试.txt","fileSize":"0","name":"测试数据","fileUrl":"zall-commerce/CONTENT_CENTER/wwbkfz0vz34ubwv.txt","type":"file"}',
+    groupId: 12,
+    projectId: 71,
+    wechatId: null,
+    channelId: null,
+    wechatMediaId: null,
+    picType: "txt",
+    userId: 255,
+    userName: "刘爽",
+    createTime: "2022-07-27 23:01:47",
+    updateTime: "2022-07-27 23:01:46"
+  },
+  {
+    id: 429,
+    contentType: "file",
+    contentName: "测试数据9",
+    contentDetail:
+      '{"fileName":"测试.txt","fileSize":"0","name":"测试数据","fileUrl":"zall-commerce/CONTENT_CENTER/wwbkfz0vz34ubwv.txt","type":"file"}',
+    groupId: 12,
+    projectId: 71,
+    wechatId: null,
+    channelId: null,
+    wechatMediaId: null,
+    picType: "txt",
+    userId: 255,
+    userName: "刘爽",
+    createTime: "2022-07-27 23:01:47",
+    updateTime: "2022-07-27 23:01:46"
+  },
+  {
+    id: 430,
+    contentType: "file",
+    contentName: "测试数据10",
+    contentDetail:
+      '{"fileName":"测试.txt","fileSize":"0","name":"测试数据","fileUrl":"zall-commerce/CONTENT_CENTER/wwbkfz0vz34ubwv.txt","type":"file"}',
+    groupId: 12,
+    projectId: 71,
+    wechatId: null,
+    channelId: null,
+    wechatMediaId: null,
+    picType: "txt",
+    userId: 255,
+    userName: "刘爽",
+    createTime: "2022-07-27 23:01:47",
+    updateTime: "2022-07-27 23:01:46"
+  }
+]
+
+export const linkList = [
+  {
+    id: 325,
+    contentType: "news",
+    contentName: "12.88哈哈哈",
+    contentDetail:
+      '{"picUrl":"zall-commerce/CONTENT_CENTER/qun5rzc3ztxx8fv.jpeg","name":"12.88哈哈哈","linkUrl":"https://zall.zalldata.cn/addReply?wxAutoReplayId=127&rourteName=DefaultReply&wechatId=50","description":"12.88哈哈哈12.88哈哈哈12.8","type":"news","title":"12.88哈哈哈"}',
+    groupId: 0,
+    projectId: 71,
+    wechatId: null,
+    channelId: null,
+    wechatMediaId: null,
+    picType: null,
+    userId: 275,
+    userName: " yangmingming",
+    createTime: "2022-06-08 15:54:27",
+    updateTime: "2022-06-08 15:54:26"
+  },
+  {
+    id: 265,
+    contentType: "news",
+    contentName: "测试外链",
+    contentDetail:
+      '{"picUrl":"zall-commerce/CONTENT_CENTER/1e730f0kq7ndsmz.jpg","name":"测试外链","linkUrl":"http://www.baidu.com","description":"百度一下","type":"news","title":"百度一下"}',
+    groupId: 0,
+    projectId: 71,
+    wechatId: null,
+    channelId: null,
+    wechatMediaId: null,
+    picType: null,
+    userId: 353,
+    userName: "王超雄",
+    createTime: "2022-04-25 19:41:53",
+    updateTime: "2022-04-25 19:41:53"
+  },
+  {
+    id: 3,
+    contentType: "news",
+    contentName: "百度链接",
+    contentDetail:
+      '{"picUrl":"zall-commerce/CONTENT_CENTER/t27bpsy9jpptxsc.png","name":"百度链接","linkUrl":"http://baidu.com","description":"啥都有","type":"news","title":"baidu导航"}',
+    groupId: 1,
+    projectId: 71,
+    wechatId: null,
+    channelId: null,
+    wechatMediaId: null,
+    picType: null,
+    userId: 239,
+    userName: "宋珊",
+    createTime: "2022-02-11 10:51:58",
+    updateTime: "2022-02-11 10:51:58"
+  },
+  {
+    id: 328,
+    contentType: "news",
+    contentName: "12.88哈哈哈212",
+    contentDetail:
+      '{"picUrl":"zall-commerce/CONTENT_CENTER/qun5rzc3ztxx8fv.jpeg","name":"12.88哈哈哈","linkUrl":"https://zall.zalldata.cn/addReply?wxAutoReplayId=127&rourteName=DefaultReply&wechatId=50","description":"12.88哈哈哈12.88哈哈哈12.8","type":"news","title":"12.88哈哈哈"}',
+    groupId: 0,
+    projectId: 71,
+    wechatId: null,
+    channelId: null,
+    wechatMediaId: null,
+    picType: null,
+    userId: 275,
+    userName: " yangmingming",
+    createTime: "2022-06-08 15:54:27",
+    updateTime: "2022-06-08 15:54:26"
+  },
+  {
+    id: 329,
+    contentType: "news",
+    contentName: "测试外链329",
+    contentDetail:
+      '{"picUrl":"zall-commerce/CONTENT_CENTER/1e730f0kq7ndsmz.jpg","name":"测试外链","linkUrl":"http://www.baidu.com","description":"百度一下","type":"news","title":"百度一下"}',
+    groupId: 0,
+    projectId: 71,
+    wechatId: null,
+    channelId: null,
+    wechatMediaId: null,
+    picType: null,
+    userId: 353,
+    userName: "王超雄",
+    createTime: "2022-04-25 19:41:53",
+    updateTime: "2022-04-25 19:41:53"
+  },
+  {
+    id: 340,
+    contentType: "news",
+    contentName: "百度链接340",
+    contentDetail:
+      '{"picUrl":"zall-commerce/CONTENT_CENTER/t27bpsy9jpptxsc.png","name":"百度链接","linkUrl":"http://baidu.com","description":"啥都有","type":"news","title":"baidu导航"}',
+    groupId: 1,
+    projectId: 71,
+    wechatId: null,
+    channelId: null,
+    wechatMediaId: null,
+    picType: null,
+    userId: 239,
+    userName: "宋珊",
+    createTime: "2022-02-11 10:51:58",
+    updateTime: "2022-02-11 10:51:58"
+  },
+  {
+    id: 341,
+    contentType: "news",
+    contentName: "12.88哈哈哈341",
+    contentDetail:
+      '{"picUrl":"zall-commerce/CONTENT_CENTER/qun5rzc3ztxx8fv.jpeg","name":"12.88哈哈哈","linkUrl":"https://zall.zalldata.cn/addReply?wxAutoReplayId=127&rourteName=DefaultReply&wechatId=50","description":"12.88哈哈哈12.88哈哈哈12.8","type":"news","title":"12.88哈哈哈"}',
+    groupId: 0,
+    projectId: 71,
+    wechatId: null,
+    channelId: null,
+    wechatMediaId: null,
+    picType: null,
+    userId: 275,
+    userName: " yangmingming",
+    createTime: "2022-06-08 15:54:27",
+    updateTime: "2022-06-08 15:54:26"
+  },
+  {
+    id: 342,
+    contentType: "news",
+    contentName: "测试外链342",
+    contentDetail:
+      '{"picUrl":"zall-commerce/CONTENT_CENTER/1e730f0kq7ndsmz.jpg","name":"测试外链","linkUrl":"http://www.baidu.com","description":"百度一下","type":"news","title":"百度一下"}',
+    groupId: 0,
+    projectId: 71,
+    wechatId: null,
+    channelId: null,
+    wechatMediaId: null,
+    picType: null,
+    userId: 353,
+    userName: "王超雄",
+    createTime: "2022-04-25 19:41:53",
+    updateTime: "2022-04-25 19:41:53"
+  },
+  {
+    id: 343,
+    contentType: "news",
+    contentName: "百度链接343",
+    contentDetail:
+      '{"picUrl":"zall-commerce/CONTENT_CENTER/t27bpsy9jpptxsc.png","name":"百度链接","linkUrl":"http://baidu.com","description":"啥都有","type":"news","title":"baidu导航"}',
+    groupId: 1,
+    projectId: 71,
+    wechatId: null,
+    channelId: null,
+    wechatMediaId: null,
+    picType: null,
+    userId: 239,
+    userName: "宋珊",
+    createTime: "2022-02-11 10:51:58",
+    updateTime: "2022-02-11 10:51:58"
+  },
+  {
+    id: 344,
+    contentType: "news",
+    contentName: "12.88哈哈哈344",
+    contentDetail:
+      '{"picUrl":"zall-commerce/CONTENT_CENTER/qun5rzc3ztxx8fv.jpeg","name":"12.88哈哈哈","linkUrl":"https://zall.zalldata.cn/addReply?wxAutoReplayId=127&rourteName=DefaultReply&wechatId=50","description":"12.88哈哈哈12.88哈哈哈12.8","type":"news","title":"12.88哈哈哈"}',
+    groupId: 0,
+    projectId: 71,
+    wechatId: null,
+    channelId: null,
+    wechatMediaId: null,
+    picType: null,
+    userId: 275,
+    userName: " yangmingming",
+    createTime: "2022-06-08 15:54:27",
+    updateTime: "2022-06-08 15:54:26"
+  },
+  {
+    id: 345,
+    contentType: "news",
+    contentName: "测试外链345",
+    contentDetail:
+      '{"picUrl":"zall-commerce/CONTENT_CENTER/1e730f0kq7ndsmz.jpg","name":"测试外链","linkUrl":"http://www.baidu.com","description":"百度一下","type":"news","title":"百度一下"}',
+    groupId: 0,
+    projectId: 71,
+    wechatId: null,
+    channelId: null,
+    wechatMediaId: null,
+    picType: null,
+    userId: 353,
+    userName: "王超雄",
+    createTime: "2022-04-25 19:41:53",
+    updateTime: "2022-04-25 19:41:53"
+  },
+  {
+    id: 346,
+    contentType: "news",
+    contentName: "百度链接346",
+    contentDetail:
+      '{"picUrl":"zall-commerce/CONTENT_CENTER/t27bpsy9jpptxsc.png","name":"百度链接","linkUrl":"http://baidu.com","description":"啥都有","type":"news","title":"baidu导航"}',
+    groupId: 1,
+    projectId: 71,
+    wechatId: null,
+    channelId: null,
+    wechatMediaId: null,
+    picType: null,
+    userId: 239,
+    userName: "宋珊",
+    createTime: "2022-02-11 10:51:58",
+    updateTime: "2022-02-11 10:51:58"
+  },
+  {
+    id: 347,
+    contentType: "news",
+    contentName: "12.88哈哈哈347",
+    contentDetail:
+      '{"picUrl":"zall-commerce/CONTENT_CENTER/qun5rzc3ztxx8fv.jpeg","name":"12.88哈哈哈","linkUrl":"https://zall.zalldata.cn/addReply?wxAutoReplayId=127&rourteName=DefaultReply&wechatId=50","description":"12.88哈哈哈12.88哈哈哈12.8","type":"news","title":"12.88哈哈哈"}',
+    groupId: 0,
+    projectId: 71,
+    wechatId: null,
+    channelId: null,
+    wechatMediaId: null,
+    picType: null,
+    userId: 275,
+    userName: " yangmingming",
+    createTime: "2022-06-08 15:54:27",
+    updateTime: "2022-06-08 15:54:26"
+  },
+  {
+    id: 348,
+    contentType: "news",
+    contentName: "测试外链348",
+    contentDetail:
+      '{"picUrl":"zall-commerce/CONTENT_CENTER/1e730f0kq7ndsmz.jpg","name":"测试外链","linkUrl":"http://www.baidu.com","description":"百度一下","type":"news","title":"百度一下"}',
+    groupId: 0,
+    projectId: 71,
+    wechatId: null,
+    channelId: null,
+    wechatMediaId: null,
+    picType: null,
+    userId: 353,
+    userName: "王超雄",
+    createTime: "2022-04-25 19:41:53",
+    updateTime: "2022-04-25 19:41:53"
+  },
+  {
+    id: 349,
+    contentType: "news",
+    contentName: "百度链接349",
+    contentDetail:
+      '{"picUrl":"zall-commerce/CONTENT_CENTER/t27bpsy9jpptxsc.png","name":"百度链接","linkUrl":"http://baidu.com","description":"啥都有","type":"news","title":"baidu导航"}',
+    groupId: 1,
+    projectId: 71,
+    wechatId: null,
+    channelId: null,
+    wechatMediaId: null,
+    picType: null,
+    userId: 239,
+    userName: "宋珊",
+    createTime: "2022-02-11 10:51:58",
+    updateTime: "2022-02-11 10:51:58"
+  }
+]
+
+export const smsList = [
+  {
+    id: 66,
+    contentType: "sms",
+    contentName: "库存不足，请今快完成支付",
+    contentDetail:
+      '{"name":"库存不足，请今快完成支付","type":"sms","content":"{\\"content\\":[{\\"type\\":\\"text\\",\\"value\\":\\"库存不足，请今快完成支付\\",\\"line_num\\":1}],\\"color\\":\\"#000\\"}","channelId":157}',
+    groupId: 0,
+    projectId: 71,
+    wechatId: null,
+    channelId: 157,
+    wechatMediaId: null,
+    picType: null,
+    userId: 278,
+    userName: "陈超",
+    createTime: "2022-02-25 14:30:02",
+    updateTime: "2022-02-25 14:30:02"
+  },
+  {
+    id: 44,
+    contentType: "sms",
+    contentName: "会员专属优惠券到期提醒",
+    contentDetail:
+      '{"name":"会员专属优惠券到期提醒","type":"sms","content":"{\\"content\\":[{\\"type\\":\\"text\\",\\"value\\":\\"【卓尔数科】会员您好，会员专属大额满优惠券即将到期，享受更多优质服务http://e9q.cn/WpY4GP 退订TD\\",\\"line_num\\":1}],\\"color\\":\\"#000\\"}","channelId":157}',
+    groupId: 0,
+    projectId: 71,
+    wechatId: null,
+    channelId: 157,
+    wechatMediaId: null,
+    picType: null,
+    userId: 265,
+    userName: "范雪剑",
+    createTime: "2022-02-16 11:42:14",
+    updateTime: "2022-02-16 11:55:18"
+  },
+  {
+    id: 43,
+    contentType: "sms",
+    contentName: "会员专属优惠券短信",
+    contentDetail:
+      '{"name":"会员专属优惠券短信","type":"sms","content":"{\\"content\\":[{\\"type\\":\\"text\\",\\"value\\":\\"【卓尔数科】会员您好，会员专属大额满优惠券已到账，享受更多优质服务http://e9q.cn/WpY4GP 退订TD\\",\\"line_num\\":1}],\\"color\\":\\"#000\\"}","channelId":157}',
+    groupId: 0,
+    projectId: 71,
+    wechatId: null,
+    channelId: 157,
+    wechatMediaId: null,
+    picType: null,
+    userId: 265,
+    userName: "范雪剑",
+    createTime: "2022-02-16 11:29:10",
+    updateTime: "2022-02-16 11:44:24"
+  },
+  {
+    id: 19,
+    contentType: "sms",
+    contentName: "zsh测试短信模板",
+    contentDetail:
+      '{"name":"zsh测试短信模板","type":"sms","content":"{\\"content\\":[{\\"type\\":\\"text\\",\\"value\\":\\"短信短信\\",\\"line_num\\":1}],\\"color\\":\\"#000\\"}","channelId":157}',
+    groupId: 1,
+    projectId: 71,
+    wechatId: null,
+    channelId: 157,
+    wechatMediaId: null,
+    picType: null,
+    userId: 288,
+    userName: "赵世豪",
+    createTime: "2022-02-11 10:52:05",
+    updateTime: "2022-02-11 10:52:05"
+  }
+]
+
+export const appletList = [
+  {
+    id: 7,
+    contentType: "miniprogrampage",
+    contentName: "小程序",
+    contentDetail:
+      '{"picUrl":"zall-commerce/CONTENT_CENTER/6csvifvamxce8fy.jpg","appId":"wx70dbec2349cfbca3","name":"小程序","type":"miniprogrampage","title":"商城","pagePath":"pages/home/index"}',
+    groupId: 1,
+    projectId: 71,
+    wechatId: null,
+    channelId: null,
+    wechatMediaId: null,
+    picType: null,
+    userId: 239,
+    userName: "宋珊",
+    createTime: "2022-02-11 10:52:11",
+    updateTime: "2022-02-11 10:52:11"
+  },
+  {
+    id: 21,
+    contentType: "miniprogrampage",
+    contentName: "zsh测试小程序",
+    contentDetail:
+      '{"picUrl":"zall-commerce/CONTENT_CENTER/g22zwm5pulewn5b.jpg","appId":"wx70dbec2349cfbca3","name":"zsh测试小程序","type":"miniprogrampage","title":"123321","pagePath":"pages/goods/goods-category/index"}',
+    groupId: 1,
+    projectId: 71,
+    wechatId: null,
+    channelId: null,
+    wechatMediaId: null,
+    picType: null,
+    userId: 288,
+    userName: "赵世豪",
+    createTime: "2022-02-11 10:52:11",
+    updateTime: "2022-02-11 10:52:11"
+  }
+]
+
+export const msgMenuList = [
+  {
+    id: 210,
+    contentType: "msgmenu",
+    contentName: "专属福利",
+    contentDetail:
+      '{"headContentTxt":"<div style=\\"word-break:break-all\\" index=\\"1\\">Hi，欢迎来到官网！</div><div style=\\"word-break:break-all\\" index=\\"2\\">出口世界各国专属品牌，秉承高效、极致的护肤理念，“专注无添加，没得更无暇”。</div><div style=\\"word-break:break-all\\" index=\\"3\\">戳蓝字了解：</div><div style=\\"word-break:break-all\\" index=\\"4\\"><img class=\\"emoji-icon\\" src=\\"https://res.wx.qq.com/mpres/htmledition/images/icon/emotion/63.gif\\" alt=\\"[玫瑰]\\"/><span style=\\"color: #2749F1\\">圈粉百万</span></div><div style=\\"word-break:break-all\\" index=\\"5\\"><img class=\\"emoji-icon\\" src=\\"https://res.wx.qq.com/mpres/htmledition/images/icon/emotion/63.gif\\" alt=\\"[玫瑰]\\"/><span style=\\"color: #2749F1\\">揭秘无添加</span></div><br><div style=\\"word-break:break-all\\" index=\\"7\\">点击【每日签到】，还能领取积分，兑换超子好礼！</div>","isVugiFlag":true,"nextLevelMenu":[{"nextLevelMenu":[{"isVugiFlag":false,"id":"11978090360","type":"mpnews","content":"{\\"picUrl\\":\\"zall-commerce/CONTENT_CENTER/cb34g6ab82ao0t5.jpeg\\",\\"author\\":\\"\\",\\"articleId\\":\\"QKLfTE-No1by9IJ7vk97XVm7aoSCUOby8RsyqN2TlYZ03CBACA4MTHwSDGBq9u4a\\",\\"name\\":\\"第2期留言中奖名单\\",\\"digest\\":\\"再次恭喜3位获奖的小可爱～\\",\\"type\\":\\"mpnews\\",\\"title\\":\\"第2期留言中奖名单\\",\\"content\\":\\"<section style=\\\\\\"margin-top: 10px;margin-bottom: 10px;max-width: 100%;white-space: normal;text-align: center;overflow-wrap: break-word !important;box-sizing: border-box !important;\\\\\\" data-mpa-powered-by=\\\\\\"yiban.io\\\\\\"><section style=\\\\\\"max-width: 100%;display: inline-block;width: 370px;vertical-align: top;overflow-wrap: break-word !important;box-sizing: border-box !important;\\\\\\"><section style=\\\\\\"max-width: 100%;overflow-wrap: break-word !important;box-sizing: border-box !important;\\\\\\"><section style=\\\\\\"padding-right: 3px;padding-left: 3px;max-width: 100%;display: inline-block;vertical-align: bottom;width: 29.5938px;overflow-wrap: break-word !important;box-sizing: border-box !important;\\\\\\"><section style=\\\\\\"max-width: 100%;transform: translate3d(10px, 0px, 0px);overflow-wrap: break-word !important;box-sizing: border-box !important;\\\\\\"><section style=\\\\\\"max-width: 100%;vertical-align: middle;display: inline-block;line-height: 0;width: 23.5938px;overflow-wrap: break-word !important;box-sizing: border-box !important;\\\\\\"><img class=\\\\\\"rich_pages wxw-img\\\\\\" data-fileid=\\\\\\"100019733\\\\\\" data-ratio=\\\\\\"2.665\\\\\\" data-src=\\\\\\"https://mmbiz.qpic.cn/mmbiz_png/icXzy2ibdAq5etjY3ZkFp4HrhP0nWQWWJWBBFl1o6uuwjyzSJMUYLX3yT1ibBJSBjUD5zAHVneGKMZaic80GkMsCmg/640?wx_fmt=png\\\\\\" data-type=\\\\\\"png\\\\\\" data-w=\\\\\\"200\\\\\\" style=\\\\\\"width: 23.5938px;vertical-align: middle;box-sizing: border-box;overflow-wrap: break-word !important;\\\\\\"  /></section></section></section><section style=\\\\\\"max-width: 100%;display: inline-block;vertical-align: bottom;width: 340.391px;overflow-wrap: break-word !important;box-sizing: border-box !important;\\\\\\"><section style=\\\\\\"margin-bottom: -5px;max-width: 100%;text-align: right;overflow-wrap: break-word !important;box-sizing: border-box !important;\\\\\\"><section style=\\\\\\"max-width: 100%;vertical-align: middle;display: inline-block;line-height: 0;width: 102.109px;overflow-wrap: break-word !important;box-sizing: border-box !important;\\\\\\"><img data-ratio=\\\\\\"0.2988505747126437\\\\\\" data-src=\\\\\\"https://mmbiz.qpic.cn/mmbiz_gif/icXzy2ibdAq5etjY3ZkFp4HrhP0nWQWWJW5icUr9pPWoF2gy9ZuLkofz7gTYe6DyRmfxcP4CvwSgPSVbDzKCcd1Tw/640?wx_fmt=gif\\\\\\" data-type=\\\\\\"gif\\\\\\" data-w=\\\\\\"435\\\\\\" style=\\\\\\"width: 102.109px;vertical-align: middle;box-sizing: border-box;overflow-wrap: break-word !important;\\\\\\" data-fileid=\\\\\\"100019732\\\\\\"  /></section></section><section style=\\\\\\"margin-top: 10px;margin-bottom: -5px;max-width: 100%;transform: translate3d(-1px, 0px, 0px);overflow-wrap: break-word !important;box-sizing: border-box !important;\\\\\\"><section style=\\\\\\"max-width: 100%;vertical-align: middle;display: inline-block;line-height: 0;width: 27.2188px;overflow-wrap: break-word !important;box-sizing: border-box !important;\\\\\\"><img data-ratio=\\\\\\"1.0338709677419355\\\\\\" data-src=\\\\\\"https://mmbiz.qpic.cn/mmbiz_gif/icXzy2ibdAq5etjY3ZkFp4HrhP0nWQWWJWtKjKeG0aiazkwA8ZzYXAZ4Iz87RN2zNtVibU6FA8lP0aRsDO2Ikhww9w/640?wx_fmt=gif\\\\\\" data-type=\\\\\\"gif\\\\\\" data-w=\\\\\\"620\\\\\\" style=\\\\\\"width: 27.2188px;vertical-align: middle;box-sizing: border-box;overflow-wrap: break-word !important;\\\\\\" data-fileid=\\\\\\"100019734\\\\\\"  /></section></section></section></section><section style=\\\\\\"max-width: 100%;overflow-wrap: break-word !important;box-sizing: border-box !important;\\\\\\"><section style=\\\\\\"padding: 5px 10px;max-width: 100%;display: inline-block;vertical-align: top;background-color: rgb(179, 229, 252);border-width: 0px;border-radius: 5px;border-style: none;border-color: rgb(62, 62, 62);width: 370px;overflow-wrap: break-word !important;box-sizing: border-box !important;\\\\\\"><section style=\\\\\\"max-width: 100%;color: rgb(96, 125, 139);overflow-wrap: break-word !important;box-sizing: border-box !important;\\\\\\"><p style=\\\\\\"max-width: 100%;overflow-wrap: break-word !important;box-sizing: border-box !important;\\\\\\"><strong style=\\\\\\"max-width: 100%;overflow-wrap: break-word !important;box-sizing: border-box !important;\\\\\\">第2期留言互动中奖名单</strong></p></section></section></section></section></section><p style=\\\\\\"margin-top: 5px;margin-bottom: 1em;max-width: 100%;white-space: normal;overflow-wrap: break-word !important;box-sizing: border-box !important;\\\\\\"><br style=\\\\\\"max-width: 100%;overflow-wrap: break-word !important;box-sizing: border-box !important;\\\\\\"  /></p><section style=\\\\\\"margin-top: 10px;margin-bottom: 10px;max-width: 100%;white-space: normal;text-align: center;overflow-wrap: break-word !important;box-sizing: border-box !important;\\\\\\"><section style=\\\\\\"padding: 5px;max-width: 100%;display: inline-block;width: 370px;vertical-align: top;background-color: rgb(187, 222, 251);overflow-wrap: break-word !important;box-sizing: border-box !important;\\\\\\"><section style=\\\\\\"max-width: 100%;text-align: justify;overflow-wrap: break-word !important;box-sizing: border-box !important;\\\\\\"><p style=\\\\\\"max-width: 100%;overflow-wrap: break-word !important;box-sizing: border-box !important;\\\\\\"><br style=\\\\\\"max-width: 100%;overflow-wrap: break-word !important;box-sizing: border-box !important;\\\\\\"  /></p></section><section style=\\\\\\"max-width: 100%;text-align: justify;overflow-wrap: break-word !important;box-sizing: border-box !important;\\\\\\"><section style=\\\\\\"padding: 5px;max-width: 100%;display: inline-block;width: 360px;vertical-align: top;border-style: dashed;border-width: 1px;border-radius: 0px;border-color: rgb(255, 255, 255);overflow-wrap: break-word !important;box-sizing: border-box !important;\\\\\\"><section style=\\\\\\"max-width: 100%;overflow-wrap: break-word !important;box-sizing: border-box !important;\\\\\\"><section style=\\\\\\"padding: 10px;max-width: 100%;display: inline-block;width: 348px;vertical-align: top;background-color: rgb(255, 255, 255);overflow-wrap: break-word !important;box-sizing: border-box !important;\\\\\\"><section style=\\\\\\"max-width: 100%;text-align: center;line-height: 1.8;overflow-wrap: break-word !important;box-sizing: border-box !important;\\\\\\"><p style=\\\\\\"max-width: 100%;color: rgb(158, 158, 158);font-size: 15px;overflow-wrap: break-word !important;box-sizing: border-box !important;\\\\\\"><br style=\\\\\\"max-width: 100%;overflow-wrap: break-word !important;box-sizing: border-box !important;\\\\\\"  /></p><p style=\\\\\\"max-width: 100%;color: rgb(158, 158, 158);font-size: 15px;overflow-wrap: break-word !important;box-sizing: border-box !important;\\\\\\"><span style=\\\\\\"max-width: 100%;color: rgb(63, 57, 56);overflow-wrap: break-word !important;box-sizing: border-box !important;\\\\\\">恭喜以下3位小可爱</span><span style=\\\\\\"font-family: mp-quote, -apple-system-font, BlinkMacSystemFont, &quot;Helvetica Neue&quot;, &quot;PingFang SC&quot;, &quot;Hiragino Sans GB&quot;, &quot;Microsoft YaHei UI&quot;, &quot;Microsoft YaHei&quot;, Arial, sans-serif;color: rgb(63, 57, 56);\\\\\\">可各获</span></p><p style=\\\\\\"max-width: 100%;color: rgb(158, 158, 158);font-size: 15px;overflow-wrap: break-word !important;box-sizing: border-box !important;\\\\\\"><span style=\\\\\\"font-family: mp-quote, -apple-system-font, BlinkMacSystemFont, &quot;Helvetica Neue&quot;, &quot;PingFang SC&quot;, &quot;Hiragino Sans GB&quot;, &quot;Microsoft YaHei UI&quot;, &quot;Microsoft YaHei&quot;, Arial, sans-serif;color: rgb(84, 141, 212);\\\\\\">【 珀莱雅官方商城在售任意单品 】1支</span></p><p style=\\\\\\"max-width: 100%;color: rgb(158, 158, 158);font-size: 15px;overflow-wrap: break-word !important;box-sizing: border-box !important;\\\\\\"><span style=\\\\\\"max-width: 100%;font-family: mp-quote, -apple-system-font, BlinkMacSystemFont, &quot;Helvetica Neue&quot;, &quot;PingFang SC&quot;, &quot;Hiragino Sans GB&quot;, &quot;Microsoft YaHei UI&quot;, &quot;Microsoft YaHei&quot;, Arial, sans-serif;color: rgb(84, 141, 212);overflow-wrap: break-word !important;box-sizing: border-box !important;\\\\\\"></span></p><p style=\\\\\\"max-width: 100%;color: rgb(158, 158, 158);font-size: 15px;overflow-wrap: break-word !important;box-sizing: border-box !important;\\\\\\"><span style=\\\\\\"max-width: 100%;color: rgb(84, 141, 212);font-family: mp-quote, -apple-system-font, BlinkMacSystemFont, &quot;Helvetica Neue&quot;, &quot;PingFang SC&quot;, &quot;Hiragino Sans GB&quot;, &quot;Microsoft YaHei UI&quot;, &quot;Microsoft YaHei&quot;, Arial, sans-serif;font-size: 14px;overflow-wrap: break-word !important;box-sizing: border-box !important;\\\\\\"></span></p><p style=\\\\\\"max-width: 100%;overflow-wrap: break-word !important;box-sizing: border-box !important;\\\\\\"><img class=\\\\\\"rich_pages wxw-img\\\\\\" data-cropselx1=\\\\\\"0\\\\\\" data-cropselx2=\\\\\\"328\\\\\\" data-cropsely1=\\\\\\"0\\\\\\" data-cropsely2=\\\\\\"158\\\\\\" data-fileid=\\\\\\"100019735\\\\\\" data-galleryid=\\\\\\"\\\\\\" data-ratio=\\\\\\"0.46987951807228917\\\\\\" data-s=\\\\\\"300,640\\\\\\" data-src=\\\\\\"https://mmbiz.qpic.cn/mmbiz_png/G7mGZTFciaaXY0iaK1pnuEf36Topyib7JVsias25z0icS1QPtTsaqcj2d0o4tkHsy9cYWq3yqg5R5kemDyD9qS4km1Q/640?wx_fmt=png\\\\\\" data-type=\\\\\\"png\\\\\\" data-w=\\\\\\"830\\\\\\" style=\\\\\\"height: 158px;width: 336px;overflow-wrap: break-word !important;\\\\\\"  /><span style=\\\\\\"max-width: 100%;font-family: mp-quote, -apple-system-font, BlinkMacSystemFont, &quot;Helvetica Neue&quot;, &quot;PingFang SC&quot;, &quot;Hiragino Sans GB&quot;, &quot;Microsoft YaHei UI&quot;, &quot;Microsoft YaHei&quot;, Arial, sans-serif;overflow-wrap: break-word !important;box-sizing: border-box !important;\\\\\\"></span></p><section style=\\\\\\"max-width: 100%;font-family: -apple-system-font, system-ui, &quot;Helvetica Neue&quot;, &quot;PingFang SC&quot;, &quot;Hiragino Sans GB&quot;, &quot;Microsoft YaHei UI&quot;, &quot;Microsoft YaHei&quot;, Arial, sans-serif;letter-spacing: 0.544px;line-height: 1.8;overflow-wrap: break-word !important;box-sizing: border-box !important;\\\\\\"><p style=\\\\\\"max-width: 100%;color: rgb(158, 158, 158);font-size: 15px;overflow-wrap: break-word !important;box-sizing: border-box !important;\\\\\\"><br style=\\\\\\"max-width: 100%;overflow-wrap: break-word !important;box-sizing: border-box !important;\\\\\\"  /></p><p style=\\\\\\"max-width: 100%;color: rgb(158, 158, 158);font-size: 15px;overflow-wrap: break-word !important;box-sizing: border-box !important;\\\\\\"><span style=\\\\\\"max-width: 100%;color: rgb(49, 48, 48);font-size: 14px;overflow-wrap: break-word !important;box-sizing: border-box !important;\\\\\\">请中奖的小可爱</span><br style=\\\\\\"max-width: 100%;overflow-wrap: break-word !important;box-sizing: border-box !important;\\\\\\"  /></p><p style=\\\\\\"max-width: 100%;color: rgb(158, 158, 158);font-size: 15px;overflow-wrap: break-word !important;box-sizing: border-box !important;\\\\\\"><span style=\\\\\\"max-width: 100%;color: rgb(49, 48, 48);font-size: 14px;overflow-wrap: break-word !important;box-sizing: border-box !important;\\\\\\">在2022年1月26日中午12点前</span></p></section><section style=\\\\\\"max-width: 100%;font-family: -apple-system-font, system-ui, &quot;Helvetica Neue&quot;, &quot;PingFang SC&quot;, &quot;Hiragino Sans GB&quot;, &quot;Microsoft YaHei UI&quot;, &quot;Microsoft YaHei&quot;, Arial, sans-serif;letter-spacing: 0.544px;transform: rotate(0deg);overflow-wrap: break-word !important;box-sizing: border-box !important;\\\\\\"><section style=\\\\\\"max-width: 100%;font-size: 14px;color: rgb(49, 48, 48);line-height: 1.8;overflow-wrap: break-word !important;box-sizing: border-box !important;\\\\\\"><p style=\\\\\\"max-width: 100%;overflow-wrap: break-word !important;box-sizing: border-box !important;\\\\\\">扫描下方二维码填写个人信息</p><p style=\\\\\\"max-width: 100%;overflow-wrap: break-word !important;box-sizing: border-box !important;\\\\\\"><br style=\\\\\\"max-width: 100%;overflow-wrap: break-word !important;box-sizing: border-box !important;\\\\\\"  /></p><p style=\\\\\\"max-width: 100%;overflow-wrap: break-word !important;box-sizing: border-box !important;\\\\\\"><img class=\\\\\\"rich_pages wxw-img\\\\\\" data-cropselx1=\\\\\\"0\\\\\\" data-cropselx2=\\\\\\"133\\\\\\" data-cropsely1=\\\\\\"0\\\\\\" data-cropsely2=\\\\\\"133\\\\\\" data-fileid=\\\\\\"100019736\\\\\\" data-galleryid=\\\\\\"\\\\\\" data-ratio=\\\\\\"1\\\\\\" data-s=\\\\\\"300,640\\\\\\" data-src=\\\\\\"https://mmbiz.qpic.cn/mmbiz_png/G7mGZTFciaaXY0iaK1pnuEf36Topyib7JVsia8a7Qsl4ldchPn9t4EwdayoynzrxMj7IZ2YuBSRcGtcChEq4CYmGdQ/640?wx_fmt=png\\\\\\" data-type=\\\\\\"png\\\\\\" data-w=\\\\\\"220\\\\\\" style=\\\\\\"height: 133px;letter-spacing: 0.544px;width: 133px;overflow-wrap: break-word !important;\\\\\\"><br style=\\\\\\"max-width: 100%;overflow-wrap: break-word !important;box-sizing: border-box !important;\\\\\\"  /></p><p style=\\\\\\"max-width: 100%;overflow-wrap: break-word !important;box-sizing: border-box !important;\\\\\\"><br style=\\\\\\"max-width: 100%;overflow-wrap: break-word !important;box-sizing: border-box !important;\\\\\\"  /></p></section></section></section><section style=\\\\\\"max-width: 100%;transform: rotate(0deg);overflow-wrap: break-word !important;box-sizing: border-box !important;\\\\\\"><section style=\\\\\\"max-width: 100%;font-size: 14px;color: rgb(49, 48, 48);text-align: center;line-height: 1.8;overflow-wrap: break-word !important;box-sizing: border-box !important;\\\\\\"><p style=\\\\\\"max-width: 100%;overflow-wrap: break-word !important;box-sizing: border-box !important;\\\\\\">如过期未登记</p><p style=\\\\\\"max-width: 100%;overflow-wrap: break-word !important;box-sizing: border-box !important;\\\\\\">则视为自动放弃领奖</p><p style=\\\\\\"max-width: 100%;overflow-wrap: break-word !important;box-sizing: border-box !important;\\\\\\">奖品将在填写个人信息截止后</p><p style=\\\\\\"max-width: 100%;overflow-wrap: break-word !important;box-sizing: border-box !important;\\\\\\">3～5个工作日发出<br style=\\\\\\"max-width: 100%;overflow-wrap: break-word !important;box-sizing: border-box !important;\\\\\\"  /></p><p style=\\\\\\"max-width: 100%;overflow-wrap: break-word !important;box-sizing: border-box !important;\\\\\\"><br style=\\\\\\"max-width: 100%;overflow-wrap: break-word !important;box-sizing: border-box !important;\\\\\\"  /></p></section></section></section></section></section></section></section></section><p style=\\\\\\"max-width: 100%;white-space: normal;overflow-wrap: break-word !important;box-sizing: border-box !important;\\\\\\"><br  /></p>\\",\\"url\\":\\"http://mp.weixin.qq.com/s?__biz=Mzg4NjMzODcyNw==&mid=2247488855&idx=1&sn=0904a9c1def84e4a83e87ee013313a20&chksm=cf9a709ff8edf989d1774b58b22f6d2cc8ba6e6a2285245fd71f2583f963893ea4d5e8ea96f2#rd\\"}"}],"menuName":"回复“6”即可领取你的专属福利优惠~~","id":"1197646957"}],"tailContentTxt":"<div style=\\"word-break:break-all\\" index=\\"1\\"><img class=\\"emoji-icon\\" src=\\"https://res.wx.qq.com/mpres/htmledition/images/icon/emotion/63.gif\\" alt=\\"[玫瑰]\\"/></div>","id":"1197117007","headContent":"{\\"content\\":[{\\"type\\":\\"text\\",\\"value\\":\\"Hi，欢迎来到官网！\\",\\"line_num\\":1},{\\"type\\":\\"text\\",\\"value\\":\\"出口世界各国专属品牌，秉承高效、极致的护肤理念，“专注无添加，没得更无暇”。\\",\\"line_num\\":2},{\\"type\\":\\"text\\",\\"value\\":\\"戳蓝字了解：\\",\\"line_num\\":3},{\\"type\\":\\"emoji\\",\\"value\\":\\"[玫瑰]\\",\\"line_num\\":4},{\\"type\\":\\"hyperlink\\",\\"name\\":\\"link.圈粉百万\\",\\"value\\":\\"https://h5.youzan.com/v2/showcase/mpnews?alias=YZG8oqcoMd&spm=m943830608339009536.subscribe&yz_from=yz_wx_reply\\",\\"line_num\\":4},{\\"type\\":\\"emoji\\",\\"value\\":\\"[玫瑰]\\",\\"line_num\\":5},{\\"type\\":\\"hyperlink\\",\\"name\\":\\"link.揭秘无添加\\",\\"value\\":\\"https://h5.youzan.com/v2/showcase/mpnews?alias=YZG8oqcoMd&spm=m943830608339009536.subscribe&yz_from=yz_wx_reply\\",\\"line_num\\":5},{\\"type\\":\\"text\\",\\"value\\":\\"点击【每日签到】，还能领取积分，兑换超子好礼！\\",\\"line_num\\":7}],\\"color\\":\\"#000\\"}","tailContent":"{\\"content\\":[{\\"type\\":\\"emoji\\",\\"value\\":\\"[玫瑰]\\",\\"line_num\\":1}],\\"color\\":\\"#000\\"}","type":"msgmenu"}',
+    groupId: 0,
+    projectId: 71,
+    wechatId: 50,
+    channelId: null,
+    wechatMediaId: null,
+    picType: null,
+    userId: 265,
+    userName: "范雪剑",
+    createTime: "2022-03-25 16:43:28",
+    updateTime: "2022-03-25 16:43:52"
+  },
+  {
+    id: 208,
+    contentType: "msgmenu",
+    contentName: "肤质测评",
+    contentDetail:
+      '{"headContentTxt":"<div style=\\"word-break:break-all\\" index=\\"1\\">尊敬的客户，您好！诚挚邀请您参加以下调研，为您改善肤质<img class=\\"emoji-icon\\" src=\\"https://res.wx.qq.com/mpres/htmledition/images/icon/emotion/63.gif\\" alt=\\"[玫瑰]\\"/></div><div style=\\"word-break:break-all\\" index=\\"2\\">【可以根据相应的数字回复，为您分析推荐改善方法~~】</div><div style=\\"word-break:break-all\\" index=\\"3\\">【1】斑点、色斑</div><div style=\\"word-break:break-all\\" index=\\"4\\">【2】痘痘</div><div style=\\"word-break:break-all\\" index=\\"5\\">【3】皱纹、松弛</div><div style=\\"word-break:break-all\\" index=\\"6\\">【4】毛孔粗大</div><div style=\\"word-break:break-all\\" index=\\"7\\">【5】暗黄</div>","isVugiFlag":true,"nextLevelMenu":[{"nextLevelMenu":[{"isVugiFlag":false,"id":"11959236090","type":"text","content":"{\\"name\\":\\"会员优惠券活动\\",\\"type\\":\\"text\\",\\"content\\":\\"{\\\\\\"content\\\\\\":[{\\\\\\"type\\\\\\":\\\\\\"text\\\\\\",\\\\\\"value\\\\\\":\\\\\\"【卓尔数科】会员您好，会员专属大额满优惠券已到账，享受更多优质服务http://e9q.cn/WpY4GP 退订TD\\\\\\",\\\\\\"line_num\\\\\\":1}],\\\\\\"color\\\\\\":\\\\\\"#000\\\\\\"}\\"}"}],"menuName":"1","id":"1195859098"}],"tailContentTxt":"<div style=\\"word-break:break-all\\" index=\\"1\\">感谢您的配合！</div>","id":"1195681517","headContent":"{\\"content\\":[{\\"type\\":\\"text\\",\\"value\\":\\"尊敬的客户，您好！诚挚邀请您参加以下调研，为您改善肤质\\",\\"line_num\\":1},{\\"type\\":\\"emoji\\",\\"value\\":\\"[玫瑰]\\",\\"line_num\\":1},{\\"type\\":\\"text\\",\\"value\\":\\"【可以根据相应的数字回复，为您分析推荐改善方法~~】\\",\\"line_num\\":2},{\\"type\\":\\"text\\",\\"value\\":\\"【1】斑点、色斑\\",\\"line_num\\":3},{\\"type\\":\\"text\\",\\"value\\":\\"【2】痘痘\\",\\"line_num\\":4},{\\"type\\":\\"text\\",\\"value\\":\\"【3】皱纹、松弛\\",\\"line_num\\":5},{\\"type\\":\\"text\\",\\"value\\":\\"【4】毛孔粗大\\",\\"line_num\\":6},{\\"type\\":\\"text\\",\\"value\\":\\"【5】暗黄\\",\\"line_num\\":7}],\\"color\\":\\"#000\\"}","tailContent":"{\\"content\\":[{\\"type\\":\\"text\\",\\"value\\":\\"感谢您的配合！\\",\\"line_num\\":1}],\\"color\\":\\"#000\\"}","type":"msgmenu"}',
+    groupId: 0,
+    projectId: 71,
+    wechatId: 50,
+    channelId: null,
+    wechatMediaId: null,
+    picType: null,
+    userId: 265,
+    userName: "范雪剑",
+    createTime: "2022-03-25 16:12:03",
+    updateTime: "2022-03-25 16:31:47"
+  }
+]
+
+export const mpnewsList = [
+  {
+    id: 460,
+    contentType: "mpnews",
+    contentName: "aaaaaaa",
+    contentDetail:
+      '{"picUrl":"zall-commerce/CONTENT_CENTER/ol3m8fu35ltlgwp.jpeg","author":"罗刚明","articleId":"al_B_ugidZIi9d8wDuV1j7XqD18cocXMcVh4wzK-Qu8EWhRnOFTU4gLnmpX9l6lF","name":"aaaaaaa","digest":"aaaaaaaaaaaa","type":"mpnews","title":"aaaaaaa","content":"<p>aaaaaaaaaaaa<br  /></p>","url":"http://mp.weixin.qq.com/s?__biz=Mzg3MTYyMjUyOQ==&mid=2247484269&idx=1&sn=ef5b36aad5c737141e27e9b7852dc742&chksm=cefaf183f98d7895ac195ecd7c44078919406f19b82665166bba7b95ee525e126fbd93bd5abb#rd"}',
+    groupId: 0,
+    projectId: 71,
+    wechatId: 50,
+    channelId: null,
+    wechatMediaId: "al_B_ugidZIi9d8wDuV1j7XqD18cocXMcVh4wzK-Qu8EWhRnOFTU4gLnmpX9l6lF",
+    picType: null,
+    userId: 255,
+    userName: "刘爽",
+    createTime: null,
+    updateTime: "2022-08-07 13:46:32"
+  },
+  {
+    id: 461,
+    contentType: "mpnews",
+    contentName: "图+文字",
+    contentDetail:
+      '{"picUrl":"zall-commerce/CONTENT_CENTER/3vvda6d9bohjgu7.jpeg","author":"赵世豪","articleId":"al_B_ugidZIi9d8wDuV1jxXKy3FIK8jpT5Gwi2-e3u2G6AF0ewh_o4tSMOkNDi-p","name":"图+文字","digest":"君不见黄河之水天上来，奔流到海不复回。君不见高堂明镜悲白发，朝如青丝暮成雪。人生得意须尽欢，莫使金樽空对月。","type":"mpnews","title":"图+文字","content":"<p>君不见黄河之水天上来，奔流到海不复回。</p><p>君不见高堂明镜悲白发，朝如青丝暮成雪。</p><p>人生得意须尽欢，莫使金樽空对月。</p><p>天生我材必有用，千金散尽还复来。</p><p>烹羊宰牛且为乐，会须一饮三百杯。</p><p>岑夫子，丹丘生，将进酒，君莫停。</p><p>与君歌一曲，请君为我侧耳听。</p><p>钟鼓馔玉不足贵，但愿长醉不愿醒。</p><p>古来圣贤皆寂寞，惟有饮者留其名。</p><p>陈王昔时宴平乐，斗酒十千恣欢谑。</p><p>主人何为言少钱，径须沽取对君酌。</p><p>五花马，千金裘，呼儿将出换美酒，与尔同销万古愁</p>","url":"http://mp.weixin.qq.com/s?__biz=Mzg3MTYyMjUyOQ==&mid=2247484265&idx=1&sn=cbe714df9b961d4dcb20df2c48faacc5&chksm=cefaf187f98d789136a69effbdb19dd887f44fe2b69a2e681745f9f1627ee837fa80ad5c7aad#rd"}',
+    groupId: 0,
+    projectId: 71,
+    wechatId: 50,
+    channelId: null,
+    wechatMediaId: "al_B_ugidZIi9d8wDuV1jxXKy3FIK8jpT5Gwi2-e3u2G6AF0ewh_o4tSMOkNDi-p",
+    picType: null,
+    userId: 255,
+    userName: "刘爽",
+    createTime: null,
+    updateTime: "2022-08-07 13:46:32"
+  },
+  {
+    id: 462,
+    contentType: "mpnews",
+    contentName: "有图文",
+    contentDetail:
+      '{"picUrl":"zall-commerce/CONTENT_CENTER/jihqtn44nea0s4s.jpeg","author":"罗刚明","articleId":"al_B_ugidZIi9d8wDuV1j1aY-RxeGyhP0A2e4M0CwyakEptYEGmiDg8DYB5Vv_KP","name":"有图文","digest":"这个有图片","type":"mpnews","title":"有图文","content":"<p>这个有图片<br  /></p>","url":"http://mp.weixin.qq.com/s?__biz=Mzg3MTYyMjUyOQ==&mid=2247484247&idx=1&sn=c164043227b741c3f4838d4dbeec0c41&chksm=cefaf1b9f98d78afe6946035a31f8be571b9f3f4e6363501dafce845e20e853691c61594078b#rd"}',
+    groupId: 0,
+    projectId: 71,
+    wechatId: 50,
+    channelId: null,
+    wechatMediaId: "al_B_ugidZIi9d8wDuV1j1aY-RxeGyhP0A2e4M0CwyakEptYEGmiDg8DYB5Vv_KP",
+    picType: null,
+    userId: 255,
+    userName: "刘爽",
+    createTime: null,
+    updateTime: "2022-08-07 13:46:32"
+  },
+  {
+    id: 453,
+    contentType: "mpnews",
+    contentName: "美女图文",
+    contentDetail:
+      '{"picUrl":"zall-commerce/CONTENT_CENTER/6npekwkntighe24.jpeg","author":"","articleId":"al_B_ugidZIi9d8wDuV1j6kaFpKB4JMyG0qZHYEcZkDviGcw04dLR5CCESgATYSb","name":"美女图文","digest":"美女图文","type":"mpnews","title":"美女图文","content":"","url":"http://mp.weixin.qq.com/s?__biz=Mzg3MTYyMjUyOQ==&mid=2247484306&idx=1&sn=601138ad2ee7ac4ee33cdc14f4b52432&chksm=cefaf17cf98d786a8f95a930bf23705b81bbf6100773f0cda66c4e2cdc100cc9c10cd6a98fd6#rd"}',
+    groupId: 0,
+    projectId: 71,
+    wechatId: 50,
+    channelId: null,
+    wechatMediaId: "al_B_ugidZIi9d8wDuV1j6kaFpKB4JMyG0qZHYEcZkDviGcw04dLR5CCESgATYSb",
+    picType: null,
+    userId: 255,
+    userName: "刘爽",
+    createTime: null,
+    updateTime: "2022-08-07 13:46:31"
+  },
+  {
+    id: 454,
+    contentType: "mpnews",
+    contentName: "图文图文+图文",
+    contentDetail:
+      '{"picUrl":"zall-commerce/CONTENT_CENTER/sd1rag451cewa2o.jpeg","author":"","articleId":"al_B_ugidZIi9d8wDuV1jwxB1aoVbH3NdX2bA7RMebN3tEdKjH-fkVKt6H-kkOXQ","name":"图文图文+图文","digest":"图片+文字","type":"mpnews","title":"图文图文+图文","content":"<p>图片+文字<br  /></p>","url":"http://mp.weixin.qq.com/s?__biz=Mzg3MTYyMjUyOQ==&mid=2247484304&idx=1&sn=15a1afdb3e5bd48f145d04011488b349&chksm=cefaf17ef98d78686739e123bb747cea437b85fc4288b4aa1746abaeecc87db72df3cb343449#rd"}',
+    groupId: 0,
+    projectId: 71,
+    wechatId: 50,
+    channelId: null,
+    wechatMediaId: "al_B_ugidZIi9d8wDuV1jwxB1aoVbH3NdX2bA7RMebN3tEdKjH-fkVKt6H-kkOXQ",
+    picType: null,
+    userId: 255,
+    userName: "刘爽",
+    createTime: null,
+    updateTime: "2022-08-07 13:46:31"
+  },
+  {
+    id: 455,
+    contentType: "mpnews",
+    contentName: "图片+文字",
+    contentDetail:
+      '{"picUrl":"zall-commerce/CONTENT_CENTER/0pxylpebxlm627s.jpeg","author":"","articleId":"al_B_ugidZIi9d8wDuV1j4Pmt27TZwKzq_Bk20f2CHjDgvs3umvHT11gsZxsKN-3","name":"图片+文字","digest":"君不见黄河之水天上来，奔流到海不复回。君不见高堂明镜悲白发，朝如青丝暮成雪。人生得意须尽欢，莫使金樽空对月。","type":"mpnews","title":"图片+文字","content":"<p>君不见黄河之水天上来，奔流到海不复回。</p><p>君不见高堂明镜悲白发，朝如青丝暮成雪。</p><p>人生得意须尽欢，莫使金樽空对月。</p><p>天生我材必有用，千金散尽还复来。</p><p>烹羊宰牛且为乐，会须一饮三百杯。</p><p>岑夫子，丹丘生，将进酒，君莫停。</p><p>与君歌一曲，请君为我侧耳听。</p><p>钟鼓馔玉不足贵，但愿长醉不愿醒。</p><p>古来圣贤皆寂寞，惟有饮者留其名。</p><p>陈王昔时宴平乐，斗酒十千恣欢谑。</p><p>主人何为言少钱，径须沽取对君酌。</p><p>五花马，千金裘，呼儿将出换美酒，与尔同销万古愁</p>","url":"http://mp.weixin.qq.com/s?__biz=Mzg3MTYyMjUyOQ==&mid=2247484296&idx=1&sn=83f50acbece06a861e6eca7c35d4f243&chksm=cefaf166f98d78704b6f3f24348b847e62ffd00cbe497e82d0eef3d171ce100fabeb6a3e341b#rd"}',
+    groupId: 0,
+    projectId: 71,
+    wechatId: 50,
+    channelId: null,
+    wechatMediaId: "al_B_ugidZIi9d8wDuV1j4Pmt27TZwKzq_Bk20f2CHjDgvs3umvHT11gsZxsKN-3",
+    picType: null,
+    userId: 255,
+    userName: "刘爽",
+    createTime: null,
+    updateTime: "2022-08-07 13:46:31"
+  },
+  {
+    id: 456,
+    contentType: "mpnews",
+    contentName: "同步过来的图片",
+    contentDetail:
+      '{"picUrl":"zall-commerce/CONTENT_CENTER/qdn36ellkjmhggs.jpeg","author":"","articleId":"al_B_ugidZIi9d8wDuV1jzS4nqAq2Cc2TTKoua0MXzCR6fFJ_x-BmfOQ-xgIVc2P","name":"同步过来的图片","digest":"同步过来的图片","type":"mpnews","title":"同步过来的图片","content":"","url":"http://mp.weixin.qq.com/s?__biz=Mzg3MTYyMjUyOQ==&mid=2247484277&idx=1&sn=e9e7e8c0ae63250aa0b4caeaad9873f4&chksm=cefaf19bf98d788d2813cd20b99dc9a94e81d5fbd74ccecf2f8fed0aa5ca67a9f03034d20e3a#rd"}',
+    groupId: 0,
+    projectId: 71,
+    wechatId: 50,
+    channelId: null,
+    wechatMediaId: "al_B_ugidZIi9d8wDuV1jzS4nqAq2Cc2TTKoua0MXzCR6fFJ_x-BmfOQ-xgIVc2P",
+    picType: null,
+    userId: 255,
+    userName: "刘爽",
+    createTime: null,
+    updateTime: "2022-08-07 13:46:31"
+  },
+  {
+    id: 457,
+    contentType: "mpnews",
+    contentName: "zsh测试音频同步",
+    contentDetail:
+      '{"author":"","articleId":"al_B_ugidZIi9d8wDuV1j1QiAo-pRdXHwqEiXRh_QynFVn8UUw8jzj_12j9xUmIN","name":"zsh测试音频同步","digest":"","type":"mpnews","title":"zsh测试音频同步","content":"","url":"http://mp.weixin.qq.com/s?__biz=Mzg3MTYyMjUyOQ==&mid=2247484275&idx=1&sn=f06e642e9aa26e481e420e713fbc622a&chksm=cefaf19df98d788b91a2fb94c9def62ca9186a5c9e8c33ff2cc9076e09d6af1a83b22cdb2a10#rd"}',
+    groupId: 0,
+    projectId: 71,
+    wechatId: 50,
+    channelId: null,
+    wechatMediaId: "al_B_ugidZIi9d8wDuV1j1QiAo-pRdXHwqEiXRh_QynFVn8UUw8jzj_12j9xUmIN",
+    picType: null,
+    userId: 255,
+    userName: "刘爽",
+    createTime: null,
+    updateTime: "2022-08-07 13:46:31"
+  },
+  {
+    id: 458,
+    contentType: "mpnews",
+    contentName: "同步过来的视频",
+    contentDetail:
+      '{"picUrl":"zall-commerce/CONTENT_CENTER/iebna2dqgy8jj7n.jpeg","author":"","articleId":"al_B_ugidZIi9d8wDuV1j9OKCARLg4QVznbgrk_ulEHzIkIqiWMUQt1j8zfDETyW","name":"同步过来的视频","digest":"","type":"mpnews","title":"同步过来的视频","content":"","url":"http://mp.weixin.qq.com/s?__biz=Mzg3MTYyMjUyOQ==&mid=2247484272&idx=1&sn=d41ad9bbce267c0bfe20ffbe29f9f380&chksm=cefaf19ef98d7888dfd1c9e32ba5a52ed85c79b8da257790850a12847a69d572f25365e9e1ab#rd"}',
+    groupId: 0,
+    projectId: 71,
+    wechatId: 50,
+    channelId: null,
+    wechatMediaId: "al_B_ugidZIi9d8wDuV1j9OKCARLg4QVznbgrk_ulEHzIkIqiWMUQt1j8zfDETyW",
+    picType: null,
+    userId: 255,
+    userName: "刘爽",
+    createTime: null,
+    updateTime: "2022-08-07 13:46:31"
+  },
+  {
+    id: 459,
+    contentType: "mpnews",
+    contentName: "君不见黄河之水天上来，奔流到海不复回。君",
+    contentDetail:
+      '{"author":"","articleId":"al_B_ugidZIi9d8wDuV1j424lcMLaPtPLyxvO68K_n8gMqhImalarExTtYhSDVfS","name":"君不见黄河之水天上来，奔流到海不复回。君","digest":"","type":"mpnews","title":"君不见黄河之水天上来，奔流到海不复回。君不见高堂明镜悲白发，朝如青丝暮成雪。人生得意须尽欢，莫使金樽空对月。天生我材必有用，千金散尽还复来。烹羊宰牛且为乐，会须一饮三百杯。岑夫子，丹丘生，将进酒，君莫停。与君歌一曲，请君为我侧耳听。钟鼓馔玉不足贵，但愿长醉不愿醒。古来圣贤皆寂寞，惟有饮者留其名。陈王昔时宴平乐，斗酒十千恣欢谑。主人何为言少钱，径须沽取对君酌。五花马，千金裘，呼儿将出换美酒，与尔同销万古愁","content":"君不见黄河之水天上来，奔流到海不复回。君不见高堂明镜悲白发，朝如青丝暮成雪。人生得意须尽欢，莫使金樽空对月。天生我材必有用，千金散尽还复来。烹羊宰牛且为乐，会须一饮三百杯。岑夫子，丹丘生，将进酒，君莫停。与君歌一曲，请君为我侧耳听。钟鼓馔玉不足贵，但愿长醉不愿醒。古来圣贤皆寂寞，惟有饮者留其名。陈王昔时宴平乐，斗酒十千恣欢谑。主人何为言少钱，径须沽取对君酌。五花马，千金裘，呼儿将出换美酒，与尔同销万古愁","url":"http://mp.weixin.qq.com/s?__biz=Mzg3MTYyMjUyOQ==&mid=2247484270&idx=1&sn=b55de0370b2713fffd0ef953d4053a5e&chksm=cefaf180f98d78961bec88ae4539d02c7ff1ff9bc95e9811cb3c70ceb024dd95941750f10727#rd"}',
+    groupId: 0,
+    projectId: 71,
+    wechatId: 50,
+    channelId: null,
+    wechatMediaId: "al_B_ugidZIi9d8wDuV1j424lcMLaPtPLyxvO68K_n8gMqhImalarExTtYhSDVfS",
+    picType: null,
+    userId: 255,
+    userName: "刘爽",
+    createTime: null,
+    updateTime: "2022-08-07 13:46:31"
+  },
+  {
+    id: 205,
+    contentType: "mpnews",
+    contentName: "第2期留言中奖名单",
+    contentDetail:
+      '{"picUrl":"zall-commerce/CONTENT_CENTER/cb34g6ab82ao0t5.jpeg","author":"","articleId":"QKLfTE-No1by9IJ7vk97XVm7aoSCUOby8RsyqN2TlYZ03CBACA4MTHwSDGBq9u4a","name":"第2期留言中奖名单","digest":"再次恭喜3位获奖的小可爱～","type":"mpnews","title":"第2期留言中奖名单","content":"<section style=\\"margin-top: 10px;margin-bottom: 10px;max-width: 100%;white-space: normal;text-align: center;overflow-wrap: break-word !important;box-sizing: border-box !important;\\" data-mpa-powered-by=\\"yiban.io\\"><section style=\\"max-width: 100%;display: inline-block;width: 370px;vertical-align: top;overflow-wrap: break-word !important;box-sizing: border-box !important;\\"><section style=\\"max-width: 100%;overflow-wrap: break-word !important;box-sizing: border-box !important;\\"><section style=\\"padding-right: 3px;padding-left: 3px;max-width: 100%;display: inline-block;vertical-align: bottom;width: 29.5938px;overflow-wrap: break-word !important;box-sizing: border-box !important;\\"><section style=\\"max-width: 100%;transform: translate3d(10px, 0px, 0px);overflow-wrap: break-word !important;box-sizing: border-box !important;\\"><section style=\\"max-width: 100%;vertical-align: middle;display: inline-block;line-height: 0;width: 23.5938px;overflow-wrap: break-word !important;box-sizing: border-box !important;\\"><img class=\\"rich_pages wxw-img\\" data-fileid=\\"100019733\\" data-ratio=\\"2.665\\" data-src=\\"https://mmbiz.qpic.cn/mmbiz_png/icXzy2ibdAq5etjY3ZkFp4HrhP0nWQWWJWBBFl1o6uuwjyzSJMUYLX3yT1ibBJSBjUD5zAHVneGKMZaic80GkMsCmg/640?wx_fmt=png\\" data-type=\\"png\\" data-w=\\"200\\" style=\\"width: 23.5938px;vertical-align: middle;box-sizing: border-box;overflow-wrap: break-word !important;\\"  /></section></section></section><section style=\\"max-width: 100%;display: inline-block;vertical-align: bottom;width: 340.391px;overflow-wrap: break-word !important;box-sizing: border-box !important;\\"><section style=\\"margin-bottom: -5px;max-width: 100%;text-align: right;overflow-wrap: break-word !important;box-sizing: border-box !important;\\"><section style=\\"max-width: 100%;vertical-align: middle;display: inline-block;line-height: 0;width: 102.109px;overflow-wrap: break-word !important;box-sizing: border-box !important;\\"><img data-ratio=\\"0.2988505747126437\\" data-src=\\"https://mmbiz.qpic.cn/mmbiz_gif/icXzy2ibdAq5etjY3ZkFp4HrhP0nWQWWJW5icUr9pPWoF2gy9ZuLkofz7gTYe6DyRmfxcP4CvwSgPSVbDzKCcd1Tw/640?wx_fmt=gif\\" data-type=\\"gif\\" data-w=\\"435\\" style=\\"width: 102.109px;vertical-align: middle;box-sizing: border-box;overflow-wrap: break-word !important;\\" data-fileid=\\"100019732\\"  /></section></section><section style=\\"margin-top: 10px;margin-bottom: -5px;max-width: 100%;transform: translate3d(-1px, 0px, 0px);overflow-wrap: break-word !important;box-sizing: border-box !important;\\"><section style=\\"max-width: 100%;vertical-align: middle;display: inline-block;line-height: 0;width: 27.2188px;overflow-wrap: break-word !important;box-sizing: border-box !important;\\"><img data-ratio=\\"1.0338709677419355\\" data-src=\\"https://mmbiz.qpic.cn/mmbiz_gif/icXzy2ibdAq5etjY3ZkFp4HrhP0nWQWWJWtKjKeG0aiazkwA8ZzYXAZ4Iz87RN2zNtVibU6FA8lP0aRsDO2Ikhww9w/640?wx_fmt=gif\\" data-type=\\"gif\\" data-w=\\"620\\" style=\\"width: 27.2188px;vertical-align: middle;box-sizing: border-box;overflow-wrap: break-word !important;\\" data-fileid=\\"100019734\\"  /></section></section></section></section><section style=\\"max-width: 100%;overflow-wrap: break-word !important;box-sizing: border-box !important;\\"><section style=\\"padding: 5px 10px;max-width: 100%;display: inline-block;vertical-align: top;background-color: rgb(179, 229, 252);border-width: 0px;border-radius: 5px;border-style: none;border-color: rgb(62, 62, 62);width: 370px;overflow-wrap: break-word !important;box-sizing: border-box !important;\\"><section style=\\"max-width: 100%;color: rgb(96, 125, 139);overflow-wrap: break-word !important;box-sizing: border-box !important;\\"><p style=\\"max-width: 100%;overflow-wrap: break-word !important;box-sizing: border-box !important;\\"><strong style=\\"max-width: 100%;overflow-wrap: break-word !important;box-sizing: border-box !important;\\">第2期留言互动中奖名单</strong></p></section></section></section></section></section><p style=\\"margin-top: 5px;margin-bottom: 1em;max-width: 100%;white-space: normal;overflow-wrap: break-word !important;box-sizing: border-box !important;\\"><br style=\\"max-width: 100%;overflow-wrap: break-word !important;box-sizing: border-box !important;\\"  /></p><section style=\\"margin-top: 10px;margin-bottom: 10px;max-width: 100%;white-space: normal;text-align: center;overflow-wrap: break-word !important;box-sizing: border-box !important;\\"><section style=\\"padding: 5px;max-width: 100%;display: inline-block;width: 370px;vertical-align: top;background-color: rgb(187, 222, 251);overflow-wrap: break-word !important;box-sizing: border-box !important;\\"><section style=\\"max-width: 100%;text-align: justify;overflow-wrap: break-word !important;box-sizing: border-box !important;\\"><p style=\\"max-width: 100%;overflow-wrap: break-word !important;box-sizing: border-box !important;\\"><br style=\\"max-width: 100%;overflow-wrap: break-word !important;box-sizing: border-box !important;\\"  /></p></section><section style=\\"max-width: 100%;text-align: justify;overflow-wrap: break-word !important;box-sizing: border-box !important;\\"><section style=\\"padding: 5px;max-width: 100%;display: inline-block;width: 360px;vertical-align: top;border-style: dashed;border-width: 1px;border-radius: 0px;border-color: rgb(255, 255, 255);overflow-wrap: break-word !important;box-sizing: border-box !important;\\"><section style=\\"max-width: 100%;overflow-wrap: break-word !important;box-sizing: border-box !important;\\"><section style=\\"padding: 10px;max-width: 100%;display: inline-block;width: 348px;vertical-align: top;background-color: rgb(255, 255, 255);overflow-wrap: break-word !important;box-sizing: border-box !important;\\"><section style=\\"max-width: 100%;text-align: center;line-height: 1.8;overflow-wrap: break-word !important;box-sizing: border-box !important;\\"><p style=\\"max-width: 100%;color: rgb(158, 158, 158);font-size: 15px;overflow-wrap: break-word !important;box-sizing: border-box !important;\\"><br style=\\"max-width: 100%;overflow-wrap: break-word !important;box-sizing: border-box !important;\\"  /></p><p style=\\"max-width: 100%;color: rgb(158, 158, 158);font-size: 15px;overflow-wrap: break-word !important;box-sizing: border-box !important;\\"><span style=\\"max-width: 100%;color: rgb(63, 57, 56);overflow-wrap: break-word !important;box-sizing: border-box !important;\\">恭喜以下3位小可爱</span><span style=\\"font-family: mp-quote, -apple-system-font, BlinkMacSystemFont, &quot;Helvetica Neue&quot;, &quot;PingFang SC&quot;, &quot;Hiragino Sans GB&quot;, &quot;Microsoft YaHei UI&quot;, &quot;Microsoft YaHei&quot;, Arial, sans-serif;color: rgb(63, 57, 56);\\">可各获</span></p><p style=\\"max-width: 100%;color: rgb(158, 158, 158);font-size: 15px;overflow-wrap: break-word !important;box-sizing: border-box !important;\\"><span style=\\"font-family: mp-quote, -apple-system-font, BlinkMacSystemFont, &quot;Helvetica Neue&quot;, &quot;PingFang SC&quot;, &quot;Hiragino Sans GB&quot;, &quot;Microsoft YaHei UI&quot;, &quot;Microsoft YaHei&quot;, Arial, sans-serif;color: rgb(84, 141, 212);\\">【 珀莱雅官方商城在售任意单品 】1支</span></p><p style=\\"max-width: 100%;color: rgb(158, 158, 158);font-size: 15px;overflow-wrap: break-word !important;box-sizing: border-box !important;\\"><span style=\\"max-width: 100%;font-family: mp-quote, -apple-system-font, BlinkMacSystemFont, &quot;Helvetica Neue&quot;, &quot;PingFang SC&quot;, &quot;Hiragino Sans GB&quot;, &quot;Microsoft YaHei UI&quot;, &quot;Microsoft YaHei&quot;, Arial, sans-serif;color: rgb(84, 141, 212);overflow-wrap: break-word !important;box-sizing: border-box !important;\\"></span></p><p style=\\"max-width: 100%;color: rgb(158, 158, 158);font-size: 15px;overflow-wrap: break-word !important;box-sizing: border-box !important;\\"><span style=\\"max-width: 100%;color: rgb(84, 141, 212);font-family: mp-quote, -apple-system-font, BlinkMacSystemFont, &quot;Helvetica Neue&quot;, &quot;PingFang SC&quot;, &quot;Hiragino Sans GB&quot;, &quot;Microsoft YaHei UI&quot;, &quot;Microsoft YaHei&quot;, Arial, sans-serif;font-size: 14px;overflow-wrap: break-word !important;box-sizing: border-box !important;\\"></span></p><p style=\\"max-width: 100%;overflow-wrap: break-word !important;box-sizing: border-box !important;\\"><img class=\\"rich_pages wxw-img\\" data-cropselx1=\\"0\\" data-cropselx2=\\"328\\" data-cropsely1=\\"0\\" data-cropsely2=\\"158\\" data-fileid=\\"100019735\\" data-galleryid=\\"\\" data-ratio=\\"0.46987951807228917\\" data-s=\\"300,640\\" data-src=\\"https://mmbiz.qpic.cn/mmbiz_png/G7mGZTFciaaXY0iaK1pnuEf36Topyib7JVsias25z0icS1QPtTsaqcj2d0o4tkHsy9cYWq3yqg5R5kemDyD9qS4km1Q/640?wx_fmt=png\\" data-type=\\"png\\" data-w=\\"830\\" style=\\"height: 158px;width: 336px;overflow-wrap: break-word !important;\\"  /><span style=\\"max-width: 100%;font-family: mp-quote, -apple-system-font, BlinkMacSystemFont, &quot;Helvetica Neue&quot;, &quot;PingFang SC&quot;, &quot;Hiragino Sans GB&quot;, &quot;Microsoft YaHei UI&quot;, &quot;Microsoft YaHei&quot;, Arial, sans-serif;overflow-wrap: break-word !important;box-sizing: border-box !important;\\"></span></p><section style=\\"max-width: 100%;font-family: -apple-system-font, system-ui, &quot;Helvetica Neue&quot;, &quot;PingFang SC&quot;, &quot;Hiragino Sans GB&quot;, &quot;Microsoft YaHei UI&quot;, &quot;Microsoft YaHei&quot;, Arial, sans-serif;letter-spacing: 0.544px;line-height: 1.8;overflow-wrap: break-word !important;box-sizing: border-box !important;\\"><p style=\\"max-width: 100%;color: rgb(158, 158, 158);font-size: 15px;overflow-wrap: break-word !important;box-sizing: border-box !important;\\"><br style=\\"max-width: 100%;overflow-wrap: break-word !important;box-sizing: border-box !important;\\"  /></p><p style=\\"max-width: 100%;color: rgb(158, 158, 158);font-size: 15px;overflow-wrap: break-word !important;box-sizing: border-box !important;\\"><span style=\\"max-width: 100%;color: rgb(49, 48, 48);font-size: 14px;overflow-wrap: break-word !important;box-sizing: border-box !important;\\">请中奖的小可爱</span><br style=\\"max-width: 100%;overflow-wrap: break-word !important;box-sizing: border-box !important;\\"  /></p><p style=\\"max-width: 100%;color: rgb(158, 158, 158);font-size: 15px;overflow-wrap: break-word !important;box-sizing: border-box !important;\\"><span style=\\"max-width: 100%;color: rgb(49, 48, 48);font-size: 14px;overflow-wrap: break-word !important;box-sizing: border-box !important;\\">在2022年1月26日中午12点前</span></p></section><section style=\\"max-width: 100%;font-family: -apple-system-font, system-ui, &quot;Helvetica Neue&quot;, &quot;PingFang SC&quot;, &quot;Hiragino Sans GB&quot;, &quot;Microsoft YaHei UI&quot;, &quot;Microsoft YaHei&quot;, Arial, sans-serif;letter-spacing: 0.544px;transform: rotate(0deg);overflow-wrap: break-word !important;box-sizing: border-box !important;\\"><section style=\\"max-width: 100%;font-size: 14px;color: rgb(49, 48, 48);line-height: 1.8;overflow-wrap: break-word !important;box-sizing: border-box !important;\\"><p style=\\"max-width: 100%;overflow-wrap: break-word !important;box-sizing: border-box !important;\\">扫描下方二维码填写个人信息</p><p style=\\"max-width: 100%;overflow-wrap: break-word !important;box-sizing: border-box !important;\\"><br style=\\"max-width: 100%;overflow-wrap: break-word !important;box-sizing: border-box !important;\\"  /></p><p style=\\"max-width: 100%;overflow-wrap: break-word !important;box-sizing: border-box !important;\\"><img class=\\"rich_pages wxw-img\\" data-cropselx1=\\"0\\" data-cropselx2=\\"133\\" data-cropsely1=\\"0\\" data-cropsely2=\\"133\\" data-fileid=\\"100019736\\" data-galleryid=\\"\\" data-ratio=\\"1\\" data-s=\\"300,640\\" data-src=\\"https://mmbiz.qpic.cn/mmbiz_png/G7mGZTFciaaXY0iaK1pnuEf36Topyib7JVsia8a7Qsl4ldchPn9t4EwdayoynzrxMj7IZ2YuBSRcGtcChEq4CYmGdQ/640?wx_fmt=png\\" data-type=\\"png\\" data-w=\\"220\\" style=\\"height: 133px;letter-spacing: 0.544px;width: 133px;overflow-wrap: break-word !important;\\"><br style=\\"max-width: 100%;overflow-wrap: break-word !important;box-sizing: border-box !important;\\"  /></p><p style=\\"max-width: 100%;overflow-wrap: break-word !important;box-sizing: border-box !important;\\"><br style=\\"max-width: 100%;overflow-wrap: break-word !important;box-sizing: border-box !important;\\"  /></p></section></section></section><section style=\\"max-width: 100%;transform: rotate(0deg);overflow-wrap: break-word !important;box-sizing: border-box !important;\\"><section style=\\"max-width: 100%;font-size: 14px;color: rgb(49, 48, 48);text-align: center;line-height: 1.8;overflow-wrap: break-word !important;box-sizing: border-box !important;\\"><p style=\\"max-width: 100%;overflow-wrap: break-word !important;box-sizing: border-box !important;\\">如过期未登记</p><p style=\\"max-width: 100%;overflow-wrap: break-word !important;box-sizing: border-box !important;\\">则视为自动放弃领奖</p><p style=\\"max-width: 100%;overflow-wrap: break-word !important;box-sizing: border-box !important;\\">奖品将在填写个人信息截止后</p><p style=\\"max-width: 100%;overflow-wrap: break-word !important;box-sizing: border-box !important;\\">3～5个工作日发出<br style=\\"max-width: 100%;overflow-wrap: break-word !important;box-sizing: border-box !important;\\"  /></p><p style=\\"max-width: 100%;overflow-wrap: break-word !important;box-sizing: border-box !important;\\"><br style=\\"max-width: 100%;overflow-wrap: break-word !important;box-sizing: border-box !important;\\"  /></p></section></section></section></section></section></section></section></section><p style=\\"max-width: 100%;white-space: normal;overflow-wrap: break-word !important;box-sizing: border-box !important;\\"><br  /></p>","url":"http://mp.weixin.qq.com/s?__biz=Mzg4NjMzODcyNw==&mid=2247488855&idx=1&sn=0904a9c1def84e4a83e87ee013313a20&chksm=cf9a709ff8edf989d1774b58b22f6d2cc8ba6e6a2285245fd71f2583f963893ea4d5e8ea96f2#rd"}',
+    groupId: 0,
+    projectId: 71,
+    wechatId: 51,
+    channelId: null,
+    wechatMediaId: "QKLfTE-No1by9IJ7vk97XVm7aoSCUOby8RsyqN2TlYZ03CBACA4MTHwSDGBq9u4a",
+    picType: null,
+    userId: 265,
+    userName: "范雪剑",
+    createTime: "2022-03-25 15:48:37",
+    updateTime: "2022-03-25 15:48:37"
+  },
+  {
+    id: 206,
+    contentType: "mpnews",
+    contentName: "第1期留言中奖名单",
+    contentDetail:
+      '{"picUrl":"zall-commerce/CONTENT_CENTER/bsyonh4fwzawsdo.jpeg","author":"","articleId":"QKLfTE-No1by9IJ7vk97XXYku4V7q3EupMFXRuD7WZ-WFhOo0Dhb6hWojyYW1pSL","name":"第1期留言中奖名单","digest":"再次恭喜3位获奖的小可爱～","type":"mpnews","title":"第1期留言中奖名单","content":"<section style=\\"margin-top: 10px;margin-bottom: 10px;max-width: 100%;white-space: normal;text-align: center;overflow-wrap: break-word !important;box-sizing: border-box !important;\\" data-mpa-powered-by=\\"yiban.io\\"><section style=\\"max-width: 100%;display: inline-block;width: 370px;vertical-align: top;overflow-wrap: break-word !important;box-sizing: border-box !important;\\"><section style=\\"max-width: 100%;overflow-wrap: break-word !important;box-sizing: border-box !important;\\"><section style=\\"padding-right: 3px;padding-left: 3px;max-width: 100%;display: inline-block;vertical-align: bottom;width: 29.5938px;overflow-wrap: break-word !important;box-sizing: border-box !important;\\"><section style=\\"max-width: 100%;transform: translate3d(10px, 0px, 0px);overflow-wrap: break-word !important;box-sizing: border-box !important;\\"><section style=\\"max-width: 100%;vertical-align: middle;display: inline-block;line-height: 0;width: 23.5938px;overflow-wrap: break-word !important;box-sizing: border-box !important;\\"><img class=\\"rich_pages wxw-img\\" data-fileid=\\"100019733\\" data-ratio=\\"2.665\\" data-src=\\"https://mmbiz.qpic.cn/mmbiz_png/icXzy2ibdAq5etjY3ZkFp4HrhP0nWQWWJWBBFl1o6uuwjyzSJMUYLX3yT1ibBJSBjUD5zAHVneGKMZaic80GkMsCmg/640?wx_fmt=png\\" data-type=\\"png\\" data-w=\\"200\\" style=\\"width: 23.5938px;vertical-align: middle;box-sizing: border-box;overflow-wrap: break-word !important;\\"  /></section></section></section><section style=\\"max-width: 100%;display: inline-block;vertical-align: bottom;width: 340.391px;overflow-wrap: break-word !important;box-sizing: border-box !important;\\"><section style=\\"margin-bottom: -5px;max-width: 100%;text-align: right;overflow-wrap: break-word !important;box-sizing: border-box !important;\\"><section style=\\"max-width: 100%;vertical-align: middle;display: inline-block;line-height: 0;width: 102.109px;overflow-wrap: break-word !important;box-sizing: border-box !important;\\"><img data-ratio=\\"0.2988505747126437\\" data-src=\\"https://mmbiz.qpic.cn/mmbiz_gif/icXzy2ibdAq5etjY3ZkFp4HrhP0nWQWWJW5icUr9pPWoF2gy9ZuLkofz7gTYe6DyRmfxcP4CvwSgPSVbDzKCcd1Tw/640?wx_fmt=gif\\" data-type=\\"gif\\" data-w=\\"435\\" style=\\"width: 102.109px;vertical-align: middle;box-sizing: border-box;overflow-wrap: break-word !important;\\" data-fileid=\\"100019732\\"  /></section></section><section style=\\"margin-top: 10px;margin-bottom: -5px;max-width: 100%;transform: translate3d(-1px, 0px, 0px);overflow-wrap: break-word !important;box-sizing: border-box !important;\\"><section style=\\"max-width: 100%;vertical-align: middle;display: inline-block;line-height: 0;width: 27.2188px;overflow-wrap: break-word !important;box-sizing: border-box !important;\\"><img data-ratio=\\"1.0338709677419355\\" data-src=\\"https://mmbiz.qpic.cn/mmbiz_gif/icXzy2ibdAq5etjY3ZkFp4HrhP0nWQWWJWtKjKeG0aiazkwA8ZzYXAZ4Iz87RN2zNtVibU6FA8lP0aRsDO2Ikhww9w/640?wx_fmt=gif\\" data-type=\\"gif\\" data-w=\\"620\\" style=\\"width: 27.2188px;vertical-align: middle;box-sizing: border-box;overflow-wrap: break-word !important;\\" data-fileid=\\"100019734\\"  /></section></section></section></section><section style=\\"max-width: 100%;overflow-wrap: break-word !important;box-sizing: border-box !important;\\"><section style=\\"padding: 5px 10px;max-width: 100%;display: inline-block;vertical-align: top;background-color: rgb(179, 229, 252);border-width: 0px;border-radius: 5px;border-style: none;border-color: rgb(62, 62, 62);width: 370px;overflow-wrap: break-word !important;box-sizing: border-box !important;\\"><section style=\\"max-width: 100%;color: rgb(96, 125, 139);overflow-wrap: break-word !important;box-sizing: border-box !important;\\"><p style=\\"max-width: 100%;overflow-wrap: break-word !important;box-sizing: border-box !important;\\"><strong style=\\"max-width: 100%;overflow-wrap: break-word !important;box-sizing: border-box !important;\\">第1期留言互动中奖名单</strong></p></section></section></section></section></section><p style=\\"margin-top: 5px;margin-bottom: 1em;max-width: 100%;white-space: normal;overflow-wrap: break-word !important;box-sizing: border-box !important;\\"><br style=\\"max-width: 100%;overflow-wrap: break-word !important;box-sizing: border-box !important;\\"  /></p><section style=\\"margin-top: 10px;margin-bottom: 10px;max-width: 100%;white-space: normal;text-align: center;overflow-wrap: break-word !important;box-sizing: border-box !important;\\"><section style=\\"padding: 5px;max-width: 100%;display: inline-block;width: 370px;vertical-align: top;background-color: rgb(187, 222, 251);overflow-wrap: break-word !important;box-sizing: border-box !important;\\"><section style=\\"max-width: 100%;text-align: justify;overflow-wrap: break-word !important;box-sizing: border-box !important;\\"><p style=\\"max-width: 100%;overflow-wrap: break-word !important;box-sizing: border-box !important;\\"><br style=\\"max-width: 100%;overflow-wrap: break-word !important;box-sizing: border-box !important;\\"  /></p></section><section style=\\"max-width: 100%;text-align: justify;overflow-wrap: break-word !important;box-sizing: border-box !important;\\"><section style=\\"padding: 5px;max-width: 100%;display: inline-block;width: 360px;vertical-align: top;border-style: dashed;border-width: 1px;border-radius: 0px;border-color: rgb(255, 255, 255);overflow-wrap: break-word !important;box-sizing: border-box !important;\\"><section style=\\"max-width: 100%;overflow-wrap: break-word !important;box-sizing: border-box !important;\\"><section style=\\"padding: 10px;max-width: 100%;display: inline-block;width: 348px;vertical-align: top;background-color: rgb(255, 255, 255);overflow-wrap: break-word !important;box-sizing: border-box !important;\\"><section style=\\"max-width: 100%;text-align: center;line-height: 1.8;overflow-wrap: break-word !important;box-sizing: border-box !important;\\"><p style=\\"max-width: 100%;color: rgb(158, 158, 158);font-size: 15px;overflow-wrap: break-word !important;box-sizing: border-box !important;\\"><br style=\\"max-width: 100%;overflow-wrap: break-word !important;box-sizing: border-box !important;\\"  /></p><p style=\\"max-width: 100%;color: rgb(158, 158, 158);font-size: 15px;overflow-wrap: break-word !important;box-sizing: border-box !important;\\"><span style=\\"max-width: 100%;color: rgb(63, 57, 56);overflow-wrap: break-word !important;box-sizing: border-box !important;\\">恭喜以下3位小可爱</span></p><p style=\\"max-width: 100%;color: rgb(158, 158, 158);font-size: 15px;overflow-wrap: break-word !important;box-sizing: border-box !important;\\"><span style=\\"max-width: 100%;color: rgb(63, 57, 56);overflow-wrap: break-word !important;box-sizing: border-box !important;\\">可各获</span><span style=\\"max-width: 100%;font-family: mp-quote, -apple-system-font, BlinkMacSystemFont, &quot;Helvetica Neue&quot;, &quot;PingFang SC&quot;, &quot;Hiragino Sans GB&quot;, &quot;Microsoft YaHei UI&quot;, &quot;Microsoft YaHei&quot;, Arial, sans-serif;color: rgb(84, 141, 212);overflow-wrap: break-word !important;box-sizing: border-box !important;\\">【 舒安面膜20g&nbsp;】1份</span></p><p style=\\"max-width: 100%;color: rgb(158, 158, 158);font-size: 15px;overflow-wrap: break-word !important;box-sizing: border-box !important;\\"><span style=\\"max-width: 100%;color: rgb(84, 141, 212);font-family: mp-quote, -apple-system-font, BlinkMacSystemFont, &quot;Helvetica Neue&quot;, &quot;PingFang SC&quot;, &quot;Hiragino Sans GB&quot;, &quot;Microsoft YaHei UI&quot;, &quot;Microsoft YaHei&quot;, Arial, sans-serif;font-size: 14px;overflow-wrap: break-word !important;box-sizing: border-box !important;\\"></span></p><p style=\\"max-width: 100%;overflow-wrap: break-word !important;box-sizing: border-box !important;\\"><img class=\\"rich_pages wxw-img\\" data-cropselx1=\\"0\\" data-cropselx2=\\"328\\" data-cropsely1=\\"0\\" data-cropsely2=\\"146\\" data-fileid=\\"100019735\\" data-galleryid=\\"\\" data-ratio=\\"0.48058252427184467\\" data-s=\\"300,640\\" data-src=\\"https://mmbiz.qpic.cn/mmbiz_png/G7mGZTFciaaWQjgHOK5HNlA3ib6VRpVA7yRoTFFa9F20ZuPktNujYQ1PzglzIcuqQsz8liaf7Nu7wd3TfMQeAY7cg/640?wx_fmt=png\\" data-type=\\"png\\" data-w=\\"824\\" style=\\"height: 158px;width: 328px;overflow-wrap: break-word !important;\\"  /><span style=\\"max-width: 100%;font-family: mp-quote, -apple-system-font, BlinkMacSystemFont, &quot;Helvetica Neue&quot;, &quot;PingFang SC&quot;, &quot;Hiragino Sans GB&quot;, &quot;Microsoft YaHei UI&quot;, &quot;Microsoft YaHei&quot;, Arial, sans-serif;overflow-wrap: break-word !important;box-sizing: border-box !important;\\"></span></p><section style=\\"max-width: 100%;font-family: -apple-system-font, system-ui, &quot;Helvetica Neue&quot;, &quot;PingFang SC&quot;, &quot;Hiragino Sans GB&quot;, &quot;Microsoft YaHei UI&quot;, &quot;Microsoft YaHei&quot;, Arial, sans-serif;letter-spacing: 0.544px;line-height: 1.8;overflow-wrap: break-word !important;box-sizing: border-box !important;\\"><p style=\\"max-width: 100%;color: rgb(158, 158, 158);font-size: 15px;overflow-wrap: break-word !important;box-sizing: border-box !important;\\"><br style=\\"max-width: 100%;overflow-wrap: break-word !important;box-sizing: border-box !important;\\"  /></p><p style=\\"max-width: 100%;color: rgb(158, 158, 158);font-size: 15px;overflow-wrap: break-word !important;box-sizing: border-box !important;\\"><span style=\\"max-width: 100%;color: rgb(49, 48, 48);font-size: 14px;overflow-wrap: break-word !important;box-sizing: border-box !important;\\">请中奖的小可爱</span><br style=\\"max-width: 100%;overflow-wrap: break-word !important;box-sizing: border-box !important;\\"  /></p><p style=\\"max-width: 100%;color: rgb(158, 158, 158);font-size: 15px;overflow-wrap: break-word !important;box-sizing: border-box !important;\\"><span style=\\"max-width: 100%;color: rgb(49, 48, 48);font-size: 14px;overflow-wrap: break-word !important;box-sizing: border-box !important;\\">在2022年1月26日中午12点前</span></p></section><section style=\\"max-width: 100%;font-family: -apple-system-font, system-ui, &quot;Helvetica Neue&quot;, &quot;PingFang SC&quot;, &quot;Hiragino Sans GB&quot;, &quot;Microsoft YaHei UI&quot;, &quot;Microsoft YaHei&quot;, Arial, sans-serif;letter-spacing: 0.544px;transform: rotate(0deg);overflow-wrap: break-word !important;box-sizing: border-box !important;\\"><section style=\\"max-width: 100%;font-size: 14px;color: rgb(49, 48, 48);line-height: 1.8;overflow-wrap: break-word !important;box-sizing: border-box !important;\\"><p style=\\"max-width: 100%;overflow-wrap: break-word !important;box-sizing: border-box !important;\\">扫描下方二维码填写个人信息</p><p style=\\"max-width: 100%;overflow-wrap: break-word !important;box-sizing: border-box !important;\\"><br style=\\"max-width: 100%;overflow-wrap: break-word !important;box-sizing: border-box !important;\\"  /></p><p style=\\"max-width: 100%;overflow-wrap: break-word !important;box-sizing: border-box !important;\\"><img class=\\"rich_pages wxw-img\\" data-cropselx1=\\"0\\" data-cropselx2=\\"133\\" data-cropsely1=\\"0\\" data-cropsely2=\\"133\\" data-fileid=\\"100019736\\" data-galleryid=\\"\\" data-ratio=\\"1\\" data-s=\\"300,640\\" data-src=\\"https://mmbiz.qpic.cn/mmbiz_png/G7mGZTFciaaWQjgHOK5HNlA3ib6VRpVA7ySY0iaOD58CB7dMgNia0FNVwhXXRaJ1eSkEu5JmsISLCqEUzib2HFot8jg/640?wx_fmt=png\\" data-type=\\"png\\" data-w=\\"220\\" style=\\"height: 133px;letter-spacing: 0.544px;width: 133px;overflow-wrap: break-word !important;\\"  /><br style=\\"max-width: 100%;overflow-wrap: break-word !important;box-sizing: border-box !important;\\"  /></p><p style=\\"max-width: 100%;overflow-wrap: break-word !important;box-sizing: border-box !important;\\"><br style=\\"max-width: 100%;overflow-wrap: break-word !important;box-sizing: border-box !important;\\"  /></p></section></section></section><section style=\\"max-width: 100%;transform: rotate(0deg);overflow-wrap: break-word !important;box-sizing: border-box !important;\\"><section style=\\"max-width: 100%;font-size: 14px;color: rgb(49, 48, 48);text-align: center;line-height: 1.8;overflow-wrap: break-word !important;box-sizing: border-box !important;\\"><p style=\\"max-width: 100%;overflow-wrap: break-word !important;box-sizing: border-box !important;\\">如过期未登记</p><p style=\\"max-width: 100%;overflow-wrap: break-word !important;box-sizing: border-box !important;\\">则视为自动放弃领奖</p><p style=\\"max-width: 100%;overflow-wrap: break-word !important;box-sizing: border-box !important;\\">奖品将在填写个人信息截止后</p><p style=\\"max-width: 100%;overflow-wrap: break-word !important;box-sizing: border-box !important;\\">3～5个工作日发出<br style=\\"max-width: 100%;overflow-wrap: break-word !important;box-sizing: border-box !important;\\"  /></p><p style=\\"max-width: 100%;overflow-wrap: break-word !important;box-sizing: border-box !important;\\"><br style=\\"max-width: 100%;overflow-wrap: break-word !important;box-sizing: border-box !important;\\"  /></p></section></section></section></section></section></section></section></section><p style=\\"max-width: 100%;white-space: normal;overflow-wrap: break-word !important;box-sizing: border-box !important;\\"><br  /></p>","url":"http://mp.weixin.qq.com/s?__biz=Mzg4NjMzODcyNw==&mid=2247488756&idx=1&sn=5a6d73fba2e6221f1d23a7722e7ea574&chksm=cf9a713cf8edf82a15984aab6ef625d001265063b43956642ed8596789325fe96285150bc926#rd"}',
+    groupId: 0,
+    projectId: 71,
+    wechatId: 51,
+    channelId: null,
+    wechatMediaId: "QKLfTE-No1by9IJ7vk97XXYku4V7q3EupMFXRuD7WZ-WFhOo0Dhb6hWojyYW1pSL",
+    picType: null,
+    userId: 265,
+    userName: "范雪剑",
+    createTime: "2022-03-25 15:48:37",
+    updateTime: "2022-03-25 15:48:37"
+  },
+  {
+    id: 203,
+    contentType: "mpnews",
+    contentName: "第4期留言中奖名单",
+    contentDetail:
+      '{"picUrl":"zall-commerce/CONTENT_CENTER/3lymtbr5e2mmul7.jpeg","author":"","articleId":"QKLfTE-No1by9IJ7vk97XUlgo_E5BLXY2nt99RPNBYzqtCU8VmfqxtNeeTuOwJk3","name":"第4期留言中奖名单","digest":"再次恭喜3位获奖的小可爱～","type":"mpnews","title":"第4期留言中奖名单","content":"<section style=\\"margin-top: 10px;margin-bottom: 10px;max-width: 100%;white-space: normal;text-align: center;overflow-wrap: break-word !important;box-sizing: border-box !important;\\" data-mpa-powered-by=\\"yiban.io\\"><section style=\\"max-width: 100%;display: inline-block;width: 370px;vertical-align: top;overflow-wrap: break-word !important;box-sizing: border-box !important;\\"><section style=\\"max-width: 100%;overflow-wrap: break-word !important;box-sizing: border-box !important;\\"><section style=\\"padding-right: 3px;padding-left: 3px;max-width: 100%;display: inline-block;vertical-align: bottom;width: 29.5938px;overflow-wrap: break-word !important;box-sizing: border-box !important;\\"><section style=\\"max-width: 100%;transform: translate3d(10px, 0px, 0px);overflow-wrap: break-word !important;box-sizing: border-box !important;\\"><section style=\\"max-width: 100%;vertical-align: middle;display: inline-block;line-height: 0;width: 23.5938px;overflow-wrap: break-word !important;box-sizing: border-box !important;\\"><img class=\\"rich_pages wxw-img\\" data-fileid=\\"100019733\\" data-ratio=\\"2.665\\" data-src=\\"https://mmbiz.qpic.cn/mmbiz_png/icXzy2ibdAq5etjY3ZkFp4HrhP0nWQWWJWBBFl1o6uuwjyzSJMUYLX3yT1ibBJSBjUD5zAHVneGKMZaic80GkMsCmg/640?wx_fmt=png\\" data-type=\\"png\\" data-w=\\"200\\" style=\\"width: 23.5938px;vertical-align: middle;box-sizing: border-box;overflow-wrap: break-word !important;\\"  /></section></section></section><section style=\\"max-width: 100%;display: inline-block;vertical-align: bottom;width: 340.391px;overflow-wrap: break-word !important;box-sizing: border-box !important;\\"><section style=\\"margin-bottom: -5px;max-width: 100%;text-align: right;overflow-wrap: break-word !important;box-sizing: border-box !important;\\"><section style=\\"max-width: 100%;vertical-align: middle;display: inline-block;line-height: 0;width: 102.109px;overflow-wrap: break-word !important;box-sizing: border-box !important;\\"><img data-ratio=\\"0.2988505747126437\\" data-src=\\"https://mmbiz.qpic.cn/mmbiz_gif/icXzy2ibdAq5etjY3ZkFp4HrhP0nWQWWJW5icUr9pPWoF2gy9ZuLkofz7gTYe6DyRmfxcP4CvwSgPSVbDzKCcd1Tw/640?wx_fmt=gif\\" data-type=\\"gif\\" data-w=\\"435\\" style=\\"width: 102.109px;vertical-align: middle;box-sizing: border-box;overflow-wrap: break-word !important;\\" data-fileid=\\"100019732\\"  /></section></section><section style=\\"margin-top: 10px;margin-bottom: -5px;max-width: 100%;transform: translate3d(-1px, 0px, 0px);overflow-wrap: break-word !important;box-sizing: border-box !important;\\"><section style=\\"max-width: 100%;vertical-align: middle;display: inline-block;line-height: 0;width: 27.2188px;overflow-wrap: break-word !important;box-sizing: border-box !important;\\"><img data-ratio=\\"1.0338709677419355\\" data-src=\\"https://mmbiz.qpic.cn/mmbiz_gif/icXzy2ibdAq5etjY3ZkFp4HrhP0nWQWWJWtKjKeG0aiazkwA8ZzYXAZ4Iz87RN2zNtVibU6FA8lP0aRsDO2Ikhww9w/640?wx_fmt=gif\\" data-type=\\"gif\\" data-w=\\"620\\" style=\\"width: 27.2188px;vertical-align: middle;box-sizing: border-box;overflow-wrap: break-word !important;\\" data-fileid=\\"100019734\\"  /></section></section></section></section><section style=\\"max-width: 100%;overflow-wrap: break-word !important;box-sizing: border-box !important;\\"><section style=\\"padding: 5px 10px;max-width: 100%;display: inline-block;vertical-align: top;background-color: rgb(179, 229, 252);border-width: 0px;border-radius: 5px;border-style: none;border-color: rgb(62, 62, 62);width: 370px;overflow-wrap: break-word !important;box-sizing: border-box !important;\\"><section style=\\"max-width: 100%;color: rgb(96, 125, 139);overflow-wrap: break-word !important;box-sizing: border-box !important;\\"><p style=\\"max-width: 100%;overflow-wrap: break-word !important;box-sizing: border-box !important;\\"><strong style=\\"max-width: 100%;overflow-wrap: break-word !important;box-sizing: border-box !important;\\">第4期留言互动中奖名单</strong></p></section></section></section></section></section><p style=\\"margin-top: 5px;margin-bottom: 1em;max-width: 100%;white-space: normal;overflow-wrap: break-word !important;box-sizing: border-box !important;\\"><br style=\\"max-width: 100%;overflow-wrap: break-word !important;box-sizing: border-box !important;\\"  /></p><section style=\\"margin-top: 10px;margin-bottom: 10px;max-width: 100%;white-space: normal;text-align: center;overflow-wrap: break-word !important;box-sizing: border-box !important;\\"><section style=\\"padding: 5px;max-width: 100%;display: inline-block;width: 370px;vertical-align: top;background-color: rgb(187, 222, 251);overflow-wrap: break-word !important;box-sizing: border-box !important;\\"><section style=\\"max-width: 100%;text-align: justify;overflow-wrap: break-word !important;box-sizing: border-box !important;\\"><p style=\\"max-width: 100%;overflow-wrap: break-word !important;box-sizing: border-box !important;\\"><br style=\\"max-width: 100%;overflow-wrap: break-word !important;box-sizing: border-box !important;\\"  /></p></section><section style=\\"max-width: 100%;text-align: justify;overflow-wrap: break-word !important;box-sizing: border-box !important;\\"><section style=\\"padding: 5px;max-width: 100%;display: inline-block;width: 360px;vertical-align: top;border-style: dashed;border-width: 1px;border-radius: 0px;border-color: rgb(255, 255, 255);overflow-wrap: break-word !important;box-sizing: border-box !important;\\"><section style=\\"max-width: 100%;overflow-wrap: break-word !important;box-sizing: border-box !important;\\"><section style=\\"padding: 10px;max-width: 100%;display: inline-block;width: 348px;vertical-align: top;background-color: rgb(255, 255, 255);overflow-wrap: break-word !important;box-sizing: border-box !important;\\"><section style=\\"max-width: 100%;text-align: center;line-height: 1.8;overflow-wrap: break-word !important;box-sizing: border-box !important;\\"><p style=\\"max-width: 100%;color: rgb(158, 158, 158);font-size: 15px;overflow-wrap: break-word !important;box-sizing: border-box !important;\\"><br style=\\"max-width: 100%;overflow-wrap: break-word !important;box-sizing: border-box !important;\\"  /></p><p style=\\"max-width: 100%;color: rgb(158, 158, 158);font-size: 15px;overflow-wrap: break-word !important;box-sizing: border-box !important;\\"><span style=\\"max-width: 100%;color: rgb(63, 57, 56);overflow-wrap: break-word !important;box-sizing: border-box !important;\\">恭喜以下3位小可爱</span><span style=\\"font-family: mp-quote, -apple-system-font, BlinkMacSystemFont, &quot;Helvetica Neue&quot;, &quot;PingFang SC&quot;, &quot;Hiragino Sans GB&quot;, &quot;Microsoft YaHei UI&quot;, &quot;Microsoft YaHei&quot;, Arial, sans-serif;color: rgb(63, 57, 56);\\">可各获</span></p><p style=\\"max-width: 100%;color: rgb(158, 158, 158);font-size: 15px;overflow-wrap: break-word !important;box-sizing: border-box !important;\\"><span style=\\"font-family: mp-quote, -apple-system-font, BlinkMacSystemFont, &quot;Helvetica Neue&quot;, &quot;PingFang SC&quot;, &quot;Hiragino Sans GB&quot;, &quot;Microsoft YaHei UI&quot;, &quot;Microsoft YaHei&quot;, Arial, sans-serif;color: rgb(84, 141, 212);\\">【 珀莱雅水动力旅行装 】1份</span></p><p style=\\"max-width: 100%;color: rgb(158, 158, 158);font-size: 15px;overflow-wrap: break-word !important;box-sizing: border-box !important;\\"><span style=\\"max-width: 100%;font-family: mp-quote, -apple-system-font, BlinkMacSystemFont, &quot;Helvetica Neue&quot;, &quot;PingFang SC&quot;, &quot;Hiragino Sans GB&quot;, &quot;Microsoft YaHei UI&quot;, &quot;Microsoft YaHei&quot;, Arial, sans-serif;color: rgb(84, 141, 212);overflow-wrap: break-word !important;box-sizing: border-box !important;\\"></span></p><p style=\\"max-width: 100%;color: rgb(158, 158, 158);font-size: 15px;overflow-wrap: break-word !important;box-sizing: border-box !important;\\"><span style=\\"max-width: 100%;color: rgb(84, 141, 212);font-family: mp-quote, -apple-system-font, BlinkMacSystemFont, &quot;Helvetica Neue&quot;, &quot;PingFang SC&quot;, &quot;Hiragino Sans GB&quot;, &quot;Microsoft YaHei UI&quot;, &quot;Microsoft YaHei&quot;, Arial, sans-serif;font-size: 14px;overflow-wrap: break-word !important;box-sizing: border-box !important;\\"></span></p><p style=\\"max-width: 100%;overflow-wrap: break-word !important;box-sizing: border-box !important;\\"><img class=\\"rich_pages wxw-img\\" data-cropselx1=\\"0\\" data-cropselx2=\\"328\\" data-cropsely1=\\"0\\" data-cropsely2=\\"159\\" data-fileid=\\"100019735\\" data-galleryid=\\"\\" data-ratio=\\"0.4864864864864865\\" data-s=\\"300,640\\" data-src=\\"https://mmbiz.qpic.cn/mmbiz_png/G7mGZTFciaaUl5XicHLMVxic9EHN3K9o7FOb2zQJmfCOGLdpziaUsP9qjLsXZCK3um1eBrOko1rpR5Iwn92zDQTYLQ/640?wx_fmt=png\\" data-type=\\"png\\" data-w=\\"740\\" style=\\"height: 160px;width: 328px;overflow-wrap: break-word !important;\\"  /><span style=\\"max-width: 100%;font-family: mp-quote, -apple-system-font, BlinkMacSystemFont, &quot;Helvetica Neue&quot;, &quot;PingFang SC&quot;, &quot;Hiragino Sans GB&quot;, &quot;Microsoft YaHei UI&quot;, &quot;Microsoft YaHei&quot;, Arial, sans-serif;overflow-wrap: break-word !important;box-sizing: border-box !important;\\"></span></p><section style=\\"max-width: 100%;font-family: -apple-system-font, system-ui, &quot;Helvetica Neue&quot;, &quot;PingFang SC&quot;, &quot;Hiragino Sans GB&quot;, &quot;Microsoft YaHei UI&quot;, &quot;Microsoft YaHei&quot;, Arial, sans-serif;letter-spacing: 0.544px;line-height: 1.8;overflow-wrap: break-word !important;box-sizing: border-box !important;\\"><p style=\\"max-width: 100%;color: rgb(158, 158, 158);font-size: 15px;overflow-wrap: break-word !important;box-sizing: border-box !important;\\"><br style=\\"max-width: 100%;overflow-wrap: break-word !important;box-sizing: border-box !important;\\"  /></p><p style=\\"max-width: 100%;color: rgb(158, 158, 158);font-size: 15px;overflow-wrap: break-word !important;box-sizing: border-box !important;\\"><span style=\\"max-width: 100%;color: rgb(49, 48, 48);font-size: 14px;overflow-wrap: break-word !important;box-sizing: border-box !important;\\">请中奖的小可爱</span><br style=\\"max-width: 100%;overflow-wrap: break-word !important;box-sizing: border-box !important;\\"  /></p><p style=\\"max-width: 100%;color: rgb(158, 158, 158);font-size: 15px;overflow-wrap: break-word !important;box-sizing: border-box !important;\\"><span style=\\"max-width: 100%;color: rgb(49, 48, 48);font-size: 14px;overflow-wrap: break-word !important;box-sizing: border-box !important;\\">在2022年2月24日中午12点前</span></p></section><section style=\\"max-width: 100%;font-family: -apple-system-font, system-ui, &quot;Helvetica Neue&quot;, &quot;PingFang SC&quot;, &quot;Hiragino Sans GB&quot;, &quot;Microsoft YaHei UI&quot;, &quot;Microsoft YaHei&quot;, Arial, sans-serif;letter-spacing: 0.544px;transform: rotate(0deg);overflow-wrap: break-word !important;box-sizing: border-box !important;\\"><section style=\\"max-width: 100%;font-size: 14px;color: rgb(49, 48, 48);line-height: 1.8;overflow-wrap: break-word !important;box-sizing: border-box !important;\\"><p style=\\"max-width: 100%;overflow-wrap: break-word !important;box-sizing: border-box !important;\\">扫描下方二维码填写个人信息</p><p style=\\"max-width: 100%;overflow-wrap: break-word !important;box-sizing: border-box !important;\\"><br style=\\"max-width: 100%;overflow-wrap: break-word !important;box-sizing: border-box !important;\\"  /></p><p style=\\"max-width: 100%;overflow-wrap: break-word !important;box-sizing: border-box !important;\\"><img class=\\"rich_pages wxw-img\\" data-cropselx1=\\"0\\" data-cropselx2=\\"148\\" data-cropsely1=\\"0\\" data-cropsely2=\\"148\\" data-fileid=\\"100019736\\" data-galleryid=\\"\\" data-ratio=\\"1\\" data-s=\\"300,640\\" data-src=\\"https://mmbiz.qpic.cn/mmbiz_png/G7mGZTFciaaUl5XicHLMVxic9EHN3K9o7FOJYQXbBqiceacmll8TjLHkk9DFxCfLtI6QmpYiavOErV6Sic3wJvv72mLg/640?wx_fmt=png\\" data-type=\\"png\\" data-w=\\"220\\" style=\\"height: 148px;letter-spacing: 0.544px;width: 148px;overflow-wrap: break-word !important;\\"  /><br style=\\"max-width: 100%;overflow-wrap: break-word !important;box-sizing: border-box !important;\\"  /></p><p style=\\"max-width: 100%;overflow-wrap: break-word !important;box-sizing: border-box !important;\\"><br style=\\"max-width: 100%;overflow-wrap: break-word !important;box-sizing: border-box !important;\\"  /></p></section></section></section><section style=\\"max-width: 100%;transform: rotate(0deg);overflow-wrap: break-word !important;box-sizing: border-box !important;\\"><section style=\\"max-width: 100%;font-size: 14px;color: rgb(49, 48, 48);text-align: center;line-height: 1.8;overflow-wrap: break-word !important;box-sizing: border-box !important;\\"><p style=\\"max-width: 100%;overflow-wrap: break-word !important;box-sizing: border-box !important;\\">如过期未登记</p><p style=\\"max-width: 100%;overflow-wrap: break-word !important;box-sizing: border-box !important;\\">则视为自动放弃领奖</p><p style=\\"max-width: 100%;overflow-wrap: break-word !important;box-sizing: border-box !important;\\">奖品将在填写个人信息截止后</p><p style=\\"max-width: 100%;overflow-wrap: break-word !important;box-sizing: border-box !important;\\">3～5个工作日发出<br style=\\"max-width: 100%;overflow-wrap: break-word !important;box-sizing: border-box !important;\\"  /></p><p style=\\"max-width: 100%;overflow-wrap: break-word !important;box-sizing: border-box !important;\\"><br style=\\"max-width: 100%;overflow-wrap: break-word !important;box-sizing: border-box !important;\\"  /></p></section></section></section></section></section></section></section></section><p style=\\"max-width: 100%;white-space: normal;overflow-wrap: break-word !important;box-sizing: border-box !important;\\"><br  /></p>","url":"http://mp.weixin.qq.com/s?__biz=Mzg4NjMzODcyNw==&mid=2247489213&idx=1&sn=0d3f997929d80764873ab9b5c2031c05&chksm=cf9a7375f8edfa63977c693a037670bb918f17ce56c2bb7b387c3f01c68834413d456489e7c2#rd"}',
+    groupId: 0,
+    projectId: 71,
+    wechatId: 51,
+    channelId: null,
+    wechatMediaId: "QKLfTE-No1by9IJ7vk97XUlgo_E5BLXY2nt99RPNBYzqtCU8VmfqxtNeeTuOwJk3",
+    picType: null,
+    userId: 265,
+    userName: "范雪剑",
+    createTime: "2022-03-25 15:48:37",
+    updateTime: "2022-03-25 15:48:36"
+  },
+  {
+    id: 204,
+    contentType: "mpnews",
+    contentName: "第3期留言中奖名单",
+    contentDetail:
+      '{"picUrl":"zall-commerce/CONTENT_CENTER/lyljks29mesbatj.jpeg","author":"","articleId":"QKLfTE-No1by9IJ7vk97XeNgF9Ts4eim_rZvNPww30ohLhJ-bn-9zfxmuWEvQ2rP","name":"第3期留言中奖名单","digest":"再次恭喜3位获奖的小可爱～","type":"mpnews","title":"第3期留言中奖名单","content":"<section style=\\"margin-top: 10px;margin-bottom: 10px;max-width: 100%;white-space: normal;text-align: center;overflow-wrap: break-word !important;box-sizing: border-box !important;\\" data-mpa-powered-by=\\"yiban.io\\"><section style=\\"max-width: 100%;display: inline-block;width: 370px;vertical-align: top;overflow-wrap: break-word !important;box-sizing: border-box !important;\\"><section style=\\"max-width: 100%;overflow-wrap: break-word !important;box-sizing: border-box !important;\\"><section style=\\"padding-right: 3px;padding-left: 3px;max-width: 100%;display: inline-block;vertical-align: bottom;width: 29.5938px;overflow-wrap: break-word !important;box-sizing: border-box !important;\\"><section style=\\"max-width: 100%;transform: translate3d(10px, 0px, 0px);overflow-wrap: break-word !important;box-sizing: border-box !important;\\"><section style=\\"max-width: 100%;vertical-align: middle;display: inline-block;line-height: 0;width: 23.5938px;overflow-wrap: break-word !important;box-sizing: border-box !important;\\"><img class=\\"rich_pages wxw-img\\" data-fileid=\\"100019733\\" data-ratio=\\"2.665\\" data-src=\\"https://mmbiz.qpic.cn/mmbiz_png/icXzy2ibdAq5etjY3ZkFp4HrhP0nWQWWJWBBFl1o6uuwjyzSJMUYLX3yT1ibBJSBjUD5zAHVneGKMZaic80GkMsCmg/640?wx_fmt=png\\" data-type=\\"png\\" data-w=\\"200\\" style=\\"width: 23.5938px;vertical-align: middle;box-sizing: border-box;overflow-wrap: break-word !important;\\"  /></section></section></section><section style=\\"max-width: 100%;display: inline-block;vertical-align: bottom;width: 340.391px;overflow-wrap: break-word !important;box-sizing: border-box !important;\\"><section style=\\"margin-bottom: -5px;max-width: 100%;text-align: right;overflow-wrap: break-word !important;box-sizing: border-box !important;\\"><section style=\\"max-width: 100%;vertical-align: middle;display: inline-block;line-height: 0;width: 102.109px;overflow-wrap: break-word !important;box-sizing: border-box !important;\\"><img data-ratio=\\"0.2988505747126437\\" data-src=\\"https://mmbiz.qpic.cn/mmbiz_gif/icXzy2ibdAq5etjY3ZkFp4HrhP0nWQWWJW5icUr9pPWoF2gy9ZuLkofz7gTYe6DyRmfxcP4CvwSgPSVbDzKCcd1Tw/640?wx_fmt=gif\\" data-type=\\"gif\\" data-w=\\"435\\" style=\\"width: 102.109px;vertical-align: middle;box-sizing: border-box;overflow-wrap: break-word !important;\\" data-fileid=\\"100019732\\"  /></section></section><section style=\\"margin-top: 10px;margin-bottom: -5px;max-width: 100%;transform: translate3d(-1px, 0px, 0px);overflow-wrap: break-word !important;box-sizing: border-box !important;\\"><section style=\\"max-width: 100%;vertical-align: middle;display: inline-block;line-height: 0;width: 27.2188px;overflow-wrap: break-word !important;box-sizing: border-box !important;\\"><img data-ratio=\\"1.0338709677419355\\" data-src=\\"https://mmbiz.qpic.cn/mmbiz_gif/icXzy2ibdAq5etjY3ZkFp4HrhP0nWQWWJWtKjKeG0aiazkwA8ZzYXAZ4Iz87RN2zNtVibU6FA8lP0aRsDO2Ikhww9w/640?wx_fmt=gif\\" data-type=\\"gif\\" data-w=\\"620\\" style=\\"width: 27.2188px;vertical-align: middle;box-sizing: border-box;overflow-wrap: break-word !important;\\" data-fileid=\\"100019734\\"  /></section></section></section></section><section style=\\"max-width: 100%;overflow-wrap: break-word !important;box-sizing: border-box !important;\\"><section style=\\"padding: 5px 10px;max-width: 100%;display: inline-block;vertical-align: top;background-color: rgb(179, 229, 252);border-width: 0px;border-radius: 5px;border-style: none;border-color: rgb(62, 62, 62);width: 370px;overflow-wrap: break-word !important;box-sizing: border-box !important;\\"><section style=\\"max-width: 100%;color: rgb(96, 125, 139);overflow-wrap: break-word !important;box-sizing: border-box !important;\\"><p style=\\"max-width: 100%;overflow-wrap: break-word !important;box-sizing: border-box !important;\\"><strong style=\\"max-width: 100%;overflow-wrap: break-word !important;box-sizing: border-box !important;\\">第3期留言互动中奖名单</strong></p></section></section></section></section></section><p style=\\"margin-top: 5px;margin-bottom: 1em;max-width: 100%;white-space: normal;overflow-wrap: break-word !important;box-sizing: border-box !important;\\"><br style=\\"max-width: 100%;overflow-wrap: break-word !important;box-sizing: border-box !important;\\"  /></p><section style=\\"margin-top: 10px;margin-bottom: 10px;max-width: 100%;white-space: normal;text-align: center;overflow-wrap: break-word !important;box-sizing: border-box !important;\\"><section style=\\"padding: 5px;max-width: 100%;display: inline-block;width: 370px;vertical-align: top;background-color: rgb(187, 222, 251);overflow-wrap: break-word !important;box-sizing: border-box !important;\\"><section style=\\"max-width: 100%;text-align: justify;overflow-wrap: break-word !important;box-sizing: border-box !important;\\"><p style=\\"max-width: 100%;overflow-wrap: break-word !important;box-sizing: border-box !important;\\"><br style=\\"max-width: 100%;overflow-wrap: break-word !important;box-sizing: border-box !important;\\"  /></p></section><section style=\\"max-width: 100%;text-align: justify;overflow-wrap: break-word !important;box-sizing: border-box !important;\\"><section style=\\"padding: 5px;max-width: 100%;display: inline-block;width: 360px;vertical-align: top;border-style: dashed;border-width: 1px;border-radius: 0px;border-color: rgb(255, 255, 255);overflow-wrap: break-word !important;box-sizing: border-box !important;\\"><section style=\\"max-width: 100%;overflow-wrap: break-word !important;box-sizing: border-box !important;\\"><section style=\\"padding: 10px;max-width: 100%;display: inline-block;width: 348px;vertical-align: top;background-color: rgb(255, 255, 255);overflow-wrap: break-word !important;box-sizing: border-box !important;\\"><section style=\\"max-width: 100%;text-align: center;line-height: 1.8;overflow-wrap: break-word !important;box-sizing: border-box !important;\\"><p style=\\"max-width: 100%;color: rgb(158, 158, 158);font-size: 15px;overflow-wrap: break-word !important;box-sizing: border-box !important;\\"><br style=\\"max-width: 100%;overflow-wrap: break-word !important;box-sizing: border-box !important;\\"  /></p><p style=\\"max-width: 100%;color: rgb(158, 158, 158);font-size: 15px;overflow-wrap: break-word !important;box-sizing: border-box !important;\\"><span style=\\"max-width: 100%;color: rgb(63, 57, 56);overflow-wrap: break-word !important;box-sizing: border-box !important;\\">恭喜以下3位小可爱</span><span style=\\"font-family: mp-quote, -apple-system-font, BlinkMacSystemFont, &quot;Helvetica Neue&quot;, &quot;PingFang SC&quot;, &quot;Hiragino Sans GB&quot;, &quot;Microsoft YaHei UI&quot;, &quot;Microsoft YaHei&quot;, Arial, sans-serif;color: rgb(63, 57, 56);\\">可各获</span></p><p style=\\"max-width: 100%;color: rgb(158, 158, 158);font-size: 15px;overflow-wrap: break-word !important;box-sizing: border-box !important;\\"><span style=\\"font-family: mp-quote, -apple-system-font, BlinkMacSystemFont, &quot;Helvetica Neue&quot;, &quot;PingFang SC&quot;, &quot;Hiragino Sans GB&quot;, &quot;Microsoft YaHei UI&quot;, &quot;Microsoft YaHei&quot;, Arial, sans-serif;color: rgb(84, 141, 212);\\">【 珀莱雅解渴面膜15ml&nbsp;】1支</span></p><p style=\\"max-width: 100%;color: rgb(158, 158, 158);font-size: 15px;overflow-wrap: break-word !important;box-sizing: border-box !important;\\"><span style=\\"max-width: 100%;font-family: mp-quote, -apple-system-font, BlinkMacSystemFont, &quot;Helvetica Neue&quot;, &quot;PingFang SC&quot;, &quot;Hiragino Sans GB&quot;, &quot;Microsoft YaHei UI&quot;, &quot;Microsoft YaHei&quot;, Arial, sans-serif;color: rgb(84, 141, 212);overflow-wrap: break-word !important;box-sizing: border-box !important;\\"></span></p><p style=\\"max-width: 100%;color: rgb(158, 158, 158);font-size: 15px;overflow-wrap: break-word !important;box-sizing: border-box !important;\\"><span style=\\"max-width: 100%;color: rgb(84, 141, 212);font-family: mp-quote, -apple-system-font, BlinkMacSystemFont, &quot;Helvetica Neue&quot;, &quot;PingFang SC&quot;, &quot;Hiragino Sans GB&quot;, &quot;Microsoft YaHei UI&quot;, &quot;Microsoft YaHei&quot;, Arial, sans-serif;font-size: 14px;overflow-wrap: break-word !important;box-sizing: border-box !important;\\"></span></p><p style=\\"max-width: 100%;overflow-wrap: break-word !important;box-sizing: border-box !important;\\"><img class=\\"rich_pages wxw-img\\" data-cropselx1=\\"0\\" data-cropselx2=\\"328\\" data-cropsely1=\\"0\\" data-cropsely2=\\"154\\" data-fileid=\\"100019735\\" data-galleryid=\\"\\" data-ratio=\\"0.4838709677419355\\" data-s=\\"300,640\\" data-src=\\"https://mmbiz.qpic.cn/mmbiz_png/G7mGZTFciaaUl5XicHLMVxic9EHN3K9o7FOuYfs1ib5RNEzZoTKbk42yNl4iaLoyw5pfYzeIYYib039hia3ZbmaX3wbwg/640?wx_fmt=png\\" data-type=\\"png\\" data-w=\\"744\\" style=\\"height: 159px;width: 328px;overflow-wrap: break-word !important;\\"  /><span style=\\"max-width: 100%;font-family: mp-quote, -apple-system-font, BlinkMacSystemFont, &quot;Helvetica Neue&quot;, &quot;PingFang SC&quot;, &quot;Hiragino Sans GB&quot;, &quot;Microsoft YaHei UI&quot;, &quot;Microsoft YaHei&quot;, Arial, sans-serif;overflow-wrap: break-word !important;box-sizing: border-box !important;\\"></span></p><section style=\\"max-width: 100%;font-family: -apple-system-font, system-ui, &quot;Helvetica Neue&quot;, &quot;PingFang SC&quot;, &quot;Hiragino Sans GB&quot;, &quot;Microsoft YaHei UI&quot;, &quot;Microsoft YaHei&quot;, Arial, sans-serif;letter-spacing: 0.544px;line-height: 1.8;overflow-wrap: break-word !important;box-sizing: border-box !important;\\"><p style=\\"max-width: 100%;color: rgb(158, 158, 158);font-size: 15px;overflow-wrap: break-word !important;box-sizing: border-box !important;\\"><br style=\\"max-width: 100%;overflow-wrap: break-word !important;box-sizing: border-box !important;\\"  /></p><p style=\\"max-width: 100%;color: rgb(158, 158, 158);font-size: 15px;overflow-wrap: break-word !important;box-sizing: border-box !important;\\"><span style=\\"max-width: 100%;color: rgb(49, 48, 48);font-size: 14px;overflow-wrap: break-word !important;box-sizing: border-box !important;\\">请中奖的小可爱</span><br style=\\"max-width: 100%;overflow-wrap: break-word !important;box-sizing: border-box !important;\\"  /></p><p style=\\"max-width: 100%;color: rgb(158, 158, 158);font-size: 15px;overflow-wrap: break-word !important;box-sizing: border-box !important;\\"><span style=\\"max-width: 100%;color: rgb(49, 48, 48);font-size: 14px;overflow-wrap: break-word !important;box-sizing: border-box !important;\\">在2022年2月22日中午12点前</span></p></section><section style=\\"max-width: 100%;font-family: -apple-system-font, system-ui, &quot;Helvetica Neue&quot;, &quot;PingFang SC&quot;, &quot;Hiragino Sans GB&quot;, &quot;Microsoft YaHei UI&quot;, &quot;Microsoft YaHei&quot;, Arial, sans-serif;letter-spacing: 0.544px;transform: rotate(0deg);overflow-wrap: break-word !important;box-sizing: border-box !important;\\"><section style=\\"max-width: 100%;font-size: 14px;color: rgb(49, 48, 48);line-height: 1.8;overflow-wrap: break-word !important;box-sizing: border-box !important;\\"><p style=\\"max-width: 100%;overflow-wrap: break-word !important;box-sizing: border-box !important;\\">扫描下方二维码填写个人信息</p><p style=\\"max-width: 100%;overflow-wrap: break-word !important;box-sizing: border-box !important;\\"><br style=\\"max-width: 100%;overflow-wrap: break-word !important;box-sizing: border-box !important;\\"  /></p><p style=\\"max-width: 100%;overflow-wrap: break-word !important;box-sizing: border-box !important;\\"><img class=\\"rich_pages wxw-img\\" data-cropselx1=\\"0\\" data-cropselx2=\\"133\\" data-cropsely1=\\"0\\" data-cropsely2=\\"133\\" data-fileid=\\"100019736\\" data-galleryid=\\"\\" data-ratio=\\"1\\" data-s=\\"300,640\\" data-src=\\"https://mmbiz.qpic.cn/mmbiz_png/G7mGZTFciaaUl5XicHLMVxic9EHN3K9o7FOIXibJJ2mdI344dtXMiaJOrWa0W5ehTdBsiczX85TJqttKEyOpDSC7PEhA/640?wx_fmt=png\\" data-type=\\"png\\" data-w=\\"220\\" style=\\"height: 148px;letter-spacing: 0.544px;width: 148px;overflow-wrap: break-word !important;\\"  /><br style=\\"max-width: 100%;overflow-wrap: break-word !important;box-sizing: border-box !important;\\"  /></p><p style=\\"max-width: 100%;overflow-wrap: break-word !important;box-sizing: border-box !important;\\"><br style=\\"max-width: 100%;overflow-wrap: break-word !important;box-sizing: border-box !important;\\"  /></p></section></section></section><section style=\\"max-width: 100%;transform: rotate(0deg);overflow-wrap: break-word !important;box-sizing: border-box !important;\\"><section style=\\"max-width: 100%;font-size: 14px;color: rgb(49, 48, 48);text-align: center;line-height: 1.8;overflow-wrap: break-word !important;box-sizing: border-box !important;\\"><p style=\\"max-width: 100%;overflow-wrap: break-word !important;box-sizing: border-box !important;\\">如过期未登记</p><p style=\\"max-width: 100%;overflow-wrap: break-word !important;box-sizing: border-box !important;\\">则视为自动放弃领奖</p><p style=\\"max-width: 100%;overflow-wrap: break-word !important;box-sizing: border-box !important;\\">奖品将在填写个人信息截止后</p><p style=\\"max-width: 100%;overflow-wrap: break-word !important;box-sizing: border-box !important;\\">3～5个工作日发出<br style=\\"max-width: 100%;overflow-wrap: break-word !important;box-sizing: border-box !important;\\"  /></p><p style=\\"max-width: 100%;overflow-wrap: break-word !important;box-sizing: border-box !important;\\"><br style=\\"max-width: 100%;overflow-wrap: break-word !important;box-sizing: border-box !important;\\"  /></p></section></section></section></section></section></section></section></section><p style=\\"max-width: 100%;white-space: normal;overflow-wrap: break-word !important;box-sizing: border-box !important;\\"><br  /></p>","url":"http://mp.weixin.qq.com/s?__biz=Mzg4NjMzODcyNw==&mid=2247489205&idx=1&sn=ca807205705b178d808769f1258d1fd1&chksm=cf9a737df8edfa6be63f82a7e2b6c4e8b0332eb8827513bd4550eab3b84c4c811a9774005f99#rd"}',
+    groupId: 0,
+    projectId: 71,
+    wechatId: 51,
+    channelId: null,
+    wechatMediaId: "QKLfTE-No1by9IJ7vk97XeNgF9Ts4eim_rZvNPww30ohLhJ-bn-9zfxmuWEvQ2rP",
+    picType: null,
+    userId: 265,
+    userName: "范雪剑",
+    createTime: "2022-03-25 15:48:37",
+    updateTime: "2022-03-25 15:48:36"
+  }
+]
+
+export const templateList = [
+  {
+    id: 209,
+    contentType: "template",
+    contentName: "物流信息",
+    contentDetail:
+      '{"templateParameters":[{"oldShowValue":"{{first.DATA}}","name":"first","label":"first","title":"","value":"{\\"content\\":[{\\"type\\":\\"text\\",\\"value\\":\\"尊敬的客户，您好！您的快件已到达代收点，请及时取件，详情如下：\\",\\"line_num\\":1}],\\"color\\":\\"#000\\"}"},{"oldShowValue":"{{order_id.DATA}}","name":"order_id","label":"订单号","title":"订单号","value":"{\\"content\\":[{\\"type\\":\\"text\\",\\"value\\":\\"12782689283823109\\",\\"line_num\\":1}],\\"color\\":\\"#000\\"}"},{"oldShowValue":"{{package_id.DATA}}","name":"package_id","label":"包裹单号","title":"包裹单号","value":"{\\"content\\":[{\\"type\\":\\"text\\",\\"value\\":\\"782689283823109\\",\\"line_num\\":1}],\\"color\\":\\"#000\\"}"},{"oldShowValue":"{{remark.DATA}}","name":"remark","label":"remark","title":"","value":"{\\"content\\":[{\\"type\\":\\"text\\",\\"value\\":\\"卓尔数科\\",\\"line_num\\":1}],\\"color\\":\\"#000\\"}"}],"name":"物流信息","wechatId":50,"openTypeParameters":{"parameter":{"pagepath":"223","appId":"223"},"type":"MINI_PROGRAM"},"type":"template","templateId":"mHBrxv2F71T9yfNi2tvnPYs2-ircDPtFyEuHzqQj8RY"}',
+    groupId: 0,
+    projectId: 71,
+    wechatId: 50,
+    channelId: null,
+    wechatMediaId: null,
+    picType: null,
+    userId: 238,
+    userName: "朱东霞",
+    createTime: "2022-03-25 16:19:14",
+    updateTime: "2022-04-01 15:54:25"
+  }
+]

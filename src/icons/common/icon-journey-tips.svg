@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="16px" height="16px" viewBox="0 0 16 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>切片</title>
+    <g id="智慧运营v1.3" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" font-family="PingFangSC-Semibold, PingFang SC" font-size="14" font-weight="500">
+        <g id="用户旅程-设置-进入1" transform="translate(-640.000000, -406.000000)" fill="#8DA8FF">
+            <g id="icon/16/提示备份" transform="translate(640.000000, 404.000000)">
+                <text id="！">
+                    <tspan x="4" y="15">！</tspan>
+                </text>
+            </g>
+        </g>
+    </g>
+</svg>

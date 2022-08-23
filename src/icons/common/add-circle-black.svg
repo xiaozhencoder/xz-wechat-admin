@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="16px" height="16px" viewBox="0 0 16 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <g id="智慧运营v1.3" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="文本编辑框" transform="translate(-425.000000, -94.000000)">
+            <g id="内容/文本编辑框备份" transform="translate(333.000000, 86.000000)">
+                <g id="按钮/无框icon+文字备份-6" transform="translate(76.000000, 0.000000)">
+                    <g id="icon/16/箭头备份" transform="translate(16.000000, 8.000000)">
+                        <circle id="椭圆形" fill="#888D97" cx="8" cy="8" r="7"></circle>
+                        <rect id="矩形" fill="#FFFFFF" x="4.17202509" y="6.93108614" width="8" height="1.6" rx="0.4"></rect>
+                        <rect id="矩形备份" fill="#FFFFFF" transform="translate(8.172025, 7.731086) rotate(-270.000000) translate(-8.172025, -7.731086) " x="4.17202509" y="6.93108614" width="8" height="1.6" rx="0.4"></rect>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

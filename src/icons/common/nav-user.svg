@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>icon/弱功能区/系统设置-客户端 2</title>
+    <g id="页面-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="切图" transform="translate(-1250.000000, -16.000000)">
+            <g id="编组" transform="translate(1250.000000, 16.000000)">
+                <rect id="矩形" x="0" y="0" width="24" height="24"></rect>
+                <g transform="translate(1.000000, 1.000000)">
+                    <circle id="椭圆形" stroke="#FFFFFF" stroke-width="2" cx="11" cy="11" r="10"></circle>
+                    <path d="M11,11 C15.0082742,11 18.3280486,14.316295 18.9096636,18.6430179 C16.9098259,20.7133719 14.105167,22 11,22 C7.89533006,22 5.09107201,20.7137838 3.09101685,18.6451424 C3.67143962,14.3168063 6.99141687,11 11,11 Z" id="形状结合" fill="#FFFFFF"></path>
+                    <circle id="椭圆形" fill="#FFFFFF" cx="11" cy="8" r="3"></circle>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
