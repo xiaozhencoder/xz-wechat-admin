@@ -60,6 +60,12 @@ export default [
         component: () => import("@/views/ui/edit/index.vue"),
         meta: { title: "自定义文本编辑器", elSvgIcon: "EditPen" },
         name: "Edit"
+      },
+      {
+        path: "svgView",
+        component: () => import("@/views/ui/svg/index.vue"),
+        meta: { title: "SVG", elSvgIcon: "Star" },
+        name: "SvgView"
       }
     ]
   }

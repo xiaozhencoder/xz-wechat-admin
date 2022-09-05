@@ -149,8 +149,6 @@ import { ObjTy } from "~/common"
 import { copyText } from "@/utils"
 import { customSimpleData, mediaList, groups } from "./config"
 
-const { proxy }: any = getCurrentInstance()
-
 import {
   imageList,
   voiceList,
@@ -164,6 +162,8 @@ import {
   mpnewsList,
   templateList
 } from "./config"
+
+const { proxy }: any = getCurrentInstance()
 
 const activeNames = ref(["1"])
 const drawerShow = ref(false)
