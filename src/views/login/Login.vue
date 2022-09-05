@@ -1,60 +1,69 @@
 <!--suppress ALL -->
 <template>
-  <div class="login-container columnCC">
+  <div class="login-container flex-center">
     <el-form ref="refloginForm" class="login-form" :model="formInline" :rules="formRules">
       <div class="title-container">
         <h3 class="title text-center">{{ settings.title }}</h3>
       </div>
       <el-form-item prop="username" :rules="formRules.isNotNull">
-        <div class="rowSC">
-          <span class="svg-container">
-            <svg-icon icon-class="user" />
-          </span>
-          <el-input v-model="formInline.username" placeholder="用户名(admin)" />
-          <!--占位-->
-          <div class="show-pwd" />
+        <div class="flex-center flex-1">
+          <el-input v-model="formInline.username" placeholder="请输入用户名">
+            <template #prefix>
+              <span class="svg-container">
+                <svg-icon icon-class="user" />
+              </span>
+            </template>
+          </el-input>
         </div>
       </el-form-item>
-      <!--<el-form-item prop="password" :rules="formRules.passwordValid">-->
+
       <el-form-item prop="password" :rules="formRules.isNotNull">
-        <div class="rowSC flex-1">
-          <span class="svg-container">
-            <svg-icon icon-class="password" />
-          </span>
+        <div class="flex-center flex-1">
           <el-input
             :key="passwordType"
             ref="refPassword"
             v-model="formInline.password"
             :type="passwordType"
             name="password"
-            placeholder="password(123456)"
+            placeholder="请输入密码"
             @keyup.enter="handleLogin"
-          />
-          <span class="show-pwd" @click="showPwd">
-            <svg-icon :icon-class="passwordType === 'password' ? 'eye' : 'eye-open'" />
-          </span>
+          >
+            <template #prefix>
+              <span class="svg-container">
+                <svg-icon icon-class="password" />
+              </span>
+            </template>
+
+            <template #suffix>
+              <span class="show-pwd" @click="showPwd">
+                <svg-icon :icon-class="passwordType === 'password' ? 'eye' : 'eye-open'" />
+              </span>
+            </template>
+          </el-input>
         </div>
       </el-form-item>
       <div class="tip-message">{{ tipMessage }}</div>
       <el-button :loading="loading" type="primary" class="login-btn" size="default" @click.prevent="handleLogin">
-        Login
+        登 录
       </el-button>
     </el-form>
   </div>
 </template>
 
 <script setup lang="ts">
-import settings from '@/settings'
-
-import { ElMessage } from 'element-plus'
-import { ObjTy } from '~/common'
-import { useUserStore } from '@/store/user'
+import settings from "@/settings"
+import md5 from "js-md5"
+import { ElMessage } from "element-plus"
+import { Calendar, Search } from "@element-plus/icons-vue"
+import { ObjTy } from "~/common"
+import { useUserStore } from "@/store/user"
 //element valid
 const formRules = useElement().formRules
 //form
 let formInline = reactive({
-  username: 'admin',
-  password: '123456'
+  username: "ls@zall.com",
+  password: "a123456",
+  grant_type: "password_code"
 })
 let state: ObjTy = reactive({
   otherQuery: {},
@@ -65,7 +74,7 @@ let state: ObjTy = reactive({
 const route = useRoute()
 let getOtherQuery = (query: any) => {
   return Object.keys(query).reduce((acc: any, cur: any) => {
-    if (cur !== 'redirect') {
+    if (cur !== "redirect") {
       acc[cur] = query[cur]
     }
     return acc
@@ -87,7 +96,7 @@ watch(
  *  login relative
  * */
 let loading = ref(false)
-let tipMessage = ref('')
+let tipMessage = ref("")
 
 const refloginForm: any = ref(null)
 let handleLogin = () => {
@@ -102,14 +111,15 @@ let handleLogin = () => {
 
 //use the auto import from vite.config.js of AutoImport
 const router = useRouter()
+
 let loginReq = () => {
   loading.value = true
+  formInline.password = md5(formInline.password)
   const userStore = useUserStore()
   userStore
     .login(formInline)
     .then(() => {
-      ElMessage({ message: '登录成功', type: 'success' })
-      router.push({ path: state.redirect || '/', query: state.otherQuery })
+      router.push({ path: "/" })
     })
     .catch((res) => {
       tipMessage.value = res.msg
@@ -123,13 +133,13 @@ let loginReq = () => {
 /*
  *  password show or hidden
  * */
-let passwordType = ref('password')
+let passwordType = ref("password")
 const refPassword: any = ref(null)
 let showPwd = () => {
-  if (passwordType.value === 'password') {
-    passwordType.value = ''
+  if (passwordType.value === "password") {
+    passwordType.value = ""
   } else {
-    passwordType.value = 'password'
+    passwordType.value = "password"
   }
   nextTick(() => {
     refPassword.value.focus()
@@ -138,22 +148,42 @@ let showPwd = () => {
 </script>
 
 <style lang="scss" scoped>
-$bg: #2d3a4b;
 $dark_gray: #889aa4;
-$light_gray: #eee;
+
+:deep(.el-textarea__inner) {
+  background-color: transparent;
+}
+
+:deep(.el-input__wrapper) {
+  height: 52px;
+}
 .login-container {
+  background-image: linear-gradient(to top, #a8edea 0%, #fed6e3 100%);
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  font-family: "Vibur", cursive;
+  font-family: "Abel", sans-serif;
+  opacity: 0.95;
   height: 100vh;
-  width: 100%;
-  background-color: #2d3a4b;
+  // width: 100%;
+  // // background: linear-gradient(to left bottom, hsl(218, 100%, 85%) 0%,hsl(125, 100%, 85%) 100%)
+  // background: linear-gradient(to left bottom, hsl(218, 100%, 85%) 0%, hsl(125, 100%, 85%) 100%);
   .login-form {
-    margin-bottom: 20vh;
-    width: 360px;
+    width: 25%;
+    height: auto;
+    border-radius: 5px;
+    margin: 2% auto;
+    box-shadow: 0 9px 50px hsl(20deg 67% 75% / 31%);
+    padding: 4%;
+    background-image: linear-gradient(-225deg, #e3fdf5 50%, #ffe6fa 50%);
   }
+
   .title-container {
+    margin: 2% auto 10% auto;
+    text-align: center;
     .title {
-      font-size: 22px;
-      color: #eee;
-      margin: 0px auto 25px auto;
+      font-size: 30px;
+      margin: 0px auto 48px auto;
       text-align: center;
       font-weight: bold;
     }
@@ -161,56 +191,23 @@ $light_gray: #eee;
 }
 
 .svg-container {
-  padding-left: 6px;
+  padding: 0 10px;
   color: $dark_gray;
-  text-align: center;
-  width: 30px;
-}
-
-//错误提示信息
-.tip-message {
-  color: #e4393c;
-  height: 30px;
-  margin-top: -12px;
-  font-size: 12px;
 }
 
 //登录按钮
 .login-btn {
   width: 100%;
-  margin-bottom: 30px;
+  height: 52px;
+  font-size: 18px;
+  margin-top: 28px;
+  border-color: #b8f2e6;
+  background-color: #b8f2e6;
 }
+
 .show-pwd {
-  width: 50px;
   font-size: 16px;
   color: $dark_gray;
   cursor: pointer;
-  text-align: center;
-}
-</style>
-
-<style lang="scss">
-//css 样式重置 增加个前缀避免全局污染
-.login-container {
-  .el-form-item {
-    border: 1px solid rgba(255, 255, 255, 0.1);
-    background: rgba(0, 0, 0, 0.1);
-    border-radius: 5px;
-    color: #454545;
-  }
-  .el-input input {
-    background: transparent;
-    border: 0px;
-    -webkit-appearance: none;
-    border-radius: 0px;
-    padding: 10px 5px 10px 15px;
-    color: #fff;
-    height: 42px; //此处调整item的高度
-    caret-color: #fff;
-  }
-  //hiden the input border
-  .el-input__inner {
-    box-shadow: none !important;
-  }
 }
 </style>

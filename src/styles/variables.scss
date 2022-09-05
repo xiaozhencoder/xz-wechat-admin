@@ -45,6 +45,16 @@ $color-primary-light-7: mix($color-white, $color-primary, 70%);
 $color-primary-light-8: mix($color-white, $color-primary, 80%);
 $color-primary-light-9: mix($color-white, $color-primary, 90%);
 
+$color-secondary-light-1: mix($color-white, $color-secondary, 10%);
+$color-secondary-light-2: mix($color-white, $color-secondary, 20%);
+$color-secondary-light-3: mix($color-white, $color-secondary, 30%);
+$color-secondary-light-4: mix($color-white, $color-secondary, 40%);
+$color-secondary-light-5: mix($color-white, $color-secondary, 50%);
+$color-secondary-light-6: mix($color-white, $color-secondary, 60%);
+$color-secondary-light-7: mix($color-white, $color-secondary, 70%);
+$color-secondary-light-8: mix($color-white, $color-secondary, 80%);
+$color-secondary-light-9: mix($color-white, $color-secondary, 90%);
+
 /* Font
 -------------------------- */
 
@@ -153,7 +163,8 @@ $button-padding-horizontal: (
 $table: (
   "text-color": $color-text-primary,
   "header-text-color": $color-text-primary,
-  "header-bg-color": rgba($color-primary, 0.05)
+  // "header-bg-color": rgba($color-primary, 0.05)
+  "header-bg-color": mix($color-white, $color-primary-light-9, 30%)
 );
 
 $menu: (

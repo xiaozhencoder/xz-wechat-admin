@@ -1,6 +1,6 @@
 
 # 启动服务
-pnpm run dev
+npm run dev
 ```
 
 浏览器访问 http://localhost:5001
@@ -10,20 +10,20 @@ pnpm run dev
 
 ```bash
 # 构建测试环境
-pnpm run build-test
+npm run build-test
 
 # 构建生产环境
-pnpm run build
+npm run build
 ```
 
 ## 其它
 
 ```bash
 # 预览生产环境
-pnpm run preview
+npm run preview
 
 # 代码格式检查并自动修复
-pnpm run lint
+npm run lint
 ```
 
 

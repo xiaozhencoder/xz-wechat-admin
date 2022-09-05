@@ -13,18 +13,49 @@
     </div>
     <div class="nav-right">
       <div class="nav-setting"></div>
-      <div class="nav-user flex-center">
+      <div class="nav-user flex-center" ref="userRef" v-click-outside="onClickOutside">
         <div class="content">
           <svg-icon icon-class="nav-user" />
-          <span class="m-l-8 line-1">liushuang@163.com</span>
+          <span class="m-l-8 line-1">{{ userInfo.email }}</span>
           <svg-icon class="drop-color" icon-class="drop-down" />
         </div>
       </div>
     </div>
   </div>
+
+  <el-popover
+    ref="popoverRef"
+    popper-class="user-center"
+    :show-arrow="false"
+    :virtual-ref="userRef"
+    trigger="click"
+    virtual-triggering
+  >
+    <div class="nav-user-info">
+      <div class="user f-s-20 f-w-500">
+        <span>{{ userInfo.userName }}</span>
+      </div>
+      <span>{{ userInfo.email }}</span>
+      <div class="nav-setting">
+        <div @click="router.push({ path: '/' })">
+          <svg-icon icon-class="icon-user-center" />
+          <span>个人中心</span>
+        </div>
+        <div>
+          <a href="https://www.yuque.com/u25374364/zdata/" target="_blank">
+            <svg-icon icon-class="icon-help-center" />
+            <span>帮助中心</span>
+          </a>
+        </div>
+      </div>
+      <span class="p-t-10" @click="loginOut">退出登录</span>
+    </div>
+  </el-popover>
 </template>
 
 <script setup lang="ts">
+import { ref } from "vue"
+import { ClickOutside as vClickOutside, ElMessageBox } from "element-plus"
 import Logo from "./Sidebar/Logo.vue"
 import { ElMessage } from "element-plus"
 import { usePermissionStore } from "@/store/permission"
@@ -33,12 +64,18 @@ import { isQuery } from "@/utils/validate"
 import { useAppStore } from "@/store/app"
 import { useUserStore } from "@/store/user"
 import { queryToObject } from "@/utils"
+const { userInfo, service } = useUserStore()
 
 const permissionStore = usePermissionStore()
 
-import { ref } from "vue"
 const { proxy }: any = getCurrentInstance()
 console.log(proxy.$router.currentRoute.value?.fullPath)
+
+const userRef = ref()
+const popoverRef = ref()
+const onClickOutside = () => {
+  unref(popoverRef).popperRef?.delayHide?.()
+}
 
 const props = defineProps({
   pointer: {
@@ -80,13 +117,22 @@ const appStore = useAppStore()
  * 退出登录
  * */
 const router = useRouter()
-const route = useRoute()
 const loginOut = () => {
   const userStore = useUserStore()
-  userStore.logout().then(() => {
-    ElMessage({ message: "退出登录成功", type: "success" })
-    router.push(`/login?redirect=/`)
+  ElMessageBox.confirm("此操作将退出登录, 是否继续?", "提示", {
+    confirmButtonText: "确定",
+    cancelButtonText: "取消"
   })
+    .then(() => {
+      ElMessage({
+        type: "success",
+        message: "退出成功，请重新登录！"
+      })
+      setTimeout(async () => {
+        await userStore.resetUserInfo()
+      }, 1000)
+    })
+    .catch(() => {})
 }
 </script>
 
@@ -146,6 +192,60 @@ const loginOut = () => {
 
     &:hover {
       background-color: #425369;
+    }
+  }
+}
+</style>
+
+<style lang="scss">
+.user-center {
+  width: 188px !important;
+
+  .nav-user-info {
+    .user {
+      padding-left: 10px;
+    }
+
+    > span {
+      display: inline-block;
+      margin-left: 10px;
+      cursor: pointer;
+    }
+
+    .nav-setting {
+      padding: 16px 0;
+      border-bottom: 1px solid #f6f7f9;
+
+      div {
+        height: 32px;
+        border-radius: 4px;
+
+        a {
+          display: flex;
+        }
+
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+
+        svg {
+          margin-left: 16px;
+          width: 24px;
+          height: 24px;
+        }
+
+        span {
+          margin-left: 12px;
+        }
+      }
+
+      div:first-child {
+        margin-bottom: 8px;
+      }
+
+      div:hover {
+        background: #f6f7f9;
+      }
     }
   }
 }

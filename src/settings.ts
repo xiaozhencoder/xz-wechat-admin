@@ -8,7 +8,6 @@ interface SettingTy {
   isNeedLogin: boolean
   isNeedNprogress: boolean
   showTagsView: boolean
-  tagsViewNum: number
   openProdMock: boolean
   errorLog: string | Array<string>
   permissionMode: string
@@ -21,7 +20,7 @@ interface SettingTy {
 }
 
 const setting: SettingTy = {
-  title: "小镇 Skying",
+  title: "HOME SKYING",
   logoUrl: "https://github.jzfai.top/file/images/pd-logo.svg",
   /**
    * @type {boolean} true | false
@@ -53,10 +52,6 @@ const setting: SettingTy = {
    * @description Whether show TagsView
    */
   showTagsView: true,
-  /**
-   * @description TagsView show number
-   */
-  tagsViewNum: 6,
   /**
    * @type {boolean} true | false
    * @description Whether show the top Navbar

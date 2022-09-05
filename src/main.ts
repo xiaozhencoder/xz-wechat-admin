@@ -34,6 +34,7 @@ directive(app)
 //import router  intercept
 import "./permission"
 
+import NoResult from "@/components/NoResult"
 import SvgIcon from "@/components/SvgIcon/SvgIcon.vue"
 import XzInput from "@/components/XzComm/XzInput/index.vue"
 import XzSelect from "@/components/XzComm/XzSelect/index.vue"
@@ -44,13 +45,14 @@ app.component("XzSelect", XzSelect)
 app.component("XzSearch", XzSearch)
 app.component("XzTable", XzTable)
 app.component("SvgIcon", SvgIcon)
+app.component("NoResult", NoResult)
 
 import { showNotify } from "@/utils"
 app.config.globalProperties.$showNotify = showNotify
 
 //error log  collection
-import errorLog from "@/hooks/useErrorLog"
-errorLog()
+// import errorLog from "@/hooks/useErrorLog"
+// errorLog()
 
 //pinia
 import { createPinia } from "pinia"

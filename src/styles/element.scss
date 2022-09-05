@@ -74,13 +74,17 @@
   }
 }
 
-.el-popper__arrow {
-  display: none;
+// .el-popper__arrow {
+//   display: none;
+// }
+
+.el-popper.is-dark {
+  max-width: 210px;
 }
 
 .el-button {
   min-width: 80px;
-  height: 28px;
+  height: 32px;
 }
 
 .el-color-picker__trigger {
@@ -194,5 +198,26 @@
 
   .el-form-item__label-wrap {
     margin-left: 0 !important;
+  }
+}
+
+.el-range-editor.el-input__wrapper {
+  width: 256px;
+}
+
+.el-picker-panel__sidebar {
+  padding: 10px;
+
+  .el-picker-panel__shortcut {
+    // border: 1px solid;
+    border-radius: 3px;
+    margin: 5px 0;
+    text-align: center;
+    padding-left: 0;
+
+    &:hover {
+      background-color: #f6f7f9;
+      color: #26292e;
+    }
   }
 }

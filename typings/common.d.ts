@@ -42,7 +42,6 @@ interface SettingTy {
   isNeedLogin: boolean
   isNeedNprogress: boolean
   showTagsView: boolean
-  tagsViewNum: number
   openProdMock: boolean
   errorLog: string | Array<string>
   permissionMode: string

@@ -1,10 +1,11 @@
-import { loginReq, logoutReq, getInfoReq } from "@/api/user"
-import { setToken, removeToken } from "@/utils/auth"
+import { loginReq, logoutReq, getInfoReq, getLoginUserInfo } from "@/api/user"
 import { ObjTy } from "~/common"
 import router, { constantRoutes, asyncRoutes } from "@/router"
 import { defineStore } from "pinia"
 import { usePermissionStore } from "@/store/permission"
-// import { useTagsViewStore } from '@/store/tagsView'
+import { getDataByCache, setDataToCache } from "@/utils/cache"
+import Cookies from "js-cookie"
+import { showNotify } from "@/utils"
 
 const resetRouter = () => {
   const asyncRouterNameArr: Array<any> = asyncRoutes.map((mItem) => mItem.name)
@@ -15,37 +16,160 @@ const resetRouter = () => {
   })
 }
 
+const removeInfo = () => {
+  const removeArr = [
+    "userInfo",
+    "service",
+    "currentProject",
+    "visitProduct",
+    "userId",
+    "dashboards",
+    "projects",
+    "token",
+    "Dashboard"
+  ]
+  removeArr.forEach((item) => {
+    localStorage.removeItem(item)
+    Cookies.remove(item)
+    Cookies.remove(item, { domain: "." + (window as any).config.DOMAIN, path: "/" })
+    console.log(item)
+  })
+}
+
+const getDefaultState = () => {
+  return {
+    userId: getDataByCache("userId") || "",
+    userName: "",
+    token: "",
+    loginInfo: getDataByCache("loginInfo")
+      ? getDataByCache("loginInfo")
+      : { productProjects: [], userName: "", email: "" },
+    userInfo: getDataByCache("userInfo") || {},
+    avatar: "",
+    roles: [] as Array<any>,
+    service: getDataByCache("service") || {},
+    projects: getDataByCache("projects") || [],
+    dashboards: getDataByCache("dashboards") || []
+  }
+}
+
 export const useUserStore = defineStore("user", {
-  state: () => {
-    return {
-      username: "",
-      avatar: "",
-      roles: [] as Array<any>
-    }
-  },
+  state: () => getDefaultState(),
 
   actions: {
-    M_username(username: string) {
+    setResetState() {
       this.$patch((state) => {
-        state.username = username
+        state = getDefaultState()
       })
     },
-    M_roles(roles: Array<string>) {
+    setUserId(id: number) {
+      this.$patch((state) => {
+        state.userId = id
+      })
+    },
+    setUserName(userName: string) {
+      this.$patch((state) => {
+        state.userName = userName
+      })
+    },
+    setUserInfo(userInfo: ObjTy) {
+      this.$patch((state) => {
+        state.userInfo = userInfo
+      })
+    },
+    setRoles(roles: Array<string>) {
       this.$patch((state) => {
         state.roles = roles
       })
     },
+    setLoginInfo(data: ObjTy) {
+      this.$patch((state) => {
+        state.loginInfo = data
+      })
+    },
 
-    login(data: ObjTy) {
+    setService(service: ObjTy) {
+      this.$patch((state) => {
+        state.service = service
+      })
+    },
+
+    setProjects(projects: Array<ObjTy>) {
+      this.$patch((state) => {
+        state.projects = projects
+      })
+    },
+
+    setDashboards(dashboards: Array<ObjTy>) {
+      this.$patch((state) => {
+        state.dashboards = dashboards
+      })
+    },
+
+    login(userInfo: ObjTy) {
       return new Promise((resolve, reject) => {
-        loginReq(data)
-          .then((res: ObjTy) => {
-            if (res.code === 20000) {
-              //commit('SET_Token', res.data?.jwtToken)
-              setToken(res.data?.jwtToken)
-              resolve(null)
+        loginReq(userInfo)
+          .then(async (res) => {
+            if (res.data.status === 0) {
+              const accessToken = res.data.data.access_token
+              setDataToCache("token", accessToken)
+              const info = await getLoginUserInfo({ accessToken })
+              if (info.data.status === 0) {
+                const data = info.data.data
+                if (!data.userName) data["userName"] = data.username
+                const userId = data.id
+                const service = { serviceName: data.serviceName }
+
+                this.setUserId(userId)
+                this.setLoginInfo(data)
+                this.setService(service)
+                setDataToCache("service", service)
+                setDataToCache("userId", userId)
+                setDataToCache("loginInfo", data)
+                resolve(info.data)
+              } else {
+                resolve(null)
+              }
             } else {
-              reject(res)
+              resolve(res.data)
+            }
+          })
+          .catch((error) => {
+            reject(error)
+          })
+      })
+    },
+
+    // get user info
+    getUserInfo() {
+      return new Promise((resolve, reject) => {
+        getInfoReq()
+          .then((response: ObjTy) => {
+            const { data, status } = response
+
+            if (!data) {
+              reject("用户信息失效，请重新登录！")
+            }
+            if (status === 0) {
+              const { projects, service, user, dashboards, actionDays, lastActionTime } = data
+              user.actionDays = actionDays // 近30天活跃天数
+              user.lastActionTime = lastActionTime // 上次访问时间
+              if (!user.userName) user["userName"] = user.username
+              setDataToCache("projects", projects)
+
+              setDataToCache("userInfo", user)
+              setDataToCache("dashboards", dashboards)
+
+              if (service) {
+                setDataToCache("service", service)
+                this.setService(service)
+              }
+              this.setUserName(user.username || user.userName)
+              this.setUserInfo(user)
+              this.setProjects(projects)
+              this.setDashboards(dashboards)
+
+              resolve(data)
             }
           })
           .catch((error: any) => {
@@ -53,39 +177,31 @@ export const useUserStore = defineStore("user", {
           })
       })
     },
-    // get user info
-    getInfo() {
-      return new Promise((resolve, reject) => {
-        getInfoReq()
-          .then((response: ObjTy) => {
-            const { data } = response
-            if (!data) {
-              return reject("Verification failed, please Login again.")
-            }
-            //此处模拟数据
-            const rolesArr: any = localStorage.getItem("roles")
-            if (rolesArr) {
-              data.roles = JSON.parse(rolesArr)
-            } else {
-              data.roles = ["admin"]
-              localStorage.setItem("roles", JSON.stringify(data.roles))
-            }
-            const { roles, username } = data
-            this.M_username(username)
-            this.M_roles(roles)
-            resolve(data)
-          })
-          .catch((error: any) => {
-            reject(error)
-          })
+
+    // remove UserInfo
+    resetUserInfo() {
+      return new Promise((resolve) => {
+        removeInfo()
+        this.resetState()
+        resetRouter()
+        window.location.reload()
+        resolve(null)
       })
     },
     // user logout
     logout() {
       return new Promise((resolve, reject) => {
         logoutReq()
-          .then(() => {
-            this.resetState()
+          .then((res: ObjTy) => {
+            if (res.data.status === 0) {
+              this.resetState()
+              resolve(null)
+            } else {
+              showNotify({
+                content: res.data.message || "注销失败！",
+                type: "warning"
+              })
+            }
             resolve(null)
           })
           .catch((error: any) => {
@@ -95,14 +211,10 @@ export const useUserStore = defineStore("user", {
     },
     resetState() {
       return new Promise((resolve) => {
-        this.M_username("")
-        this.M_roles([])
-        removeToken() // must remove  token  first
-        resetRouter() // reset the router
+        this.setResetState()
+
         const permissionStore = usePermissionStore()
         permissionStore.M_isGetUserInfo(false)
-        // const tagsViewStore = useTagsViewStore()
-        // tagsViewStore.delAllViews()
         resolve(null)
       })
     }

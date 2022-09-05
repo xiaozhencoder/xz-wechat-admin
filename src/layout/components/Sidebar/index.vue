@@ -79,6 +79,7 @@ const activeMenu = computed((): any => {
 
   .sidebar-menu {
     width: $sidebar-width;
+    border-radius: 8px;
   }
 }
 </style>

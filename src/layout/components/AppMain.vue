@@ -1,5 +1,5 @@
 <template>
-  <div class="app-main" :class="{ 'show-tag-view': settings.showTagsView }">
+  <div class="app-main" :class="{ 'app-custom-class': appWidth }">
     <router-view v-slot="{ Component }">
       <!--has transition  Judging by settings.mainNeedAnimation-->
       <transition v-if="settings.mainNeedAnimation" name="fade-transform" mode="out-in">
@@ -43,10 +43,21 @@ const removeDeepChildren = (deepOldRouter) => {
   })
 }
 
+const appWidth = computed(() => {
+  const routeTmp = route.matched.filter((r) => r.name)[0]
+  console.log(routeTmp?.children.length > 0)
+  return routeTmp?.children.length > 0
+})
+
 watch(
   () => route.name,
   () => {
     const routerLevel = route.matched.length
+
+    console.log()
+    const routeTmp = route.matched.filter((r) => r.name)[0]
+
+    console.log(route, route.matched)
     //二级路由处理
     if (routerLevel === 2) {
       if (deepOldRouter?.name) {
@@ -113,14 +124,19 @@ watch(
 <style scoped lang="scss">
 .app-main {
   width: 100%;
+
   padding: $app-main-padding;
   top: $layout-header-height;
-  background-color: $color-white;
-  box-shadow: $navbar-box-shadow;
-  border-radius: 8px;
-  margin: 10px;
+  // background-color: $color-white;
+  // box-shadow: $navbar-box-shadow;
+  // border-radius: 8px;
+  // margin: 10px;
   overflow-y: scroll;
-  height: calc(100vh - $layout-header-height - 40px);
+  height: calc(100vh - $layout-header-height - $app-main-padding * 2);
+}
+
+.app-custom-class {
+  width: calc(100vw - $sidebar-width - $app-main-padding * 2);
 }
 .fixed-header + .app-main {
   padding-top: 50px;

@@ -10,7 +10,8 @@
     left: 48px;
     right: 0;
     height: 55px;
-    background: #f6f7f9;
+    // background: #f6f7f9;
+    background: mix($color-white, $color-primary-light-9, 30%);
     padding-left: 8px;
     :deep(.select-edit) {
       display: flex;

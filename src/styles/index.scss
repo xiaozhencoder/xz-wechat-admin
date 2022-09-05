@@ -58,7 +58,14 @@
 
 //页面样式
 .common-page-container {
-  padding: 8px;
+  background-color: $color-white;
+  box-shadow: $navbar-box-shadow;
+  padding: $app-main-padding;
+  top: $layout-header-height;
+  border-radius: 8px;
+  overflow-y: scroll;
+  height: calc(100vh - $layout-header-height - 40px);
+  padding: 12px;
 }
 
 //页头
@@ -91,7 +98,12 @@
     font-weight: normal;
     line-height: $navbar-height;
     border-bottom: 1px solid #f1f1f1;
-    background: linear-gradient(96deg, $color-primary 0%, $color-primary-light-3 51%, $color-secondary 100%);
+    background: linear-gradient(
+      96deg,
+      $color-secondary 0%,
+      $color-secondary-light-3 51%,
+      $color-secondary-light-3 100%
+    );
     padding: 0 20px;
     margin-bottom: 16px;
   }

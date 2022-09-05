@@ -310,3 +310,13 @@ export function queryToObject(str: string) {
   }
   return params
 }
+
+export const getBaseUrl = () => {
+  const env = import.meta.env
+  return env.VITE_APP_ENV === "dev" ? env.VITE_APP_BASE_URL : (window as ObjTy).config.SERVER_URL
+}
+
+export function getHostName() {
+  const hostName = window.location.hostname.split(".")[0]
+  return hostName === "localhost" ? "newtest" : hostName
+}
