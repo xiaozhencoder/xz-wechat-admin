@@ -4,7 +4,30 @@
       <!--logo-->
       <Logo v-if="settings.sidebarLogo" :collapse="false" />
       <div class="nav-menu m-l-8" v-for="item in routes" :key="item.path">
-        <router-link :to="{ path: item.path, query: resolveQuery(item) }">
+        <template v-if="item.meta.pullDown">
+          <el-popover
+            v-model:visible="visible"
+            :show-arrow="false"
+            :offset="5"
+            placement="bottom-start"
+            :width="400"
+            trigger="click"
+          >
+            <template #reference>
+              <div class="nav-title" :class="{ active: isActive(item.path) }">
+                <span>{{ item.meta?.title }}</span>
+                <svg-icon :icon-class="item.meta?.icon" class="nav-icon" />
+              </div>
+            </template>
+            <component
+              :is="componentName(item.name)"
+              :sub-menu="item.children.filter((c) => !c.meta.hidden)"
+              @closePopover="handleClosePopover"
+            />
+          </el-popover>
+        </template>
+
+        <router-link v-else :to="{ path: item.path, query: resolveQuery(item) }">
           <div class="nav-title">
             <span>{{ item.meta?.title }}</span>
           </div>
@@ -17,7 +40,7 @@
         <div class="content">
           <svg-icon icon-class="nav-user" />
           <span class="m-l-8 line-1">{{ userInfo.email }}</span>
-          <svg-icon class="drop-color" icon-class="drop-down" />
+          <svg-icon class="nav-icon" icon-class="drop-down-white" />
         </div>
       </div>
     </div>
@@ -56,6 +79,7 @@
 <script setup lang="ts">
 import { ref } from "vue"
 import { ClickOutside as vClickOutside, ElMessageBox } from "element-plus"
+import ContentCenterPopover from "@/layout/components/Popover/contentCenterPopover.vue"
 import Logo from "./Sidebar/Logo.vue"
 import { ElMessage } from "element-plus"
 import { usePermissionStore } from "@/store/permission"
@@ -65,11 +89,20 @@ import { useAppStore } from "@/store/app"
 import { useUserStore } from "@/store/user"
 import { queryToObject } from "@/utils"
 const { userInfo, service } = useUserStore()
-
+const route = useRoute()
 const permissionStore = usePermissionStore()
 
-const { proxy }: any = getCurrentInstance()
-console.log(proxy.$router.currentRoute.value?.fullPath)
+const visible = ref(false)
+
+const typeComponent = {
+  ContentCenter: markRaw(ContentCenterPopover)
+}
+
+const componentName = computed(() => {
+  return (name: string) => {
+    return typeComponent[name]
+  }
+})
 
 const userRef = ref()
 const popoverRef = ref()
@@ -87,10 +120,15 @@ const props = defineProps({
 const settings = computed(() => {
   return appStore.settings
 })
-const currRoute = ref<string>(proxy.$router.currentRoute.value?.fullPath)
 
 const routes = computed(() => {
   return permissionStore.routes.filter((item) => !item.hidden)
+})
+
+const isActive = computed(() => {
+  return (path: string) => {
+    return route.fullPath.indexOf(path) !== -1
+  }
 })
 
 // 解析参数'{id:1}'|| id=1 => {id: 1}
@@ -134,9 +172,22 @@ const loginOut = () => {
     })
     .catch(() => {})
 }
+
+const handleClosePopover = () => {
+  visible.value = false
+}
 </script>
 
 <style lang="scss" scoped>
+.nav-icon {
+  font-size: 24px;
+  padding-bottom: 4px;
+  vertical-align: middle !important;
+}
+.active {
+  border-bottom: 2px solid #ffffff;
+  height: 95%;
+}
 .navbar {
   height: $navbar-height;
   line-height: $navbar-height;
@@ -185,9 +236,9 @@ const loginOut = () => {
         color: $color-white;
         max-width: 90px;
       }
-      .drop-color {
-        stroke: #fff;
-      }
+      // .drop-color {
+      //   stroke: #fff;
+      // }
     }
 
     &:hover {

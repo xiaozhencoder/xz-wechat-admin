@@ -13,7 +13,6 @@
 <script lang="ts" setup>
 import { EmojiArr } from "@/components/XzComm/XzEditor/module/common"
 const attrs: any = useAttrs()
-console.log(attrs)
 
 const emit = defineEmits(["preview"])
 const props = defineProps({

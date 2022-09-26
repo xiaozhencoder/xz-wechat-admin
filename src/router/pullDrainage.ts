@@ -1,17 +1,40 @@
 import Layout from "@/layout"
+import AppMain from "@/layout/components/AppMain.vue"
 export default [
   {
     path: "/pullDrainage",
     name: "PullDrainage",
     component: Layout,
-    redirect: "/pullDrainage/welcomeSpeech",
+    redirect: "/pullDrainage/welcomeSpeech/customWelcome",
     meta: { title: "拉新引流", icon: "example" },
     children: [
       {
         path: "welcomeSpeech",
         name: "WelcomeSpeech",
-        component: () => import("@/views/pullDrainage/welcomeSpeech/index.vue"),
-        meta: { title: "欢迎语", elSvgIcon: "WindPower" }
+        component: () => import("@/views/pullDrainage/index.vue"),
+        // component: AppMain,
+        meta: { title: "欢迎语", elSvgIcon: "WindPower" },
+        children: [
+          {
+            path: "customWelcome",
+            name: "CustomWelcome",
+            component: () => import("@/views/pullDrainage/welcomeSpeech/customSpeech/index.vue"),
+            meta: { title: "客户欢迎语" }
+          },
+          {
+            path: "createCustomWelcome",
+            name: "CreateCustomWelcome",
+            hidden: true,
+            component: () => import("@/views/pullDrainage/welcomeSpeech/customSpeech/modules/create.vue"),
+            meta: { title: "创建客户欢迎语" }
+          },
+          {
+            path: "customGroupWelcome",
+            name: "CustomGroupWelcome",
+            component: () => import("@/views/pullDrainage/welcomeSpeech/customGroupSpeech/index.vue"),
+            meta: { title: "客户群欢迎语" }
+          }
+        ]
       },
       {
         path: "addCustomer",

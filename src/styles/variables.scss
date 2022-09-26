@@ -27,7 +27,7 @@ $diabeld-border-color: #ffb800;
 $color-primary: #4a5dff;
 $color-secondary: #00a39b;
 //$color-secondary: #00a39b;
-$color-success: #67c23a;
+$color-success: #00a39b; // #67c23a
 $color-warning: #fb9400;
 $color-danger: #f56c6c;
 $color-error: #db2828;
@@ -73,6 +73,7 @@ $font-size-base: $font-size-sm;
 /* Background
 -------------------------- */
 $background-color-base: #f6f6f6;
+$background-color-hover: #e7e7e7;
 
 /* Border
 -------------------------- */

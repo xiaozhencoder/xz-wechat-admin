@@ -23,7 +23,8 @@ service.interceptors.request.use(
     request.headers["userId"] = getDataByCache("userId")
     // request.headers["currentProject"] = getDataByCache("currentProject")?.projectName
     // request.headers["productName"] = getDataByCache("visitProduct")?.codeName
-    request.headers["currentProject"] = "kwn9iffp"
+    // request.headers["currentProject"] = "kwn9iffp"
+    request.headers["currentProject"] = "dddssss" // dddssss
     request.headers["productName"] = "scrm"
     request.headers["service"] = getHostName()
 
@@ -224,6 +225,7 @@ export function axiosReq({
   data,
   params,
   method,
+  headers,
   bfLoading,
   afHLoading,
   isUploadFile,
@@ -237,6 +239,7 @@ export function axiosReq({
     method: method ?? "get",
     data: data ?? {},
     params: params ?? {},
+    headers: headers ?? {},
     bfLoading: bfLoading ?? false,
     afHLoading: afHLoading ?? true,
     isUploadFile: isUploadFile ?? false,

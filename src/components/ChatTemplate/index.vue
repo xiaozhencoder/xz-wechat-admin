@@ -6,8 +6,15 @@
         效果预览
       </div>
       <div class="body">
-        <template v-if="componentName">
-          <component :is="componentName" :info="info" v-bind="$attrs" it="showEdit" @preview="preview" />
+        <template v-for="(item, index) in info" :key="index">
+          <component
+            v-if="componentName(item)"
+            :is="componentName(item)"
+            :info="item"
+            v-bind="$attrs"
+            it="showEdit"
+            @preview="preview"
+          />
         </template>
       </div>
       <div v-if="hasTestSendBtn" class="foot">
@@ -23,7 +30,6 @@
     /> -->
     <!-- <media-preview
       :media-list="[info]"
-      :is-edit="false"
       :media-dialog-visible="previewDialog"
       @close="previewDialog = false"
     /> -->
@@ -95,7 +101,9 @@ const sendDialog = ref<boolean>(false)
 const previewDialog = ref<boolean>(false) // 预览框
 
 const componentName = computed(() => {
-  return Object.keys(props.info).length > 1 ? typeText[props.info.type] : ""
+  return (item) => {
+    return Object.keys(item).length > 1 ? typeText[item.type] : ""
+  }
 })
 
 function preview() {
@@ -144,7 +152,8 @@ function testSend() {
     background: #f0f1f5;
     box-shadow: 0px -20px 22px 0px rgba(23, 22, 23, 0.07);
     border-radius: 4px;
-    margin: auto;
+    left: 50%;
+    transform: translate(-50%);
     .head {
       height: 50px;
       text-align: center;

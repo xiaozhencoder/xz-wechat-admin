@@ -1,5 +1,5 @@
 <template>
-  <div class='rule-nav-container'>
+  <div class="rule-nav-container">
     <nav
       v-for="(item, index) in data"
       :key="index"
@@ -7,20 +7,24 @@
       @click="handle(item.id)"
     >
       <template v-if="item.isComplete && tickIcon">
-        <span><svg-icon class="tick-icon" icon-class="rule-nav-tick" /></span> {{ item.name }}
+        <span><svg-icon class="tick-icon" icon-class="rule-nav-tick" /></span>
+        {{ item.name }}
       </template>
       <template v-else>
-        <span>{{ index + 1 }}</span> {{ item.name }}
+        <span>{{ index + 1 }}</span>
+        {{ item.name }}
       </template>
     </nav>
   </div>
 </template>
 
 <script setup lang="ts">
+import { ObjTy } from '~/common';
+
 const emit = defineEmits(["handle"])
 const props = defineProps({
   data: {
-    type: Array,
+    type: Array<ObjTy>,
     default: () => []
   },
   value: {
@@ -58,7 +62,7 @@ const handle = (id) => {
     position: relative;
     &:not(:last-child) {
       &::after {
-        content: '';
+        content: "";
         position: absolute;
         width: 140px;
         height: 1px;

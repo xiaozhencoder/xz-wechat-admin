@@ -1,10 +1,10 @@
-import { ElLoading, ElNotification, ElMessage, ElMessageBox } from 'element-plus'
+import { ElLoading, ElNotification, ElMessage, ElMessageBox } from "element-plus"
 const useElementExample = () => {
   /* element form校验相关*/
   // 密码必须为6-18位字母、数字
   const passwordValid: any = (rule: any, value: any, callback: any) => {
     if (!/^(?![^a-zA-Z]+$)(?!\D+$)/.test(value)) {
-      callback(new Error('6-18位字母、数字'))
+      callback(new Error("6-18位字母、数字"))
     } else {
       callback()
     }
@@ -12,7 +12,7 @@ const useElementExample = () => {
   // 大于0的整数
   const upZeroInt = (rule: any, value: any, callback: any) => {
     if (!/^\+?[1-9]\d*$/.test(value)) {
-      callback(new Error('大于0的整数'))
+      callback(new Error("大于0的整数"))
     } else {
       callback()
     }
@@ -22,15 +22,15 @@ const useElementExample = () => {
       callback()
     } else {
       if (!/^\+?[1-9]\d*$/.test(value)) {
-        callback(new Error('大于0的整数'))
+        callback(new Error("大于0的整数"))
       } else {
         callback()
       }
     }
   }
   const validatePass = (rule: any, value: any, callback: any) => {
-    if (value === '') {
-      callback(new Error('请输入密码'))
+    if (value === "") {
+      callback(new Error("请输入密码"))
     } else {
       callback()
     }
@@ -47,24 +47,24 @@ const useElementExample = () => {
     searchForm: {},
     /* 表单校验*/
     formRules: {
-      isNotNull: [{ required: true, message: '该字段不能为空', trigger: 'blur' }],
-      isNotNullSecond: [{ required: true, message: '不能为空', trigger: 'blur' }],
+      isNotNull: [{ required: true, message: "该字段不能为空", trigger: "blur" }],
+      isNotNullSecond: [{ required: true, message: "不能为空", trigger: "blur" }],
       mLength8: [
-        { required: true, message: '该字段不能为空', trigger: 'blur' },
-        { max: 8, message: '最长为8个字符', trigger: 'blur' }
+        { required: true, message: "该字段不能为空", trigger: "blur" },
+        { max: 8, message: "最长为8个字符", trigger: "blur" }
       ],
       minLength7: [
-        { required: true, message: '该字段不能为空', trigger: 'blur' },
-        { min: 7, message: '最小7个字符', trigger: 'blur' }
+        { required: true, message: "该字段不能为空", trigger: "blur" },
+        { min: 7, message: "最小7个字符", trigger: "blur" }
       ],
       length17: [
-        { required: true, message: '该字段不能为空', trigger: 'blur' },
-        { min: 17, max: 17, message: '长度为17个字符', trigger: 'blur' }
+        { required: true, message: "该字段不能为空", trigger: "blur" },
+        { min: 17, max: 17, message: "长度为17个字符", trigger: "blur" }
       ],
-      desc: [{ validator: validatePass, trigger: 'blur' }],
-      upZeroInt: [{ validator: upZeroInt, trigger: 'blur' }],
-      upZeroIntCanNull: [{ validator: upZeroIntCanNull, trigger: 'blur' }],
-      passwordValid: [{ validator: passwordValid, trigger: 'blur' }]
+      desc: [{ validator: validatePass, trigger: "blur" }],
+      upZeroInt: [{ validator: upZeroInt, trigger: "blur" }],
+      upZeroIntCanNull: [{ validator: upZeroIntCanNull, trigger: "blur" }],
+      passwordValid: [{ validator: passwordValid, trigger: "blur" }]
     },
     /* 时间packing相关*/
     datePickerOptions: {
@@ -75,7 +75,7 @@ const useElementExample = () => {
     startEndArr: [],
     startEndArrSub: [],
     /* dialog相关*/
-    dialogTitle: '添加',
+    dialogTitle: "添加",
     detailDialog: false,
     isDialogEdit: false,
     dialogVisible: false,
@@ -83,16 +83,16 @@ const useElementExample = () => {
     /* 级联相关*/
     cascaderKey: 1,
     SetKesDept: {
-      value: 'id',
-      expandTrigger: 'hover',
-      label: 'label',
-      children: 'children'
+      value: "id",
+      expandTrigger: "hover",
+      label: "label",
+      children: "children"
     },
     SetKesDeptNoStrictly: {
-      value: 'id',
-      expandTrigger: 'hover',
-      label: 'label',
-      children: 'children',
+      value: "id",
+      expandTrigger: "hover",
+      label: "label",
+      children: "children",
       checkStrictly: true
     },
     cascaderOptionsOne: [],
@@ -100,8 +100,8 @@ const useElementExample = () => {
     /* 树相关*/
     treeData: [],
     defaultProps: {
-      children: 'children',
-      label: 'label'
+      children: "children",
+      label: "label"
     }
   })
 
@@ -120,8 +120,8 @@ const useElementExample = () => {
   const elMessage = (message?: string, type?: any) => {
     ElMessage({
       showClose: true,
-      message: message || '成功',
-      type: type || 'success',
+      message: message || "成功",
+      type: type || "success",
       center: false
     })
   }
@@ -133,9 +133,9 @@ const useElementExample = () => {
   const elLoading = () => {
     loadingId = ElLoading.service({
       lock: true,
-      text: '数据载入中',
-      spinner: 'el-icon-loading',
-      background: 'rgba(0, 0, 0, 0.1)'
+      text: "数据载入中",
+      spinner: "el-icon-loading",
+      background: "rgba(0, 0, 0, 0.1)"
     })
   }
   /*
@@ -147,10 +147,10 @@ const useElementExample = () => {
    * */
   const elNotify = (message?: string, type?: any, title?: string, duration?: number) => {
     ElNotification({
-      title: title || '提示',
-      type: type || 'success',
-      message: message || '请传入提示消息',
-      position: 'top-right',
+      title: title || "提示",
+      type: type || "success",
+      message: message || "请传入提示消息",
+      position: "top-right",
       duration: duration || 2500,
       offset: 40
     })
@@ -163,12 +163,12 @@ const useElementExample = () => {
   * */
   const elConfirmNoCancelBtn = (title?: string, message?: string) => {
     return ElMessageBox({
-      message: message || '你确定要删除吗',
-      title: title || '确认框',
-      confirmButtonText: '确定',
-      cancelButtonText: '取消',
+      message: message || "你确定要删除吗",
+      title: title || "确认框",
+      confirmButtonText: "确定",
+      cancelButtonText: "取消",
       showCancelButton: false,
-      type: 'warning'
+      type: "warning"
     })
   }
   /*
@@ -179,11 +179,11 @@ const useElementExample = () => {
    * */
   const elConfirm = (title?: string, message?: string) => {
     return ElMessageBox({
-      message: message || '你确定要删除吗',
-      title: title || '确认框',
-      confirmButtonText: '确定',
-      cancelButtonText: '取消',
-      type: 'warning'
+      message: message || "你确定要删除吗",
+      title: title || "确认框",
+      confirmButtonText: "确定",
+      cancelButtonText: "取消",
+      type: "warning"
     })
   }
 

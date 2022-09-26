@@ -1,5 +1,5 @@
-import router from '@/router'
-import { ObjTy } from '~/common'
+import router from "@/router"
+import { ObjTy } from "~/common"
 const useVueRouterExample = function () {
   const route: any = router.currentRoute
   const getQueryParam = () => {
@@ -8,7 +8,7 @@ const useVueRouterExample = function () {
     }
   }
   // vue router
-  const routerPush = (name: string, params: ObjTy) => {
+  const routerPush = (name: string, params?: ObjTy) => {
     let data = {}
     if (params) {
       data = {

@@ -26,10 +26,10 @@ export default [
         name: "Input"
       },
       {
-        path: "select",
+        path: "singleSelect",
         component: () => import("@/views/ui/select/index.vue"),
         meta: { title: "单选", elSvgIcon: "SetUp" },
-        name: "Select"
+        name: "SingleSelect"
       },
       {
         path: "multiselect",

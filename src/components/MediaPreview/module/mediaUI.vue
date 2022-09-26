@@ -15,12 +15,18 @@
     <audio ref="audioPlayer" controls :src="voiceUrl">Your browser does not support the audio element.</audio>
   </div>
   <div v-else class="other-preview">
-    <chat-template :info="mediaDetail" v-bind="$attrs" :show-edit="true" :has-test-send-btn="false" />
+    <chat-template
+      :info="Array.isArray(mediaDetail) ? mediaDetail : [mediaDetail]"
+      v-bind="$attrs"
+      :show-edit="true"
+      :has-test-send-btn="false"
+    />
   </div>
 </template>
 
 <script lang="ts" setup>
 import ChatTemplate from "@/components/ChatTemplate/index.vue"
+import { mediaList } from "@/views/ui/comm/config"
 
 import { ObjTy } from "~/common"
 
@@ -55,7 +61,6 @@ const videoUrl = ref(
 watch(
   () => props.mediaDetail,
   (val) => {
-    console.log(props.mediaDetail)
     proxy.$nextTick(() => {
       if (val.type === "voice") {
         proxy.$refs.audioPlayer.src =

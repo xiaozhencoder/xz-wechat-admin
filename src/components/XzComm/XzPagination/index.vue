@@ -94,7 +94,7 @@ const handleCurrentChange = (val: number) => {
   display: flex;
   justify-content: flex-end;
   background: #fff;
-  padding: 24px 0 24px 16px;
+  padding: 18px 0 18px 16px;
 }
 .pagination-container.hidden {
   display: none;

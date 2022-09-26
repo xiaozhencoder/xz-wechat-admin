@@ -169,7 +169,7 @@
   border-radius: 6px;
 
   .el-dialog__header {
-    padding: 16px 18px;
+    padding: 24px 30px;
     .el-dialog__title {
       font-size: 18px;
       font-weight: bold;
@@ -177,11 +177,11 @@
     }
   }
   .el-dialog__body {
-    padding: 0 18px 12px;
+    padding: 15px 30px 30px;
     background: #fff;
   }
   .el-dialog__footer {
-    padding: 0 18px 16px;
+    padding: 18px 30px 16px;
 
     .dialog-footer {
       display: block;
@@ -220,4 +220,46 @@
       color: #26292e;
     }
   }
+}
+
+.el-notification {
+  background-color: $color-primary-light-9;
+}
+
+// 分页样式
+.el-pagination {
+  &.paging {
+    .el-pagination__sizes {
+      margin-right: 0px;
+
+      .el-input__wrapper {
+        box-shadow: none;
+      }
+    }
+
+    .el-pager li {
+      border-radius: 4px;
+      background: #ffffff;
+      border: 1px solid $border-color-base;
+      margin-right: 8px;
+      &:last-child {
+        margin-right: 0;
+      }
+      &.is-active {
+        background: $color-primary;
+        color: #fff;
+        border: 1px solid $color-primary;
+      }
+    }
+    .el-pager li.active + li {
+      border-left: 1px solid $border-color-base;
+    }
+    .el-pagination__jump {
+      display: none;
+    }
+  }
+}
+
+.el-select-dropdown > .el-scrollbar {
+  width: $select-max-width;
 }

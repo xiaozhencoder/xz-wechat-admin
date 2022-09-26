@@ -19,7 +19,7 @@
       </div>
 
       <div class="dashb-echarts m-r-16">
-        <el-card shadow="always">
+        <el-card v-loading="chartLoading" shadow="always">
           <span class="f-s-20 f-w-700">客户趋势</span>
           <el-date-picker
             v-model="dateArr"
@@ -117,7 +117,7 @@ import { workData, option as optionData, routeMenu } from "./config"
 import { getCompanyAuthStatus, getWorkChatData as getStatData, getUserTrendData } from "@/api/dashboard/index"
 import { ObjTy } from "~/common"
 import { beforeDay } from "@/utils"
-import { shortcuts } from "@/constent/globalConstant"
+import { shortcuts } from "@/constent/dateConstant"
 import { useUserStore } from "@/store/user"
 
 const { userInfo, service } = useUserStore()

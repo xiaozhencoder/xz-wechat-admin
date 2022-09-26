@@ -1,26 +1,24 @@
 <template>
   <template v-if="item && !item.hidden">
-    <template v-if="showSidebarItem(item?.children, item)">
-      <Link v-if="onlyOneChild.meta" :to="onlyOneChild.path">
-        <el-menu-item :index="onlyOneChild.path" :class="{ 'submenu-title': !isNest }">
-          <item :meta="onlyOneChild.meta || item.meta" />
-          <template #title>
-            <span class="sidebar-title">{{ onlyOneChild.meta?.title }}</span>
-          </template>
+    <template v-if="showSidebarItem(item.children, item)">
+      <Link v-if="item.meta" :to="resolvePath(item.path)" :class="{ 'router-link-active': isActive }">
+        <el-menu-item :index="item.path" :class="{ 'submenu-title': !isNest }">
+          <item :meta="item.meta || item.meta" />
+          <template #title>{{ item.meta?.title }}</template>
         </el-menu-item>
       </Link>
     </template>
-    <el-sub-menu v-else ref="subMenu" :index="item.path" popper-append-to-body>
+    <el-sub-menu v-else ref="subMenu" :index="item.path">
       <template v-if="item.meta" #title>
         <item :meta="item.meta" />
         <span>{{ item.meta.title }}</span>
       </template>
-      <SidebarItem
-        v-for="child in item"
-        :key="child.path"
+      <sidebar-item
+        v-for="child in item.children"
+        :key="resolvePath(child.path)"
         :is-nest="true"
         :item="child"
-        :base-path="resolvePath(child.path)"
+        :base-path="resolvePath(item.path)"
       />
     </el-sub-menu>
   </template>
@@ -33,6 +31,8 @@ import Item from "./Item"
 import { isExternal } from "@/utils/validate"
 import path from "path"
 import { RouteItemTy } from "~/router"
+const route = useRoute()
+
 const props = defineProps({
   //每一个router Item
   item: {
@@ -54,27 +54,20 @@ onMounted(() => {
   // console.log("我挂载了");
   // console.log(proxy.item);
 })
-//显示sidebarItem 的情况
-let onlyOneChild: any = ref(null)
+
+const isActive = computed(() => {
+  const name = props.item.name
+  return (route.name as string).includes(name)
+})
+
 const showSidebarItem = (children = [], parent: RouteItemTy) => {
-  const showingChildren = children.filter((item: RouteItemTy) => {
-    if (item.hidden) {
-      return false
-    } else {
-      // Temp set(will be used if only has one showing child)
-      onlyOneChild.value = item
-      return true
-    }
-  })
-  if (showingChildren.length === 1 && !parent?.alwaysShow) {
-    return true
-  }
+  const showingChildren = children.filter((item: RouteItemTy) => !item.hidden)
   if (showingChildren.length === 0) {
-    onlyOneChild.value = { ...parent, noChildren: true }
     return true
   }
   return false
 }
+
 const resolvePath = (routePath: string) => {
   if (isExternal(routePath)) {
     return routePath

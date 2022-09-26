@@ -111,7 +111,6 @@
   </div>
   <media-preview
     :media-list="previewMediaData"
-    :is-edit="false"
     v-model:media-dialog-visible="previewDialog"
     @close="previewDialog = false"
   />

@@ -1,10 +1,10 @@
 <template>
-  <el-tabs v-model="activeName" @tab-click="handleClick">
-    <el-tab-pane v-for="(item, index) in tabs" :key="index" :name="item.label">
+  <el-tabs v-model="activeName" @tab-change="handleChange">
+    <el-tab-pane v-for="(item, index) in tabs" :key="index" :name="item[tabsConfig.label]">
       <template #label>
-        {{ item.name }}
-        <span v-if="item.num >= 0" :class="'event-num__' + item.label">
-          {{ item.num }}
+        {{ item[tabsConfig.name] }}
+        <span v-if="item[tabsConfig.num] >= 0" :class="'event-num__' + item[tabsConfig.label]">
+          {{ item[tabsConfig.num] }}
         </span>
       </template>
     </el-tab-pane>
@@ -12,7 +12,6 @@
 </template>
 
 <script lang="ts" setup>
-import { ObjTy } from "~/common"
 const emit = defineEmits(["change"])
 const props = defineProps({
   tabs: {
@@ -20,16 +19,24 @@ const props = defineProps({
     required: true,
     default: () => []
   },
+  tabsConfig: {
+    type: Object,
+    default: {
+      name: "name",
+      lable: "lable",
+      num: "num"
+    }
+  },
   currTab: {
     type: String,
     default: ""
   }
 })
 
-const activeName = ref<string>(props.currTab ? props.currTab : props.tabs[0].label)
+const activeName = ref<string>(props.currTab ? props.currTab : props.tabs[0][props.tabsConfig.lable])
 
-const handleClick = (tab) => {
-  emit("change", tab.name)
+const handleChange = (name: any) => {
+  emit("change", name)
 }
 </script>
 

@@ -1,5 +1,5 @@
 /*使用vue3.0 jsx语法书写*/
-import ElSvgItem from "@/components/SvgIcon/ElSvgItem.vue"
+import ElSvgIcon from "@/components/SvgIcon/ElSvgIcon.vue"
 export default defineComponent({
   props: {
     icon: {
@@ -26,7 +26,7 @@ export default defineComponent({
         //using element-plus svg icon
         // element-plus remove el-icon,using 'svg icon'  to replace
         // view https://element-plus.org/zh-CN/component/icon.html
-        return <ElSvgItem elSvgName={props.meta.elSvgIcon} />
+        return <ElSvgIcon elSvgName={props.meta.elSvgIcon} />
       } else if (props.meta?.icon) {
         //console.log('我进入渲染了')
         return <svg-icon icon-class={props.meta?.icon} className="nav-icon" />

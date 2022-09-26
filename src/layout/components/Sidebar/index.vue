@@ -1,17 +1,18 @@
 <template>
-  <div class="sidebar" v-if="routes.length > 0">
+  <div class="sidebar" v-if="routes.length > 0 && !baseRoute.meta?.pullDown">
     <!--router nav-->
     <el-scrollbar>
       <el-menu
         class="sidebar-menu"
         :default-active="activeMenu"
+        :default-openeds="defaultOpeneds"
         :collapse="!isCollapse"
         :unique-opened="false"
         :collapse-transition="false"
         mode="vertical"
         @select="menuSelect"
       >
-        <sidebar-item v-for="route in routes" :key="route.path" :item="route" :base-path="route.path" />
+        <sidebar-item v-for="route in routes" :key="route.path" :item="route" :base-path="baseRoute.path" />
       </el-menu>
     </el-scrollbar>
   </div>
@@ -21,6 +22,7 @@
 import SidebarItem from "./SidebarItem.vue"
 import { useAppStore } from "@/store/app"
 import { usePermissionStore } from "@/store/permission"
+import { ObjTy } from "~/common"
 
 //导入配置文件
 const appStore = useAppStore()
@@ -31,9 +33,13 @@ const settings = computed(() => {
 const route = useRoute()
 const permissionStore = usePermissionStore()
 
+const baseRoute = ref<ObjTy>({})
+
 const routes = computed(() => {
   let routeArr = getCurrRoutes()
-  return routeArr.length > 0 ? routeArr[0]?.children : []
+  baseRoute.value = routeArr.length > 0 ? routeArr[0] : ""
+
+  return routeArr.length > 0 ? (routeArr[0]?.path !== "/" ? routeArr[0]?.children : []) : []
 })
 const isCollapse = computed(() => {
   // return appStore.sidebar.opened
@@ -46,21 +52,36 @@ const menuSelect = (val) => {
 
 const getCurrRoutes = () => {
   let obj = {}
-  let path = activeMenu.value?.slice(activeMenu.value?.lastIndexOf("/") + 1)
-  const getRoutes = (routes, path, obj) => {
+  let name = activeMenu.value?.slice(activeMenu.value?.lastIndexOf("/") + 1)
+  const getRoutes = (routes, name, obj) => {
     routes?.forEach((v) => {
       let p = v.path.replace("/", "")
       if (p) {
-        obj[p] = path
+        obj[p] = name
         if (v?.children && v.children.length > 0) {
-          getRoutes(v?.children, v.path, obj)
+          getRoutes(v?.children, name ? name : v?.name.toLowerCase(), obj)
         }
       }
     })
   }
   getRoutes(permissionStore.routes, "", obj)
-  return permissionStore.routes.filter((r) => r.path === obj[path])
+  if (obj[name]) {
+    return permissionStore.routes.filter((r) => r.name?.toLowerCase() === obj[name])
+  }
+  return permissionStore.routes.filter((r) => r.path === "/")
 }
+
+const defaultOpeneds = computed(() => {
+  let openeds: Array<string> = []
+  permissionStore.routes.forEach((r: { children: ObjTy[] }) => {
+    r.children?.forEach((rc) => {
+      if (rc.children?.length > 0) {
+        openeds.push(rc.path)
+      }
+    })
+  })
+  return openeds
+})
 
 const activeMenu = computed((): any => {
   const { meta, path } = route

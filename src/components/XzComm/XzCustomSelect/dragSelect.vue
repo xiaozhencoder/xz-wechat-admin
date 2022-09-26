@@ -1,6 +1,6 @@
 <template>
   <el-dialog
-    custom-class="label-container dialog-cantainer"
+    class="label-container dialog-cantainer"
     :title="title"
     v-model="visible"
     :close-on-click-modal="false"

@@ -16,10 +16,10 @@
 </template>
 
 <script setup>
-import { scrollTo } from '@/utils/scroll-to'
-import { computed, ref } from 'vue'
+import { scrollTo } from "@/utils/scroll-to"
+import { computed, ref } from "vue"
 
-const emit = defineEmits(['update:page', 'update:limit', 'pagination'])
+const emit = defineEmits(["update:page", "update:limit", "pagination"])
 
 const props = defineProps({
   total: {
@@ -42,7 +42,7 @@ const props = defineProps({
   },
   layout: {
     type: String,
-    default: 'total, sizes, prev, pager, next, jumper'
+    default: "total, sizes, prev, pager, next, jumper"
   },
   background: {
     type: Boolean,
@@ -62,7 +62,7 @@ const currentPage = computed({
     return props.page
   },
   set(val) {
-    emit('update:page', val)
+    emit("update:page", val)
   }
 })
 const pageSize = computed({
@@ -70,18 +70,18 @@ const pageSize = computed({
     return props.limit
   },
   set(val) {
-    emit('update:limit', val)
+    emit("update:limit", val)
   }
 })
 
 const handleSizeChange = (val) => {
-  emit('pagination', { page: currentPage, limit: val })
+  emit("pagination", { page: currentPage, limit: val })
   if (ref(props.autoScroll).value) {
     scrollTo(0, 800)
   }
 }
 const handleCurrentChange = (val) => {
-  emit('pagination', { page: val, limit: pageSize })
+  emit("pagination", { page: val, limit: pageSize })
   if (ref(props.autoScroll).value) {
     scrollTo(0, 800)
   }
@@ -91,7 +91,7 @@ const handleCurrentChange = (val) => {
 <style scoped>
 .pagination-container {
   background: #fff;
-  padding: 32px 16px;
+  padding: 20px 16px;
   /*text-align: center;*/
 }
 .pagination-container.hidden {

@@ -12,10 +12,12 @@
 </template>
 
 <script setup lang="ts">
+import { ObjTy } from '~/common';
+
 let clickTime = 0
 const propsSideBarNew = defineProps({
   data: {
-    type: Array,
+    type: Array<ObjTy>,
     default: () => []
   },
   value: {

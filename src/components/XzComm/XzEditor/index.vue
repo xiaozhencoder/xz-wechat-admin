@@ -119,6 +119,7 @@
 </template>
 
 <script lang="ts" setup name="XzEditor">
+import { nextTick } from 'vue'
 import Emoji from "./module/emoji.vue"
 import XzCustomSelect from "@/components/XzComm/XzCustomSelect/index.vue"
 import DefaultPopover from "./module/default.vue"
@@ -242,7 +243,7 @@ const toolsConfig = computed(() => {
 
 watch(
   () => props.value,
-  (val, oldVal) => {
+  async (val, oldVal) => {
     if (val === oldVal) return
     try {
       reactiveData.color = JSON.parse(val).color || "#000"
@@ -258,10 +259,12 @@ watch(
       reactiveData.color = "#000"
       reactiveData.editorData = []
     }
-    proxy.$nextTick(() => {
-      if (reactiveData.disabled) initHtml(reactiveData.editorData, null)
+
+    await nextTick(() => {
+      initHtml(reactiveData.editorData, null)
+      setPlaceholder()
     })
-  }
+  }, {deep: true}
 )
 
 watch(() => props.selectOption, (newVal, oldVal) => {
@@ -299,11 +302,11 @@ watch(() => reactiveData.editorData, (newVal, oldVal) => {
 }, {deep: true})
 
 
-onMounted(() => {
+onMounted(async () => {
   if (document.querySelector("body")) document.querySelector("body")?.addEventListener("click", handleBodyClick)
   if (document.querySelector("." + props.uniqueKey)) document.querySelector("." + props.uniqueKey)?.addEventListener("click", listenerEdit)
   reactiveData.isRead = !reactiveData.isRead
-  proxy.$nextTick(() => {
+  await nextTick(() => {
     initHtml(reactiveData.editorData, null)
     setPlaceholder()
   })
@@ -335,7 +338,8 @@ function groupBy(array, f) {
 
 function initHtml(arr, type) {
   // 获取最大行数
-  const maxNum = Math.max(...arr.map((a) => a.line_num))
+  let maxNum = Math.max(...arr.map((a) => a.line_num))
+  if (maxNum.toString().indexOf("Infinity") !== -1) maxNum = 1
 
   // 每行数据
   const tmpArr = groupBy(arr, (item) => [item.line_num])
@@ -403,7 +407,7 @@ function getReturnHtml(arr) {
   return mapObj
 }
 
-function  getHtmlData(arr) {
+function getHtmlData(arr) {
   const icon = "black"
   const mapObj = {}
   for (let i = 0; i < arr.length; i++) {
@@ -855,15 +859,14 @@ function  insertHtmlAtCaret(html) {
 }
 
 // 设置弹框的位置
-function setPointer(ref, cla, sourceEl, el, offset) {
+async function setPointer(ref, cla, sourceEl, el, offset) {
   const { offsetTop, offsetLeft } = el || {}
   let element = document.querySelector(cla)
-  console.log(cla, element)
   element.style.display = "block"
   if (ref === "attrSelect") {
     element.style.top = offsetTop + offset + "px"
     element.style.left = offsetLeft + "px"
-    proxy.$nextTick(() => {
+    await nextTick(() => {
       document.querySelector(cla)?.click()
     })
   } else {
@@ -1022,10 +1025,10 @@ function listenerEdit(e) {
 }
 
 // 监听到edit 操作用户属性时
-function  doUserAttr(e) {
+async function  doUserAttr(e) {
   const attrSelect = proxy.$el?.querySelector(`.select-container`)
   attrSelect && (attrSelect.style.display = "block")
-  proxy.$nextTick(() => {
+  await nextTick(() => {
     proxy.$refs[`attrSelect`][0] && proxy.$refs[`attrSelect`][0].doShow()
   })
 
@@ -1102,7 +1105,7 @@ const paste = (e) => {
 
 .xz-editor {
   background-color: transparent;
-  min-width: 752px;
+  // min-width: 752px;
   min-height: 192px;
   border-radius: 3px;
   border: 1px solid #dbdee4;

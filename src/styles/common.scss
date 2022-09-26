@@ -99,7 +99,7 @@
 }
 
 // 字体大小 Example: f-s-[19-40]
-@for $i from 19 through 40 {
+@for $i from 16 through 40 {
   .f-s-#{$i} {
     font-size: $i + px;
   }

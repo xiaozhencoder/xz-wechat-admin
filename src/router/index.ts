@@ -3,6 +3,7 @@ import Layout from "@/layout"
 import { RouterTy } from "~/router"
 import uiRouter from "./ui"
 import pullDrainage from "./pullDrainage"
+import contentCenter from "./contentCenter"
 
 export const constantRoutes: RouterTy = [
   // {
@@ -49,6 +50,7 @@ export const constantRoutes: RouterTy = [
   },
 
   ...pullDrainage,
+  ...contentCenter,
   ...uiRouter
 ]
 /**

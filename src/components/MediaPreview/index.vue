@@ -3,7 +3,7 @@
   <div>
     <el-dialog
       v-model="visible"
-      custom-class="media_preview_container"
+      class="media_preview_container"
       :close-on-press-escape="false"
       :close-on-click-modal="false"
       :append-to-body="true"
@@ -90,9 +90,13 @@ const props = defineProps({
     type: Boolean,
     default: false
   },
+  isMultiple: {
+    type: Boolean,
+    default: false
+  },
   isEdit: {
     type: Boolean,
-    default: true
+    default: false
   }
 })
 
@@ -132,11 +136,14 @@ const getFileSize = (size, fixed) => {
   return formatBytes(size, fixed)
 }
 const getContent = () => {
-  const contentDetail = props.isEdit
-    ? JSON.parse(props.mediaList[positionIndex.value].contentDetail)
-    : typeof props.mediaList[positionIndex.value] === "object"
-    ? props.mediaList[positionIndex.value]
-      : JSON.parse(props.mediaList[positionIndex.value])
+  const content = props.mediaList[positionIndex.value]?.contentDetail || props.mediaList[positionIndex.value]?.content
+  let contentDetail = props.isMultiple ? JSON.parse(content) : props.mediaList[positionIndex.value]
+
+  // const contentDetail = props.isEdit
+  //   ? JSON.parse(props.mediaList[positionIndex.value].contentDetail)
+  //   : typeof props.mediaList[positionIndex.value] === "object"
+  //   ? props.mediaList[positionIndex.value]
+  //     : JSON.parse(props.mediaList[positionIndex.value])
   return contentDetail
 }
 

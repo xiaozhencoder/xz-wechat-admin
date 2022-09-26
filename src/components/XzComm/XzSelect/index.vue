@@ -1,5 +1,10 @@
 <template>
-  <div ref="selectContainer" class="com-select-container" :class="{ 'border-bottom': line }">
+  <div
+    ref="selectContainer"
+    class="com-select-container"
+    :class="{ 'border-bottom': line }"
+    :style="[styles, { width: line ? '100%' : selLen }]"
+  >
     <el-select
       ref="selectRef"
       v-model="selectValue"
@@ -129,26 +134,4 @@ function visibleChange(val: boolean) {
     box-shadow: none;
   }
 }
-// :deep(.el-input__suffix) {
-//   display: none;
-// }
-
-// .com-select-container {
-//   position: relative;
-//   display: inline-block;
-
-//   .common-drop-down {
-//     font-size: 16px;
-//     position: absolute;
-//     right: 2px;
-//     top: 5px;
-//     pointer-events: none;
-//     transform: rotate(0deg);
-//     transition: transform 0.2s;
-//     &.visible {
-//       transform: rotate(-180deg);
-//       transition: transform 0.2s;
-//     }
-//   }
-// }
 </style>

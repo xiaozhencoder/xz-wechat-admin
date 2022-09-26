@@ -318,5 +318,57 @@ export const getBaseUrl = () => {
 
 export function getHostName() {
   const hostName = window.location.hostname.split(".")[0]
-  return hostName === "localhost" ? "newtest" : hostName
+  return hostName === "localhost" ? "zall-dev" : hostName
+}
+
+/**
+ * @param {Array} actual
+ * @returns {Array}
+ */
+export function cleanArray(actual: Array<any>): Array<any> {
+  const newArray: any = []
+  for (let i = 0; i < actual.length; i++) {
+    if (actual[i]) {
+      newArray.push(actual[i])
+    }
+  }
+  return newArray
+}
+
+/**
+ * @param {Object} obj
+ * @returns {String} string
+ */
+export function param(obj: ObjTy): string {
+  if (!obj) return ""
+  return cleanArray(
+    Object.keys(obj).map((key) => {
+      if (obj[key] === undefined) return ""
+      return encodeURIComponent(key) + "=" + encodeURIComponent(obj[key])
+    })
+  ).join("&")
+}
+
+export function setPageParam(page: ObjTy, data: ObjTy) {
+  page.params.currentPage = data.currentPage
+  page.params.pageSize = data.pageSize
+  page.total = data.totalPage
+}
+
+/*
+ *数组对象去重
+ */
+export function removeDuplicate(arr, batch) {
+  if (!Array.isArray(arr)) {
+    return arr
+  }
+  if (arr.length == 0) {
+    return []
+  }
+  let obj = {}
+  let uniqueArr = arr.reduce(function (total, item) {
+    obj[item[batch]] ? "" : (obj[item[batch]] = true && total.push(item))
+    return total
+  }, [])
+  return uniqueArr
 }

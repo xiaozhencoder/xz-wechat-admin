@@ -24,6 +24,7 @@ interface AxiosConfigTy {
   method?: string
   data?: ObjTy
   params?: ObjTy
+  headers?: ObjTy
   bfLoading?: boolean
   afHLoading?: boolean
   isUploadFile?: boolean

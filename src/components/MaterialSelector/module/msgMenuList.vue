@@ -44,10 +44,9 @@ const props = defineProps({
   }
 })
 
-
 const selects = computed(() => {
   return (item) => {
-    return props.selectList.findIndex((v) => v.contentType === item.contentType && v.id === item.id) !== -1
+    return props.selectList.findIndex((v) =>  v.contentType === item.contentType && (v.id === item.id  || v.contentName === item.contentName))  !== -1
   }
 })
 

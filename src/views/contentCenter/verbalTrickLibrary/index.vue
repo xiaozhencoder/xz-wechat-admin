@@ -1,5 +1,5 @@
 <template>
-  <h1>欢迎语</h1>
+  <h1>话术库</h1>
 </template>
 
 <script lang="ts" setup></script>

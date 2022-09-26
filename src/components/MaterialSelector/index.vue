@@ -10,7 +10,9 @@
     >
       <div class="dialog-head">
         <div
-          v-for="(item, index) in materialType"
+          v-for="(item, index) in materialType.filter((m) =>
+            materialTypes.length > 0 ? materialTypes.includes(m.type) : !materialTypes.includes(m.type)
+          )"
           :key="index"
           class="head-icon"
           :class="{ active: type === item.type }"
@@ -38,7 +40,7 @@
             </div>
           </div>
         </div>
-        <div class="body-right">
+        <div v-loading="loading" class="body-right">
           <template v-if="componentName && dataList!.length > 0">
             <component
               :is="componentName"
@@ -51,6 +53,7 @@
             />
           </template>
           <el-empty v-else style="width: 100%" description="暂无数据" :image-size="100" />
+          <div class="select-restrict" v-if="isRestrict"></div>
         </div>
       </div>
       <div class="dialog-foot">
@@ -67,12 +70,7 @@
         </span>
       </template>
     </el-dialog>
-    <media-preview
-      :media-list="previewMediaData"
-      :is-edit="false"
-      v-model:media-dialog-visible="previewDialog"
-      @close="closeMedia"
-    />
+    <media-preview :media-list="previewMediaData" v-model:media-dialog-visible="previewDialog" @close="closeMedia" />
   </div>
 </template>
 
@@ -95,8 +93,10 @@ import { materialType, tabs } from "./config"
 import TextList from "./module/textList.vue"
 import { ObjTy } from '~/common'
 import { deepClone } from "@/utils"
+import { objectTypeAnnotation } from "@babel/types"
 
 export interface MaterialObj {
+  currentPage?: number
   totalPage?: number
   pageSize?: number
   type: string
@@ -106,6 +106,14 @@ export interface MaterialObj {
 }
 
 const props = defineProps({
+  loading: {
+    type: Boolean,
+    default: false
+  },
+  materialTypes: {
+    type: Array<String>,
+    default:() => []
+  },
   dataList: {
     type: Array<ObjTy>,
     defalut: () => []
@@ -113,6 +121,10 @@ const props = defineProps({
   selectDataList: {
     type: Array<ObjTy>,
     defalut: () => []
+  },
+  restrictConfig: {
+    type: Object,
+    default: () => {}
   },
   visible: {
     type: Boolean,
@@ -171,30 +183,58 @@ const typeComponent = {
 }
 
 // watch(() => props.selectDataList, (val) => {
-//   console.log(val)
 //   selectList.value = val
 // },{deep: true})
 
+const isRestrict = computed(() => {
+  if (selectList.value.length >= 9) return true
+  if (props.restrictConfig[props.type]) {
+    return selectList.value.filter(s => s.contentType === props.type).length >= props.restrictConfig[props.type]
+  }
+  return false
+})
 
 const componentName = computed(() => {
   return typeComponent[props.type]
 })
 
-const onSelectGroup = (val) => {
-  groupId.value = val
-  getData()
+const resetData = () => {
+  searchVal.value = ''
+  groupId.value = -1
+  page.value = 1
+}
+
+const onSelectGroup = (val: number) => {
+  if (groupId.value !== val) {
+    resetData()
+    groupId.value = val
+    getData()
+  }
 }
 
 const onSelectType = (val: string) => {
-  searchVal.value = ''
-  currType.value = val
-  groupId.value = -1
+  if (currType.value !== val) {
+    resetData()
+    currType.value = val
+    getData()
+  }
+}
+
+const getSearchVal = (val: string) => {
+  searchVal.value = val
+  getData()
+}
+
+const getTabVal = (val: string) => {
+  currTab.value = val
   getData()
 }
 
 const onSelect = (val: ObjTy) => {
   if (selectList.value.length === 0 || !selectList.value.some(v => v.contentType === val.contentType && v.id === val.id)) {
     selectList.value.push(val)
+    const textArr = selectList.value.filter(s => s.contentType === "text")
+    selectList.value = textArr.concat(selectList.value.filter(s => s.contentType !== "text"))
   } else {
     onCancel(val)
   }
@@ -208,22 +248,8 @@ const onCancel = (val: ObjTy) => {
 }
 
 const onPreview = (val) => {
-  console.log(JSON.parse(val.contentDetail))
   previewMediaData.value = [JSON.parse(val.contentDetail)]
   previewDialog.value = true
-}
-
-const getSearchVal = (val: string) => {
-  // const arr = val.trim()
-  //   ? sourceDataList.value.filter(v => v.contentName.toLocaleLowerCase().indexOf(val.trim().toLocaleLowerCase()) !== -1)
-  //   : sourceDataList.value
-  searchVal.value = val
-  getData()
-}
-
-const getTabVal = (val: string) => {
-  currTab.value = val
-  getData()
 }
 
 function closeMedia() {
@@ -234,7 +260,11 @@ const loadData = () => {
   if (Date.now() - loadLimitTime.value > 300) {
     loadLimitTime.value = Date.now()
 
-    if ((page.value++) <= Math.ceil(props.totalPage / props.pageSize)) {
+    if (currType.value !== props.type) {
+      currType.value = props.type
+      page.value = 1
+    }
+    if ((page.value + 1) <= Math.ceil(props.totalPage / props.pageSize)) {
       page.value += 1
       getData()
     }
@@ -253,7 +283,6 @@ const getData = () => {
 }
 
 const open = () => {
-  console.log("open", props.selectDataList)
   selectList.value = deepClone(props.selectDataList)
 }
 
@@ -276,11 +305,13 @@ const submit = () => {
 }
 .dialog-head {
   display: flex;
-  justify-content: space-between;
+  // justify-content: space-between;
+  align-items: center;
   padding-bottom: 12px;
   border-bottom: 1px solid #dbdee4;
 
   .head-icon {
+    margin-right: 30px;
     font-size: 48px;
     height: 48px;
     border-radius: 10px;
@@ -294,7 +325,7 @@ const submit = () => {
   }
 
   .active {
-    box-shadow: 0px 15px 30px rgb(0 0 0 / 12%);
+    box-shadow: 5px 5px 5px rgb(0 0 0 / 22%);
     font-size: 52px;
     background-color: #f8f4f4;
 
@@ -335,6 +366,8 @@ const submit = () => {
 
       .tree-content {
         margin-top: 5px;
+        max-height: 160px;
+        overflow: auto;
         .content-group {
           > li {
             padding: 5px 0 5px 15px;
@@ -364,11 +397,21 @@ const submit = () => {
   .body-right {
     overflow: auto;
     flex: 1;
-    height: min-content;
-    max-height: 248px;
+    // height: min-content;
+    // max-height: 248px;
+    height: 248px;
     margin: 7px 0 7px 7px;
     display: flex;
     flex-wrap: wrap;
+
+    .select-restrict {
+      position: absolute;
+      width: -webkit-fill-available;
+      background-color: $background-color-base;
+      opacity: 0.5;
+      height: 260px;
+      cursor: not-allowed;
+    }
   }
 }
 // .dialog-foot {
